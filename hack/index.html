@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<title>Hack</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+<meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes">
+<meta name="keywords" content="digital garden, notes, photography, rjcalow">
+<meta name="author" content="RJCalow">
+<style>
+  body {
+    font-family: 'Jost', sans-serif;
+    line-height: 2.5;
+
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Zilla Slab', monospace;
+    letter-spacing: +0.02em;
+    word-spacing: -0.1em;
+    line-height: 2em;
+  }
+
+  .w3-content a {
+    text-decoration: none;
+    box-shadow: inset 0 -6px 0 rgba(123, 255, 0, 0.719);
+  }
+
+  .w3-content a:hover {
+    text-decoration: none;
+    background-color: rgba(123, 255, 0, 0.719);
+
+  }
+
+  .menu a {
+    font-family: 'Zilla Slab', monospace;
+    text-decoration: none;
+    box-shadow: none;
+  }
+
+  .title {
+    font-family: 'Zilla Slab', monospace;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+    text-decoration: none;
+    box-shadow: none;
+    line-height: 1.5;
+  }
+
+  hr {
+  border-top: 2px dotted rgb(51, 51, 51);
+}
+</style>
+
+<body>
+
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="Menu">
+    <button onclick="closeMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+
+    <ul class="w3-ul no-dec">
+      <li><a href="https://wiki.rjcalow.co.uk">$HOME</a></li>
+      
+      <li><a href="#classic+chrome">Classic Chrome On Xpro1</a></li>
+      
+      <li><a href="#e-ink">E-Ink</a></li>
+      
+      <li><a href="#Lumix-TZ10-infrared-conversion">Lumix Tz10 Infrared Conversion</a></li>
+      
+    </ul>
+  </div>
+
+
+
+  <div class="w3-bar w3-padding w3-xlarge" style="text-decoration: none;">
+    <a class="title" id="top" href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
+    <button class=" w3-button w3-right " onclick="openMenu()">&#9776;</button>
+
+
+  </div>
+
+  <div class="w3-content" style="">
+
+    <!-- DIR of page -->
+    <ul class="w3-ul w3-small w3-margin-bottom w3-monospace">
+      <li><a href="https://wiki.rjcalow.co.uk">$HOME</a> / Hack / </li>
+      
+      <li><a href="#classic+chrome">Classic Chrome On Xpro1</a></li>
+      
+      <li><a href="#e-ink">E-Ink</a></li>
+      
+      <li><a href="#Lumix-TZ10-infrared-conversion">Lumix Tz10 Infrared Conversion</a></li>
+      
+    </ul>
+
+    <!-- doc -->
+    
+    <div class="w3-container" style="margin-bottom: 3em;">
+      
+      
+   
+      <div class="" style="">
+      <a id="classic+chrome" href="https://wiki.rjcalow.co.uk/hack#classic+chrome">
+        <h2 class="w3-bottombar w3-border-gark-grey " style="">Classic Chrome On Xpro1</h2>  </a></div>
+      <p>The x-pro1 lacks my go-to fuji film simulation. </p>
+<h3>Solution: Use PRO Neg. Std with the following recipe</h3>
+<p>It makes a near match and saves time in post.</p>
+<blockquote class="w3-panel w3-leftbar w3-light-grey">
+<ul class="w3-ul">
+<li>PRO Neg. Std</li>
+<li>Dynamic Range: DR200</li>
+<li>Highlight: +1</li>
+<li>Shadow: +1</li>
+<li>Color: +1</li>
+<li>Sharpness: 0</li>
+<li>Noise Reduction: -2</li>
+<li>White Balance: Auto, 0 Red &amp; -1 Blue</li>
+</ul>
+<p>from <a href="https://fujixweekly.com/2020/04/10/classic-chrome-for-those-who-dont-have-it-x-trans-i/">https://fujixweekly.com/2020/04/10/classic-chrome-for-those-who-dont-have-it-x-trans-i/</a></p>
+</blockquote>
+<h3>Another solution is to use a dcp profile in post</h3>
+<p>My .dcp I baked is at <a href="https://github.com/rjcalow/Fujixpro1chrome/">https://github.com/rjcalow/Fujixpro1chrome/</a></p>
+<p>Results were mixed. You can try baking your own at <a href="https://github.com/abpy/FujifilmCameraProfiles">abpy/FujifilmCameraProfiles</a>.</p>
+      <div class="w3-panel w3-leftbar w3-monospace w3-small "># ./classic chrome.md | 29/4/2021 </div>
+      <hr>
+      <p class="w3-small w3-monospace"><a href="#top">Back to top</a></p>
+
+      
+
+    </div>
+
+
+    
+    <div class="w3-container" style="margin-bottom: 3em;">
+      
+      
+   
+      <div class="" style="">
+      <a id="e-ink" href="https://wiki.rjcalow.co.uk/hack#e+ink">
+        <h2 class="w3-bottombar w3-border-gark-grey " style="">E-Ink</h2>  </a></div>
+      <h3>termux-camera-to-kindle.sh</h3>
+<p>Inspired by <a href="https://www.bjp-online.com/2018/05/cairnstateshape/">Antony Cairns</a>. This short script was a tiny side project during my COVID restricted masters in photography. With no access to a darkroom I experimented with obscure/misunderstood digital technologies for image-making. </p>
+<p>The aim is to demonstrate e-ink technology as a medium for reproduction and the act of repurposing a commercial artefact for unconventional means (in this case appropriating monochrome images -the more indeterminate and abstract the better). </p>
+<figure><img class="w3-image" style=""  alt="" src="../imgs/kindle.jpg" /><figcaption></figcaption>
+</figure>
+<p>Originally a python script that called system commands, I rewrote the script in bash for less dependencies. </p>
+<script src="https://gist.github.com/rjcalow/f584c24752d1d3c722b8ff8a0b9f9c7d.js"></script>
+
+<p>Besides the novelty of the process, it allowed me to understand how reproduction works on the e-ink screen, its behaviour and limitations. I found that having a strong contrast applied to images worked best, this may be down to the e-ink screen being limited to 3bit Greyscale (8 shades) -some of the lighter shades of grey lack clarity and are lost to the grey screen. </p>
+<h3>Kindle ereader as a means of image reproduction</h3>
+<p>To reproduce images on the Kindle, I purposefully chose vague and abstract subject matter playing with the metaphor of culture appropriating nature. These are scans of the Kindle and image.   </p>
+<figure><img class="w3-image" style=""  alt="" src="../imgs/img20200501_11162913.jpg" /><figcaption></figcaption>
+</figure>
+<figure><img class="w3-image" style=""  alt="" src="../imgs/img20200501_11402077.jpg" /><figcaption></figcaption>
+</figure>
+<figure><img class="w3-image" style=""  alt="" src="../imgs/img20200501_11424010.jpg" /><figcaption></figcaption>
+</figure>
+<h3>Reflection</h3>
+<p>This started as a unconventional experiment during the pandemic quarantine, one that approaches {nature-culture} theme from a different approach. The more I reflect on it, the less unreasonable it becomes. The act of repurposing cultural artefact for another purpose is a subversive act, mimicking an aspect of the core theme. Additionally it offers discourse on cultural/digital appropriation of nature.</p>
+      <div class="w3-panel w3-leftbar w3-monospace w3-small "># ./e-ink.md | 1/9/2020 </div>
+      <hr>
+      <p class="w3-small w3-monospace"><a href="#top">Back to top</a></p>
+
+      
+
+    </div>
+
+
+    
+    <div class="w3-container" style="margin-bottom: 3em;">
+      
+      
+   
+      <div class="" style="">
+      <a id="Lumix-TZ10-infrared-conversion" href="https://wiki.rjcalow.co.uk/hack#Lumix+TZ10+infrared+conversion">
+        <h2 class="w3-bottombar w3-border-gark-grey " style="">Lumix Tz10 Infrared Conversion</h2>  </a></div>
+      <figure><img class="w3-image" style=""  alt="" src="../imgs/img_20180602_001631.jpg" /><figcaption></figcaption>
+</figure>
+<p>Remove the back panel by removing screws on the sides and bottom. Carefully remove the panel, and unclip the lcd power and data cables by opening their latches. This can be fiddly so take time. Also the preview switch (top right) can fly-out when taking the back off, but its not hard to put back.</p>
+<figure><img class="w3-image" style=""  alt="The back panel" src="../imgs/img_20180601_1148401.jpg" /><figcaption>The back panel</figcaption>
+</figure>
+<p>The sensor is hidden behind shielding. Remove it by unscrewing the surrounding screws.</p>
+<figure><img class="w3-image" style=""  alt="" src="../imgs/img_20180601_114847-1.jpg" /><figcaption></figcaption>
+</figure>
+<p>Behind the shielding is the CCD sensor held in place with three screws.</p>
+<figure><img class="w3-image" style=""  alt="" src="../imgs/img_20180601_1152421.jpg" /><figcaption></figcaption>
+</figure>
+<p>Unscrew the three screws and lift gently. Remove the IR filter found underneath the sensor. The camera is probably dirty, so it may need a clean with air.</p>
+<figure><img class="w3-image" style=""  alt="Sensor" src="../imgs/img_20180601_1155152.jpg" /><figcaption>Sensor</figcaption>
+</figure>
+<p>The cameras IR Cut-Off Filter. Assemble the camera back making sure to secure the sensor so that it is straight and level. Also be careful with the ribbon cables.</p>
+<figure><img class="w3-image" style=""  alt="Tiny filter" src="../imgs/img_20180601_1156073.jpg" /><figcaption>Tiny filter</figcaption>
+</figure>
+<p>Apply an infrared filter and set the camera to black and white.</p>
+<figure><img class="w3-image" style=""  alt="Result" src="../imgs/p1010001.jpg" /><figcaption>Result</figcaption>
+</figure>
+      <div class="w3-panel w3-leftbar w3-monospace w3-small "># ./Lumix-TZ10-infrared-conversion.md | 11/9/2018 </div>
+      <hr>
+      <p class="w3-small w3-monospace"><a href="#top">Back to top</a></p>
+
+      
+
+    </div>
+
+
+    
+
+
+  </div>
+
+  <!-- footer -->
+  <div class="w3-container w3-light-grey w3-border-top w3-border-dark-grey w3-margin-top w3-padding-top">
+    <p class="w3-right">☕ Brewed w/ love. Hosted on github. Built with w3.css. Generated by roji.py. rjcalow@gmail.com</p>
+  </div>
+
+  <script>
+
+    function openMenu() {
+      document.getElementById("Menu").style.display = "block";
+    }
+
+    function closeMenu() {
+      document.getElementById("Menu").style.display = "none";
+    }
+
+  </script>
+
+</body>
+
+</html>
