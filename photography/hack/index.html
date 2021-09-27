@@ -1,0 +1,224 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <title>Hack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../assets/style.css" />
+  <script src="../../assets/scripts.js"></script>
+  <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
+  <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
+  <meta name="author" content="R J Calow" />
+  <body onload="boot()">
+    <div class="content">
+      <header><h6><a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a></h6></header>
+
+      <!-- DIR of page -->
+
+      <nav>
+        <p>
+          <a href="https://wiki.rjcalow.co.uk">$HOME</a>/<a
+            href="https://wiki.rjcalow.co.uk/photography/"
+            >Photography</a
+          >/Hack
+        </p>
+        <section>
+           
+
+          <a class="button" href="#classic+chrome"
+            ><img
+              src="../../assets/doc_32.png"
+              style="width: 32px"
+            /><br />Classic Chrome on xpro1</a
+          >
+          
+
+          <a class="button" href="#e-ink"
+            ><img
+              src="../../assets/doc_32.png"
+              style="width: 32px"
+            /><br />E-ink</a
+          >
+          
+
+          <a class="button" href="#Lumix-TZ10-infrared-conversion"
+            ><img
+              src="../../assets/doc_32.png"
+              style="width: 32px"
+            /><br />LUMIX TZ10 INFRARED CONVERSION</a
+          >
+          
+
+          <a class="button" href="#35mm+Holga"
+            ><img
+              src="../../assets/doc_32.png"
+              style="width: 32px"
+            /><br />35mm film in a Holga</a
+          >
+          
+        </section>
+      </nav>
+
+      <!-- doc -->
+
+       
+      <article>
+        <a id="classic+chrome" href="#classic+chrome">
+          <h1>Classic Chrome on xpro1</h1>
+        </a>
+
+        <p>The x-pro1 lacks my go-to fuji film simulation. </p>
+<h4>Solution: Use PRO Neg. Std with the following recipe</h4>
+<p>It makes a near match and saves time in post.</p>
+<blockquote>
+<ul>
+<li>PRO Neg. Std</li>
+<li>Dynamic Range: DR200</li>
+<li>Highlight: +1</li>
+<li>Shadow: +1</li>
+<li>Color: +1</li>
+<li>Sharpness: 0</li>
+<li>Noise Reduction: -2</li>
+<li>White Balance: Auto, 0 Red &amp; -1 Blue</li>
+</ul>
+<p>from <a href="https://fujixweekly.com/2020/04/10/classic-chrome-for-those-who-dont-have-it-x-trans-i/">https://fujixweekly.com/2020/04/10/classic-chrome-for-those-who-dont-have-it-x-trans-i/</a></p>
+</blockquote>
+<h4>Another solution is to use a dcp profile in post</h4>
+<p>My .dcp I baked is at <a href="https://github.com/rjcalow/Fujixpro1chrome/">https://github.com/rjcalow/Fujixpro1chrome/</a></p>
+<p>Results were mixed. You can try baking your own at <a href="https://github.com/abpy/FujifilmCameraProfiles">abpy/FujifilmCameraProfiles</a>.</p> 
+        
+        
+        <footer>
+          # ./photography/hack/classic chrome.md | 29/4/2021 
+        </footer>
+        <hr />
+        <p class=""><a href="#top">Back to top</a></p>
+      </article>
+
+      
+      <article>
+        <a id="e-ink" href="#e-ink">
+          <h1>E-ink</h1>
+        </a>
+
+        <h4>termux-camera-to-kindle.sh</h4>
+<p>Inspired by <a href="https://www.bjp-online.com/2018/05/cairnstateshape/">Antony Cairns</a>. This short script was a tiny side project during my COVID restricted masters in photography. With no access to a darkroom I experimented with obscure/misunderstood digital technologies for image-making. </p>
+<p>The aim is to demonstrate e-ink technology as a medium for reproduction and the act of repurposing a commercial artefact for unconventional means (in this case appropriating monochrome images -the more indeterminate and abstract the better). </p>
+<figure><img alt="" src="../../imgs/kindle.jpg" /><figcaption></figcaption>
+</figure>
+<p>Originally a python script that called system commands, I rewrote the script in bash for less dependencies. </p>
+<script src="https://gist.github.com/rjcalow/f584c24752d1d3c722b8ff8a0b9f9c7d.js"></script>
+
+<p>Besides the novelty of the process, it allowed me to understand how reproduction works on the e-ink screen, its behaviour and limitations. I found that having a strong contrast applied to images worked best, this may be down to the e-ink screen being limited to 3bit Greyscale (8 shades) -some of the lighter shades of grey lack clarity and are lost to the grey screen. </p>
+<h4>Kindle ereader as a means of image reproduction</h4>
+<p>To reproduce images on the Kindle, I purposefully chose vague and abstract subject matter playing with the metaphor of culture appropriating nature. These are scans of the Kindle and image.   </p>
+<figure><img alt="" src="../../imgs/img20200501_11162913.jpg" /><figcaption></figcaption>
+</figure>
+<figure><img alt="" src="../../imgs/img20200501_11402077.jpg" /><figcaption></figcaption>
+</figure>
+<figure><img alt="" src="../../imgs/img20200501_11424010.jpg" /><figcaption></figcaption>
+</figure>
+<h4>Reflection</h4>
+<p>This started as a unconventional experiment during the pandemic quarantine, one that approaches {nature-culture} theme from a different approach. The more I reflect on it, the less unreasonable it becomes. The act of repurposing cultural artefact for another purpose is a subversive act, mimicking an aspect of the core theme. Additionally it offers discourse on cultural/digital appropriation of nature.</p> 
+        
+        
+        <footer>
+          # ./photography/hack/e-ink.md | 1/9/2020 
+        </footer>
+        <hr />
+        <p class=""><a href="#top">Back to top</a></p>
+      </article>
+
+      
+      <article>
+        <a id="Lumix-TZ10-infrared-conversion" href="#Lumix-TZ10-infrared-conversion">
+          <h1>LUMIX TZ10 INFRARED CONVERSION</h1>
+        </a>
+
+        <figure><img alt="" src="../../imgs/img_20180602_001631.jpg" /><figcaption></figcaption>
+</figure>
+<p>Remove the back panel by removing screws on the sides and bottom. Carefully remove the panel, and unclip the lcd power and data cables by opening their latches. This can be fiddly so take time. Also the preview switch (top right) can fly-out when taking the back off, but its not hard to put back.</p>
+<figure><img alt="The back panel" src="../../imgs/img_20180601_1148401.jpg" /><figcaption>The back panel</figcaption>
+</figure>
+<p>The sensor is hidden behind shielding. Remove it by unscrewing the surrounding screws.</p>
+<figure><img alt="" src="../../imgs/img_20180601_114847-1.jpg" /><figcaption></figcaption>
+</figure>
+<p>Behind the shielding is the CCD sensor held in place with three screws.</p>
+<figure><img alt="" src="../../imgs/img_20180601_1152421.jpg" /><figcaption></figcaption>
+</figure>
+<p>Unscrew the three screws and lift gently. Remove the IR filter found underneath the sensor. The camera is probably dirty, so it may need a clean with air.</p>
+<figure><img alt="Sensor" src="../../imgs/img_20180601_1155152.jpg" /><figcaption>Sensor</figcaption>
+</figure>
+<p>The cameras IR Cut-Off Filter. Assemble the camera back making sure to secure the sensor so that it is straight and level. Also be careful with the ribbon cables.</p>
+<figure><img alt="Tiny filter" src="../../imgs/img_20180601_1156073.jpg" /><figcaption>Tiny filter</figcaption>
+</figure>
+<p>Apply an infrared filter and set the camera to black and white.</p>
+<figure><img alt="Result" src="../../imgs/p1010001.jpg" /><figcaption>Result</figcaption>
+</figure> 
+        
+        
+        <footer>
+          # ./photography/hack/Lumix-TZ10-infrared-conversion.md | 11/9/2018 
+        </footer>
+        <hr />
+        <p class=""><a href="#top">Back to top</a></p>
+      </article>
+
+      
+      <article>
+        <a id="35mm+Holga" href="#35mm+Holga">
+          <h1>35mm film in a Holga</h1>
+        </a>
+
+        <p><code>orginally from a blog post</code></p>
+<p>[[<a href="#35mm+HolgaNotes">Holga</a>]] setup involving foam packaging and rubber bands:</p>
+<figure><img alt="Foam packaging peanuts jammed around a 35mm canister and a 120 spool fitted with 2 elastic bands" src="../../imgs/wp-image-1338463176jpg-e1488664116132.jpg" /> <figcaption>Foam packaging peanuts jammed around a 35mm canister and a 120 spool fitted with 2 elastic bands</figcaption>
+</figure>
+<p>The results show a lot of messed up compositions where I should have had the camera either lower or more to the left. Its hard to judge what will be in frame or not. The images I took are around Lincoln.</p>
+<figure><img alt="Lincoln cathedral" src="../../imgs/2017-03-04-0008-edit1.jpg" /><figcaption>Lincoln cathedral</figcaption>
+</figure>
+<figure> <img alt="Ruddocks of lincoln" src="../../imgs/2017-03-04-0001-edit-21.jpg" /><figcaption>Ruddocks of lincoln</figcaption>
+</figure>
+<figure><img alt="Guildhall" src="../../imgs/2017-03-04-00021.jpg" /><figcaption>Guildhall</figcaption>
+</figure>
+<figure> <img alt="Michaelgate" src="../../imgs/2017-03-04-00031.jpg" /><figcaption>Michaelgate</figcaption>
+</figure>
+<figure><img alt="Wordsworth street" src="../../imgs/2017-03-04-00091.jpg" /><figcaption>Wordsworth street</figcaption>
+</figure> 
+        
+           
+        <h3>Further notes</h3>
+
+        <p>
+          <a id="35mm+HolgaNotes">↳</a>  Holga  mentioned in: <a
+            href="https://wiki.rjcalow.co.uk/photography/essay/#toy+camera+landscape"
+            >Exploring a landscape with handmade cameras</a
+          >
+
+          <a href="../../search/?=holga">🔍</a>
+        </p>
+          
+        <footer>
+          # ./photography/hack/35mm Holga.md | 4/3/2017 
+        </footer>
+        <hr />
+        <p class=""><a href="#top">Back to top</a></p>
+      </article>
+
+      
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
+
+      <p>📧 8t2pg3mf0@relay.firefox.com.</p>
+      <p>
+        <button onclick="change_mode('lightmode');">☀️</button>
+        <button onclick="change_mode('darkmode');">🌔</button>
+      </p>
+    </footer>
+  </body>
+</html>

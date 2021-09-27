@@ -1,141 +1,74 @@
+
+
+
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8" />
-<title>Newsletter</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8" />
+  <title>Newsletter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <script src="../assets/scripts.js"></script>
+  <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
+  <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
+  <meta name="author" content="R J Calow" />
+  <body onload="boot()">
+    <div class="content">
+      <header><h6><a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a></h6></header>
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
-<meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes">
-<meta name="keywords" content="digital garden, notes, photography, rjcalow">
-<meta name="author" content="RJCalow">
-<style>
-  body {
-    font-family: 'Jost', sans-serif;
-    line-height: 2.5;
+      <!-- DIR of page -->
 
-  }
+      <nav>
+        <p>
+          <a href="https://wiki.rjcalow.co.uk">$HOME</a>/Newsletter
+        </p>
+        <section>
+           
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: 'Zilla Slab', monospace;
-    letter-spacing: +0.02em;
-    word-spacing: -0.1em;
-    line-height: 2em;
-  }
+          <a class="button" href="#lowtech"
+            ><img
+              src="../assets/doc_32.png"
+              style="width: 32px"
+            /><br />Low tech</a
+          >
+          
 
-  .w3-content a {
-    text-decoration: none;
-    box-shadow: inset 0 -6px 0 rgba(123, 255, 0, 0.719);
-  }
+          <a class="button" href="#newsletter+links"
+            ><img
+              src="../assets/doc_32.png"
+              style="width: 32px"
+            /><br />Newsletters</a
+          >
+          
+        </section>
+      </nav>
 
-  .w3-content a:hover {
-    text-decoration: none;
-    background-color: rgba(123, 255, 0, 0.719);
+      <!-- doc -->
 
-  }
-
-  .menu a {
-    font-family: 'Zilla Slab', monospace;
-    text-decoration: none;
-    box-shadow: none;
-  }
-
-  .title {
-    font-family: 'Zilla Slab', monospace;
-    letter-spacing: -0.05em;
-    font-weight: 400;
-    text-decoration: none;
-    box-shadow: none;
-    line-height: 1.5;
-  }
-
-  hr {
-    border-top: 2px dotted rgb(51, 51, 51);
-  }
-</style>
-
-<body>
-
-
-  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="Menu">
-    <button onclick="closeMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-
-    <ul class="w3-ul no-dec">
-      <li><a href="https://wiki.rjcalow.co.uk">$HOME</a></li>
-      
-      <li><a href="#newsletter+links">Newsletters</a></li>
-      
-    </ul>
-  </div>
-
-
-
-  <div class="w3-bar w3-padding w3-xlarge" style="text-decoration: none;">
-    <a class="title" id="top" href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
-    <button class=" w3-button w3-right " onclick="openMenu()">&#9776;</button>
-  </div>
-
-  <div class="w3-content" style="">
-   <!-- DIR of page -->
-    <ul class="w3-ul w3-small w3-margin-bottom w3-monospace">
-      <li><a href="https://wiki.rjcalow.co.uk">$HOME</a> / Newsletter / </li>
-      
-      <li><a href="#newsletter+links">Newsletters</a></li>
-      
-    </ul>
-
-    <!-- doc -->
-    
-    <div class="w3-container" style="margin-bottom: 3em;">
-
-
-      <div class="" style="">
-        <a id="newsletter+links" href="https://wiki.rjcalow.co.uk/newsletter#newsletter+links">
-          <h2 class="w3-bottombar w3-border-gark-grey " style="">Newsletters</h2>
+       
+      <article>
+        <a id="lowtech" href="#lowtech">
+          <h1>Low tech</h1>
         </a>
-      </div>
 
-       <!-- MODALS of page -->
+        <p>Inspiring low tech/low impact (solar punk?) focused online magazine running on solar power</p>
+<p><em>Low-tech Magazine is an online magazine, based in Barcelona. The owners/authors and their very involved readers research how obsolete technology could help solve high-tech problems.</em></p>
+<p>Article of note: <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website.html">How to Build a Low-tech Website?</a></p> 
+        
+        
+        <footer>
+          # ./newsletter/lowtech.md | 19/8/2021 
+        </footer>
+        <hr />
+        <p class=""><a href="#top">Back to top</a></p>
+      </article>
+
       
-      <div id="modalzine" class="w3-modal">
-        <div class="w3-modal-content w3-card">
-          <header class="w3-container"> 
-            <span onclick="document.getElementById('modalzine').style.display='none'" 
-            class="w3-button w3-display-topright">&times;</span>
-            <h2>Zine is mentioned in:</h2>
-          </header>
-          <div class="w3-container">
-            
-            <p class="w3-monospace">/ make / <a href="https://wiki.rjcalow.co.uk/make#epson-xp-3100+booklet+printing">Printing A Zine Or Booklet On A Epson Xp-3100</a></p>
-            
-            <p class="w3-monospace">/ zines / <a href="https://wiki.rjcalow.co.uk/zines#Fl%C3%A2neur">Flâneur</a></p>
-            
-            <p class="w3-monospace">/ zines / <a href="https://wiki.rjcalow.co.uk/zines#the-garden-weed-project">The Garden Weed Project</a></p>
-            
-            <p class="w3-monospace">/ make / <a href="https://wiki.rjcalow.co.uk/make#Making+Zines+from+cheap+photo+prints">Making Zines From Cheap Photo Prints</a></p>
-            
-            <p class="w3-monospace">/ digital garden / <a href="https://wiki.rjcalow.co.uk/digital+garden#googleslides">Antistatic</a></p>
-            
-            <p class="w3-monospace">/ zines / <a href="https://wiki.rjcalow.co.uk/zines#one+punks+guide">One Punk’S Guide To Gardening By Jon Mule</a></p>
-            
-            <p class="w3-monospace">/ essay / <a href="https://wiki.rjcalow.co.uk/essay#Fays-Land">Fays Land</a></p>
-            
-          </div>
+      <article>
+        <a id="newsletter+links" href="#newsletter+links">
+          <h1>Newsletters</h1>
+        </a>
 
-
-          <footer class="w3-container w3-black">
-            <p onclick="document.getElementById('modalzine').style.display='none'" >ＣＬＯＳＥ</p>
-          </footer>
-        </div>
-      </div>
-      
-
-      <p>Newsletters, like the <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a> trend, are replacing over commercialized vanilla flavours of social media. Think of the dreaded influencer dominating the <em>blogosphere</em> and instagram, its <a href="https://qz.com/quartzy/1588115/instagram-influencers-are-out-slackers-are-in/">tiresome</a>. </p>
+        <p>Newsletters, like the <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a> trend, are replacing over commercialized vanilla flavours of social media. Think of the dreaded influencer dominating the <em>blogosphere</em> and instagram, its <a href="https://qz.com/quartzy/1588115/instagram-influencers-are-out-slackers-are-in/">tiresome</a>. </p>
 <p>Newsletters are slower, have purpose. They are usually produced for a specified niche or interest, giving them a focus. They are digital spaces, comparable to zines and pamphlets, filled by their authors unrestrained by the likes of Facebook. </p>
 <p>I read the following.</p>
 <table>
@@ -168,40 +101,47 @@
 </tr>
 <tr>
 <td><a href="https://littlebrownmushroom.substack.com/">https://littlebrownmushroom.substack.com/</a></td>
-<td>Alec Soth's [[<a onclick="document.getElementById('modalzine').style.display='block'"">Zine</a>]] like newsletter.</td>
+<td>Alec Soth's [[<a href="#newsletter+linksNotes">Zine</a>]] like newsletter.</td>
 </tr>
 </tbody>
-</table>
-      <div class="w3-panel w3-leftbar w3-monospace w3-small "># ./newsletter links.md | 1/6/2021 </div>
-      <hr>
-      <p class="w3-small w3-monospace"><a href="#top">Back to top</a></p>
+</table> 
+        
+           
+        <h3>Further notes</h3>
 
+        <p>
+          <a id="newsletter+linksNotes">↳</a>  Zine  mentioned in: <a
+            href="https://wiki.rjcalow.co.uk/newsletter/#lowtech"
+            >Low tech</a
+          >
 
+          <a
+            href="https://wiki.rjcalow.co.uk/digital+gardening/#googleslides"
+            >Antistatic</a
+          >
 
+          <a href="../search/?=zine">🔍</a>
+        </p>
+          
+        <footer>
+          # ./newsletter/newsletter links.md | 1/6/2021 
+        </footer>
+        <hr />
+        <p class=""><a href="#top">Back to top</a></p>
+      </article>
+
+      
     </div>
 
+    <!-- footer -->
+    <footer>
+      <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
 
-    
-
-
-  </div>
-
-  <!-- footer -->
-  <div class="w3-container w3-light-grey w3-border-top w3-border-dark-grey w3-margin-top w3-padding-top">
-    <p class="w3-right">☕ Brewed w/ love. Hosted on github. Built with w3.css. Generated by roji.py. rjcalow@gmail.com</p>
-  </div>
-
-  <script>
-    function openMenu() {
-      document.getElementById("Menu").style.display = "block";
-    }
-
-    function closeMenu() {
-      document.getElementById("Menu").style.display = "none";
-    }
-
-  </script>
-
-</body>
-
+      <p>📧 8t2pg3mf0@relay.firefox.com.</p>
+      <p>
+        <button onclick="change_mode('lightmode');">☀️</button>
+        <button onclick="change_mode('darkmode');">🌔</button>
+      </p>
+    </footer>
+  </body>
 </html>
