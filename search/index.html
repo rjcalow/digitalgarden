@@ -2295,7 +2295,7 @@ Bodoni
       //});
 
       var queryString = window.location.search;
-      queryString = queryString.replace("?=", "").replace("+", " ").replace("%20"," ");
+      queryString = queryString.replaceAll("?=", "").replaceAll("+", " ").replaceAll("%20"," ");
       $("#searchterm").val(queryString);
       console.log(queryString);
       if (queryString != "") {
