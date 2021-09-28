@@ -337,7 +337,7 @@ dl {
 }
 
 p {
-  /*! margin: 30px 0px 40px 0px; */
+  margin: 30px 0px 40px 0px;
 }
 
 ol,
@@ -796,13 +796,13 @@ Media queries
   }
   html,
   body {
-    max-width: 95%;
-    width: 95%;
-    margin: 5px 5px;
+    max-width: 100%;
+    width: 98%;
+    margin: auto;
     padding: 0px;
   }
   .content {
-    width: 95%;
+    width: 100%;
     padding: 0px;
     margin: 0px 1px;
   }
@@ -890,7 +890,7 @@ Media queries
     margin: 2px;
   }
   li {
-    margin: 15px 5px 25px 5px;
+    margin: 10px 50px;
   }
   h1 {
     font-size: calc(var(--fontsize) * 2);
