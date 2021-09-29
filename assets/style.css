@@ -313,9 +313,8 @@ footer {
 
 .searchbox input {
   width: 100%;
-  margin: 0px;
+  margin: 0px; 
 
-  width: 100%;
   padding: 20px 10px;
   font-size: calc(var(--fontsize) * 1.5);
   text-align: left;
@@ -910,6 +909,19 @@ Media queries
   h6 {
     font-size: calc(var(--fontsize) * 1.1);
   }
+  
+  .searchbox input {
+  width: 94%;
+  margin:0px;
+  
+
+ 
+  
+  font-size: calc(var(--fontsize) * 1.5);
+  text-align: center;
+  border: none;
+}
+  
   footer {
     line-height: 1em;
     font-size: var(--fontsize);
