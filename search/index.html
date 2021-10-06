@@ -1,10 +1,10 @@
-
+  
 <!DOCTYPE html>
 <html>
   <meta charset="utf-8" />
   <title>wiki.rjcalow.co.uk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/2.css" />
   <script src="../assets/scripts.js"></script>
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
@@ -12,47 +12,852 @@
   <script src="https://unpkg.com/lunr/lunr.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <style>
-    .show {
-      display: block;
+  @media (prefers-color-scheme: dark){
+    #searchterm {
+      background: var(--bk);
+      color: var(--tc);
+    }
+
+  }
+    .show{
+      display: block !important;
     }
     .snippet {
       display: none;
       margin: 0;
     }
-    li {
+    #question-list-container li {
       display: none;
       margin: 23px 0;
     }
   </style>
-  <body onload="boot()">
-    <header>
-      <h6><a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a></h6>
-    </header>
+  <body>
+    <main>
+      <header>
+        <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
+        <a href="https://wiki.rjcalow.co.uk#about">about</a> <a href="#index">index</a>
 
-    <div class="searchbox">
-      <input
-        id="searchterm"
-        class=""
-        type="text"
-        id="sample3"
-        placeholder="Search"
-      />
-    </div>
-
-    <div class="questions">
-      <div id="question-list-container">
-        <ul>
-               
-          <li data-question-id="21">
-            <h2>
-              <a href="../bookcase/culture+nature/#Losing+Eden"
-                > Losing Eden (2020) </a
-              >
-            </h2>
+        <nav id="index">
             
-            <section>
-              <div class="snippet">
-                Culture Nature /  Why Our Minds Need the Wild by Lucy Jones
+          <ul>
+             
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/bookcase">bookcase</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/botany">botany</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/development">development</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/film">film</a>
+            </li>
+             
+          </ul>
+             
+          <ul>
+             
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/horticulture">horticulture</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/landscape">landscape</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/misc">misc</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/photography">photography</a>
+            </li>
+             
+          </ul>
+             
+          <ul>
+             
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/psychogeography">psychogeography</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/www">www</a>
+            </li>
+                     
+          </ul>
+           
+        </nav>
+      </header>
+
+      <div class="searchbox">
+        <input
+          id="searchterm"
+          class=""
+          type="text"
+          id="sample3"
+          placeholder="Search"
+        />
+      </div>
+
+      <div class="questions">
+        <div id="question-list-container">
+          <ul>
+                 
+            <li data-question-id="21">
+              <p>
+                <a href="../botany/#stinkhorns"
+                  > Notes on stinkhorn fungi</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  Stinky fungi found in clumber park.
+
+Notes on stinkhorns: starts its life cycle as an egg-like fungus, then leaves the ground as a phallus which smells like rotting meat. The aroma lures insects like blowflies to a surgery liquid laced with spores. The  spores piggyback on the fly to other areas like dung. It’s edible (but  why would you?) at the egg stage. Found in broadleaf and coniferous  woodlands. Sometimes I see them in late autumn within edgeland  plantations.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="22">
+              <p>
+                <a href="../botany/#poppy"
+                  > The poppy</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  The corn poppy belongs in the field alongside other arable weeds and  cultivated grain crops. A single poppy can produce a thousand seeds.  These seeds lay dormant in the ground for decades, made permanent by the plough they churn into the earth dormant until the right conditions. 
+This continual permanence provides its moniker: corn poppy. The significance of which is lost to chemical weedkillers. Like those  simplistic herbicide advertisements depicting a spray bottle killing a  dandelion till it wilts into nothing, herbicides also kill association. Religated from field to leftover spaces, its contemporary moniker is now the common poppy.  
+The construction of the new housing estate - the removal of the  agricultural topsoil and further levelling of the earth has created an  abundance of poppies. Their dormant resilience to human disruption,  construction or destruction, is their significant defining  characteristic besides their colour.
+There probably isn't a weed  more appropriated in terms of imagery than the poppy. Early  civilisations associated them with blood, a semiotic foundation  underpinning today's cultural interpretation. Meanwhile, I wonder how  many dormant poppy seeds lay in wait underneath my garden topsoil as the remnants of historic agriculture.
+From newsletter.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="23">
+              <p>
+                <a href="../botany/#broad-buckler-fern"
+                  > Broad Buckler fern</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  Observation: widespread, broad, dark green fronds and a single crown.
+
+Grows in acidic woodland and plantations.
+Pinnules curl down at the edge.
+Scales have a dark stripe.
+In spring: early juvenile dark and curly fiddleheads.
+
+https://www.getty.edu/art/collection/objects/64835/anna-atkins-and-anne-dixon-lastrea-dilatato-british-british-1853/?dz=0.6138,0.6138,0.61
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="24">
+              <p>
+                <a href="../botany/#douglas+fir"
+                  > Douglas Fir</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  Pseudotsuga menziesii
+An evergreen conifer.
+
+Native to North America.
+Introduced to the UK in 1827 as timber.
+Bark is non-flammable.
+Prefers Western UK and its heavy rainfall.
+Green-grey trunk but red blisters with age.
+White stripes on needle underside.
+Has both male and female reproductive cones.
+Seed cones, developed from female cone, have a three point bract.
+
+Seed cone
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="25">
+              <p>
+                <a href="../botany/#Fern+anatomy"
+                  > Fern anatomy</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  img
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="26">
+              <p>
+                <a href="../botany/#willow"
+                  > Wasteland willows</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  
+grey willow (f) hybrid
+
+Goat willow, which I assumed to be a simple tree, is, in fact, several hybridized variations between goat (salix caprea) and grey (salix cinerea) willow -amongst others. I often encounter it within overlooked spaces, and  like many plants associated with weeds, I dismissed it as commonplace.  You can often find it as a deciduous shrub or modest scruffy tree  growing in a sheltered and damp space. 
+I have a female hybrid  willow in my garden. As tall as the house and leaning into the lawn, I  often contemplate cutting it down. The times I've almost fallen out of  it when attempting to prune its limbs extending over the neighbours  fencing. 
+On occasion, I've whittled spoons out of off-cuts. The  prepared wood is bone white, saturated with water and easy to work with  when wiped with a cloth. The worked wood gradually turns off white with  cooking and eating, obtaining a coffee-coloured patina. It's a practical softwood suitable for coppicing, fast-growing as a living hedge, and  lauded by insect pollinators in spring. For all its benefits, I still  associate it with wasteland.
+Despite there being 400+ species under the willow/Salix genus, the word willow brings to mind the ornamental weeping willow. As a cultivated tree, it is  found in urban parks and estate grounds. Its long branches drape over  lawns, paths and waterways. This familiar landscape feature is a  naturalised Chinese species, introduced into Britain and hybridized with the native white willow. 
+Before the cultural disregard, the goat willow once held religious associations for use on Palm Sunday. Its male trees, which produce attractive yellow catkins, were sought  after as an alternative to palms used in processions. This tradition is  redundant becoming frowned upon by early modern Britain. This book of  the Kew series of Natural History from the 1950s uses negative  connotations to describe the practice: hordes of trippers, ramblers and gypsies.
+ Top left. British trees and shrubs (Kew series) 1958 by R D Meikle
+
+The fostered weeping willow is coveted while the native goat/grey willow is neglected within cultural memory. Its religious appropriation is  retired, while it also lacks horticultural ornamental fancy and a  monetary value as lumber. Symbolic then that it now resides within  informal wildlife-focused gardens, nature reserves and leftover spaces.
+From an environmental perspective, both goat and grey willow are undervalued native species that provide an early food source for early pollinators in turn contributing a habitat for foraging birds. Fortunate then there is a female goat willow on my patch of edgelands located by a road  drainage ditch. Like the willow in my garden, it could be a hybrid but  it resembles the darker hairy branches of the goat willow. 
+This  specimen is weed-like with a crowded crown of stems vying for space with the dominant hawthorn and blackthorn. Though well established the  willow is singular, with no others in the area. Deer and rabbit are  partial to willow saplings, both of which are in the area and could  damage exposed willow saplings.
+Goat willow (f) in my edgelands
+
+The main trunk of the goat willow
+
+Dark stem of the goat willow and its cat’s paw catkin
+
+Snippet taken from newsletter: https://roadsidepicnic.substack.com/p/issue017-wasteland-willows
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="27">
+              <p>
+                <a href="../botany/#garlic+mustard"
+                  > Garlic Mustard</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  Alliaria Petiolata (Garlic Mustard, Jack-by-the-hedge)
+
+Traditionally it is used as a herb for fish. While contemporary foraging guides designate it as a raw salad leaf. Aside from human appropriation, it is also a food source of the colourful orange-tip butterfly. 
+Orange tip - A Colour Guide to Familiar Butterflies, Caterpillars and Chrysalides 1974 by Josef Moucha
+
+Garlic Mustard by a rusted gate
+
+As a weed: Jack-by-the-hedge thrives in the sheltered margins of hedgerows. Urban environments can provide the same, if not similar, shelter. Consequently, like the weeds discussed in last weeks issue 015, it has an invasive characteristic and is found on brownfield wastelands and car parks.  
+Snippet from https://roadsidepicnic.substack.com/p/issue016-poor-mans-garlic-and-an
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="28">
+              <p>
+                <a href="../botany/#wild+garlic"
+                  > Wild garlic</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  The surreal mundane familiarity of the roadside layby ends with a stride into the adjacent woodland. Among last year's leaf fall, the floor is populated by wild garlic. Their pungent leaves, elongated and pointing to the forest floor, paint the spring woodland in a fresh green. Its Latin designation, Allium uranium, ursus referring to bears attributing to its other name bear garlic, suggests that brown bears would enjoy this place. With none in sight, we collect some, using them throughout the week for pesto, cheese scones, and lasagne. It differs from conventional garlic, I find that it has a warm chive taste. Given its uncultivated and brief availability, it signifies spring. 
+
+Snippet taken from Roadside picnic newsletter.
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="31">
+              <p>
+                <a href="../development/#SVG+filters"
+                  > SVG filters</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  development /  Online generators:
+
+https://svgfilters.com/
+https://yoksel.github.io/svg-filters/#/
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="32">
+              <p>
+                <a href="../development/#Dither+images"
+                  > Dither?</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  development /  Why dither?
+
+https://endtimes.dev/why-you-should-dither-images/
+[[low tech]] magazine mentions dithering as a means to minimize resources https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website/
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="33">
+              <p>
+                <a href="../development/#static+search"
+                  > Search implementation for static sites</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  development /  Options:
+
+tinysearch - Rust. The most promising but can't run for Error: No such file or directory (os error 2). Even on the docker image and on ubuntu. 
+lunr.js - js, popular option but overkill as the garden/wiki is not js heavy. This codepen example looks simple enough, and this codepen using on the fly html to json is even simpler - no messing with index creation. Used by mkdocs. 
+elasticlunr - similar to above.
+fuse.js - js fuzzy search library. 
+stork - js, ui focused. Simple codepen example but ran into this error on installing the cli. Both on windows and linux. 
+crane - inspired by above, writen in go.
+
+For this digital garden/wiki I went with lunr.js with a html &gt; JSON function. Considering that it uses a custom python static site generator, I can bypass indexing and instead include a page with all the notes that can be searched.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="34">
+              <p>
+                <a href="../development/#commentsforstaticsites"
+                  > Comment implementation for static sites</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  development /  In the future, I would like to implement a comment system in my static-based digital garden ecosystem. However, I want to avoid third-party services that track and sell data. Nasty.
+Possible methodologies
+
+https://webmention.io/
+https://cactus.chat/demo/
+email?
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="35">
+              <p>
+                <a href="../development/#kivymd"
+                  > KivyMD notes</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  development /  buildozer.spec requirements
+For building KivyMD apps you have to include the pillow package otherwise it will build the apk without error but crash on android.
+For example:
+# (list) Application requirements
+# comma separated e.g. requirements = sqlite3,kivy
+requirements = python3,kivy==2.0.0,kivymd==0.104.1,pillow
+
+Problems
+kivyMD material icons not loading on android. 
+Solution: include kivymd master.zip and sdl2 in buildozer.spec.
+# (list) Application requirements
+# comma separated e.g. requirements = sqlite3,kivy
+requirements = python3,kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow
+
+Documents
+
+https://kivymd.readthedocs.io/en/latest/
+
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="41">
+              <p>
+                <a href="../film/#Stalker-1979"
+                  > Stalker (1979)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  film /  Notes on Tarkovsky’s 1979 science fiction movie, Stalker, and [[Terrain vague]].
+
+In Stalker, {terrain vague} becomes the material embodiment of an idea—that the world around us is, ultimately, the world we think into existence and, at the same time, the world that inhabits us. What is magical in this version of terrain vague (which, as Solà-Morales suggests, is indeed “evocative”—it “calls forth”) is that people bring their world into being, so that terrain vague, in its productive indeterminacy, becomes a tangible manifestation of an otherwise suppressed or forgotten dialogue between the human being and the physical environment. (Radović, 2013)
+
+(Tarkovsky, 1979)
+
+Bibliography
+Radović, S. (2013) ‘On the Threshold: Terrain Vague as Living Space in Andrei Tarkovsky’s Stalker’, Terrain Vague, Interstices at the Edge of the Pale., pp. 114–129.
+Tarkovsky, A. (1979) Stalker. Soviet Union.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="42">
+              <p>
+                <a href="../film/#Annihilation-2018"
+                  > Annihilation (2018)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  film /  Notes on Alex Garland’s 2018 science fiction movie, Annihilation, and [[Terrain vague]].
+
+
+Alex Garland’s 2018 science fiction movie, Annihilation, features an alien entity which transforms organic material in a zone called the shimmer. The shimmer  concept is similar to Andrei Tarkovsky's 1979 movie, Stalker, in which a departed alien entity has transformed corridors of space subjected to unknown extra-terrestrial laws called the Zone. 
+
+
+Like Tarkovsky’s Zone, Garlands’ Shimmer  is a [[terrain vague]] territory, one that is visually post-apocalyptic and rewilded, however, due to the extra-terrestrial, nature constantly distorts and evolves. This constant change is also applied to the characters as Garland explores, metaphorically and visually, existential crises, terminal disease, relationships and trauma through the journey in the [[Terrain vague]] landscape. 
+
+
+On the surface the film is a straightforward extra-terrestrial action horror, however, Garland, like Tarkovsky, uses the concept of [[Terrain vague]] as an uncertain representational space as a metaphorical landscape, one that reflects the protagonist and characters. The shimmer's mutating DNA plot device echoes the ambiguous terrain vague with the characters themselves becoming uncertain of who or what they are. Subtle physical attributes and traumatic experiences are shared between the characters.
+
+
+The four supporting characters succumb to the shimmer. Two are absorbed into the physical environment. In the final, the protagonist questions who they are and if they are still themselves. The existential question is at the core of the film through the terrain vague metaphor, land is representational -it reflects ourselves, culturally and socially. The shimmer and the zone are metaphorical landscape devices open to interpretation just as there many interpretations of both films.
+
+
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="51">
+              <p>
+                <a href="../horticulture/#perennialkale"
+                  > Perennial kale</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  horticulture / ['gardening', 'kale'] Sometimes referred to as heritage kale, cottager's kale and collard trees. Perennial kale varieties are obscure in origin and difficult to obtain as they are propagated by cuttings. They are increasingly popular under permaculture practices.
+Varieties
+Taunton Deane kale
+West Country, UK, origins.
+Currently I have three cuttings under lights ready for 2022. The cuttings came from a farm in Doncaster through ebay. 
+Source:
+
+https://backyardlarder.co.uk/2020/03/march-plant-profile-taunton-deane-kale/
+
+Daubenton kale
+Originating from France, it is named after French naturalist Louis Jean-Marie Daubenton. 
+Has variations. One of which is variegated (marks and patches of different colours).
+Source:
+
+https://backyardlarder.co.uk/plants/daubenton-kale/
+
+Nine star
+Broccoli-cauliflower but often grouped into perennial kale. Produces heads. Some argue its not a true perennial. Mostly grown in the states.
+Couve Galega
+A tall Portuguese kale. 
+Used to make Portuguese caldo verde soup.
+Resistant to cold. ONLY a perennial in cold climates. I'm doubtful this would include the UK, what with its hot summers. Cuttings have to be taken for a constant supply.
+I bought some seed from ebay. Unlike [[seakale]] they germinated with ease, and at the time of writing they are surviving early autumnal weather.
+source:
+
+https://backyardlarder.co.uk/2014/09/portuguese-kale/
+https://pt.wikipedia.org/wiki/Couve-galega
+
+Seakale
+[[Seakale]] grows along European shorelines. I have seen it on beaches, but never paid it any attention.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="52">
+              <p>
+                <a href="../horticulture/#hydrangea+ph"
+                  > Hydrangea and pH</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  horticulture /  Hydrangeas can be used a natural litmus test using their colour shifts based on the soil pH.
+The more acidic the soil (lower the pH) the more blue the flowers are. Likewise, the more alkaline (higher the pH) the soil the more pink. 
+My hydrangea flowers sit between purple and pink.
+
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="53">
+              <p>
+                <a href="../horticulture/#seakale"
+                  > Quest for Seakale</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  horticulture /  A log of notes and images documenting my efforts to perennialize my vegpatch by introducing Seakale for 2022.
+29/7/2021
+The start. I receive seeds, they go straight into pots and under grow lights where they will live till next spring. Sceptical, I wait for germination. From what I gather they are difficult to germinate. 
+
+
+7/9/2021
+All the seeds failed to germinate. Some time in late August I restart-rethink. I try two methods: (1) soaking seeds in salt water for 24hours, and (2) sowing seeds in sand and leaving them outside under the porch. 
+The second method results in one successful germination. This is repotted in compost/sand, brought inside and placed under lights. The seeds need a period of cold stratification? 
+
+
+22/9/2021
+The seakale seedling has developed a leaf. It lives in a ikea socker greenhouse. I use a spray to keep the humidity up. 
+
+
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="61">
+              <p>
+                <a href="../landscape/#edgelandcrime"
+                  > Notes on edgelands and crime</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  landscape /  Through the lack of context and their subversive edgy characteristics, edgeland sites can harbour suspicion. These are out of town areas where the socially marginal meet for questionable or immoral activities.  These dystopias are enforced and exploited through film and tv.  Throughout the 1990's the backdrop of the indie crime movie was an  edgeland site. The place where money is exchanged, money is stolen, and the criminal-protagonist cover is walking the dog. Of course, the edginess is hyperbole, visually enhanced with banal  industrial architecture, debris and monotonous colour balances. Film  portrays them as landscapes where concluding conflict is played out. In  reality, these areas, besides the occasional glimpses of marginal  society (the attempted dog theft) spurring suspicion, are not  straightforward dystopias but banal urban peripheries with complex  social processes. 
+Author of the term:
+
+The aura of excitement which goes with the apparent lawlessness of the edgelands has been exploited in such films of the 1990s as Reservoir Dogs, Pulp Fiction, Seven, Things to Do in Denver When you’re Dead, Fargo and The Straight Story. (Shoard, 2000, p. 130)
+
+[[Roberts, M. S.]] co-author of edgelands Journeys Into England's True Wilderness (2011):
+
+Marion Shoard’s coining of ‘edgelands’ seemed to conjure exactly our experience of these places. They were, and are, edgy. In British tv drama and low budget films, the edgelands are always the place of the dénouement, the place where the drug gang is busted, the car chase ends, or the kidnap victim is rescued. These are places where anything could happen. And when it did, it was usually illegal or contravened every rule of health and safety. This sense of the edgelands as a dystopian landscape is a familiar trope of British popular culture in particular. (Roberts, 2016, pp. 19–20)
+
+Bibliography for this note
+Roberts, M. S. (2016) ‘[[The Making of Edgelands]]’, English Topographies in Literature and Culture, pp. 17–24.
+Shoard, M. (2000) ‘[[Edgelands of Promise]]’, Landscapes, pp. 117–146.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="62">
+              <p>
+                <a href="../landscape/#Marginal-Space"
+                  > Marginal space</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  landscape /  Empty, unoccupied or peripheral urban spaces.  
+Terminology
+
+Naming turns space into place (Wells, 2011, p. 3).
+
+
+[[Edgelands]] - indeterminate interfacial between urban and rural. 
+[[Urban Wildscape]] - urban spaces under the agency of nature.
+[[Third landscape]] - spaces left to natural evolution.
+[[Non-place]]  - contemporary urban spaces without history.
+[[Terrain vague]]  - imprecise spaces.
+
+Avoiding the predetermined
+As a " " landscape photographer " " I constantly need reminding, that despite the above definitions, landscape is a “highly differentiated discourse on representing space” (Bate, 2009, p. 93).
+Following a unique interpretation of a site whether that is through geography, autobiography, or metaphor, will create original work and avoid cliche.   
+Bibliography
+Bate, D. (2009) Photography: The Key Concepts. Berg.
+Wells, L. (2011) Land Matters: Landscape Photography, Culture and Identity. Bloomsbury Publishing.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="63">
+              <p>
+                <a href="../landscape/#Non-place"
+                  > Non-place</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  landscape /  Contemporary urban-culture areas of transit and commerce with a lack of history and “heightened sense of anonymity” (Barron, 2013, p. 6)
+Bibliography
+Barron, P. (2013) ‘Introduction: At the Edge of the Pale’. Routledge, pp. 1–23.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="64">
+              <p>
+                <a href="../landscape/#Terrain-vague"
+                  > Terrain vague</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  landscape /  French landscape theoretical term for indeterminate space, defined by Spanish architect, Ignasi de Solà- Morales, stating:
+
+It is impossible to capture in a single English word or phrase the meaning of terrain vague. The French term terrain connotes a more urban quality than the English land; thus terrain is an extension of the precisely limited ground fit for construction, for the city.” (de Solà- Morales, 2013, p. 26).
+
+Breaking down the etymology
+
+The term has duality stemming from Latin: “Vague descends from vacuus, giving us “vacant” and “vacuum” in English, which is to say “empty, unoccupied,” yet also “free, available, unengaged.”  
+A second meaning superimposed on the French vague derives from the Latin vagus, giving “vague” in English, too, in the sense of “indeterminate, imprecise, blurred, uncertain.” (de Solà- Morales, 2013, p. 26). 
+Solà- Morales uses the french term ‘terrain vague’ because the English vocabulary for these pockets of vacant landscape have negative connotations such as wasteland.
+
+My favourite explanation
+Stanka Radović has a clear definition in the essay ‘on the threshold’ - an essay using the Andrei Tarkovsky 1979 film, Stalker, to explore the term as a utopia:
+
+“... terrain vague escapes and challenges rigid definitions. Is it urban or is it natural? Is it a concept or a concrete place? Free or forlorn? The term “terrain vague” translates into English as “wasteland,” “derelict area,” or “vacant land,” and refers to abandoned or unoccupied portions of urban land that remain available for spontaneous use.” (Radović, 2013, p. 114)
+
+Early photography
+Man Ray Etude pour terrain vague , 1929
+
+
+Before de Solà- Morales, Man Ray, inspired by Eugène Atget, captioned these photographs 'Terrain Vague'. 
+Bibliography
+Radović, S. (2013) ‘On the Threshold: Terrain Vague as Living Space in Andrei Tarkovsky’s Stalker’, Terrain Vague: Interstices at the Edge of the Pale.
+de Solà- Morales, I. (2013) ‘Terrain Vague’, Terrain Vague: Interstices at the Edge of the Pale.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="65">
+              <p>
+                <a href="../landscape/#Third-landscape"
+                  > Third landscape</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  landscape /  ( Tiers-Paysage )
+A term for les délaissés (leftover spaces of urban development) for nature to colonise. Coined by Gilles Clément, a French garden designer, botanist, entomologist and writer, in a manifesto entitled ‘Manifeste du Tiers paysage’.
+In ‘Manifeste du Tiers paysage’, Clément argues that neglected and unexploited space is a reserve under the term third landscape. Left to evolution, biological processes and agency transform anthropized territories to natural spaces which provide biodiverse habitats for fauna and flora but can also be used by society as spaces for leisure and connection to the natural world.
+
+Clément's Derborence Island, an inaccessible urban "garden" left to nature.
+Manifesto from Clément's website
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="66">
+              <p>
+                <a href="../landscape/#edgelands"
+                  > Edgelands</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  landscape /  Coined by Marion Shoard (see [[Edgelands of Promise]]) and further popularised by Farley, P. and Symmons Roberts (See [[Edgelands Journeys Into Englands True Wilderness]]), the term can be confusing.
+The term can refer to:
+
+
+the indeterminate urban boundary between rural territories which can host infrastructure, golf courses, car parks and canals.
+
+
+marginal areas outside of conventional urban circuits like derelict and brownfield sites.
+
+
+non-places such as retail parks, service stations and transport infrastructure on the outskirts
+
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="67">
+              <p>
+                <a href="../landscape/#Man-made-Peak"
+                  > The Man made Peak</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  landscape /  
+… the conservation movement, while well intentioned, has sought to freeze living systems in time. It attempts to prevent animals and plants from either leaving or–if they do not live there already–entering. It seeks to manage nature as if tending a garden. Many of the ecosystems, such as heath and moorland, blanket bog and rough grass, that it tries to preserve are dominated by the low, scrubby vegetation which remains after forests have been repeatedly cleared and burnt.  This vegetation is cherished by wildlife groups, which prevent it from reverting to woodland through intensive grazing by sheep, cattle and horses. It is as if conservationists in the Amazon had decided to protect the cattle ranches, rather than the rainforest.  (Monbiot, 2014, p. 8)
+
+Management of moorland through cutting. 
+
+
+
+Out of 218 nations, the UK ranks 189th for the intactness of its living systems (rspb, 2016)
+… In Britain, as in most of Western Europe, land is managed; it follows that vistas or landscapes are constructed, which means that a sense of aesthetic principles, as well as social mores, are in play. (Wells, 2011, p. 28)
+
+Bibliography
+Monbiot, G. (2014) Feral: Rewilding the Land, the Sea, and Human Life. University of Chicago Press.
+rspb (2016) State of Nature 2016, https://www.rspb.org.uk/. Available at: https://www.rspb.org.uk/globalassets/downloads/documents/conservation-projects/state-of-nature/state-of-nature-uk-report-2016.pdf (Accessed: 15 November 2019).
+Wells, L. (2011) Land Matters: Landscape Photography, Culture and Identity. I.B.Tauris.
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="68">
+              <p>
+                <a href="../landscape/#wilderness"
+                  > Wilderness in Britain</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  landscape /  
+E. M. Forster in 1964 wrote that two world wars had enveloped the wildness of Britain. “‘Two great wars demanded and bequeathed regimentation,’ wrote E. M. Forster in 1964, ‘science lent her aid, and the wildness of these islands, never extensive, was stamped upon and built over and patrolled in no time. There is no forest or fell to escape to today, no cave in which to curl up, and no deserted valley.’” (Macfarlane 2009, p.8)
+
+Jonathan Raban claims Britain lost its wilderness much earlier in the 1860s with population and industry:
+
+so thickly peopled, so intensively farmed, so industrialised, so citified, that there was nowhere to go to be truly alone, or to have … adventures, except to sea. (Jonathan Raban Cited in (Macfarlane 2009, p.8))
+
+Macfarlane states population and the road network is really to blame for the lack of wilderness or remoteness:
+
+In Britain, over sixty-one million people now live in 93,000 square miles of land. Remoteness has been almost abolished, and the main agents of that abolition have been the car and the road. Only a small and diminishing proportion of terrain is now more than five miles from a motorable surface. There are nearly thirty million cars in use in Britain, and 210,000 miles of road on the mainland alone. (Macfarlane 2009, p.9)
+
+George Monbiot argues that there is a wildness paradox, that Britain's gardens have more wildlife in them than barren uplands:
+
+Spend two hours sitting in a bushy suburban garden anywhere in Britain, and you are likely to see more birds, and of a wider range of species, than you would while walking five miles across almost any open landscape in the uplands. (Monbiot 2014, p.69)
+
+Liz Wells argues Britain is a managed land and notes the paradox of the pictorial countryside as safe, clean, and undisturbed rather than managed.
+
+...British land is managed – there is no wilderness; even the coastal littoral is overseen (by the Environment Agency). It follows that landscapes and vistas are human constructs, which means that aesthetic principles, as well as social mores, were and are in play within the actual shaping of land. Pictorial renderings of countryside as pastoral depict Britain as undisturbed and undisturbing, thus contributing to constructing a simplified and benign rural imaginary, to picturing countryside as safe. (Wells 2011, p.164)
+
+The lack of wild animals like wolves, beaver and boar:
+
+So few wild creatures, relatively, remain in Britain and Ireland: so few, relatively, in the world. Pursuing our project of civilisation, we have pushed thousands of species towards the brink of disappearance, and many thousands more over that edge. The loss, after it is theirs, is ours. Wild animals, like wild places, are invaluable to us precisely because they are not us. They are uncompromisingly different. (Macfarlane 2009, p.306,307)
+
+References
+Macfarlane, R., 2009. The Wild Places, Granta Books.
+Monbiot, G., 2014. Feral: Rewilding the Land, the Sea, and Human Life, University of Chicago Press.
+Wells, L., 2011. Land Matters: Landscape Photography, Culture and Identity, I.B.Tauris.
+                </div>
+              </section>
+            </li>
+                     
+            <li data-question-id="91">
+              <p>
+                <a href="../psychogeography/#latourex"
+                  > Latourex</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  psychogeography /  👉 https://www.latourex.org
+A collection of, mostly French, hyperlink and pdf documents around psychogeography by Joel Henry. 
+Each document has ideas, experiments, and invitations. Some are in The Lonely Planet Guide to Experimental Travel, and this collection can be seen as an extension of the book.
+Examples:
+
+ALTERNATING-TRAVEL
+Leave your home on foot. Take the first road on the right, then the next on the left, then the next on the right, then the next on the left, etc. Carry on until something, a no man's land, a building or a stretch of water, blocks your path and you can go no farther.
+ANACHRONISTIC-TRAVEL
+
+Travel using a means of transport that is old-fashioned or obsolete eg, sedan-chair, palankeen, galley, hackney cab, track motorcar, 2 CV, airship, etc.
+Visit a foreign town using an old edition of a guidebook.
+
+With the help of a telephone directory (internet, or other method) find a person called Ariadne in a town of your choice.
+Give Mr or Ms Ariadne a call and ask him/her what his/her favourite 21 places in the town are.
+Mark each place on a map and visit them in a logical order.
+
+MONOPOLYTOURISME
+Méthode d’exploration urbaine qui consiste à découvrir une capitale selon la cartographie particulière de son plateau de Monopoly. En visiter les rues, gares, prison, parking, compagnie des eaux et d’électricité… en réglant ses déplacements à coups de dé conformément aux règles du jeu officielles.
+MONOPOLYTOURISM
+Urban exploration method which consists in discovering a capital according to the particular cartography of its Monopoly board. Visit the streets, stations, prison, car park, water and electricity company… by paying for trips with the dice in accordance with the official rules of the game.
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="92">
+              <p>
+                <a href="../psychogeography/#yellow+arrow"
+                  > Yellow Arrow (2004-2008)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  psychogeography /  A defunct and pioneering interactive art project that pairs physical media with SMS mobile technology.
+
+The YellowArrow is a global public art project that merges graffiti and sticker culture with wireless media, creating an interactive forum for people to leave and discover messages pointing out what counts in their environment. Participants place arrows to draw attention to different locations and objects
+YellowArrow.org (2005)
+
+Why it's interesting today
+Reminds me of geocaching, pokemon go, and munzee. But unlike these, rather than being games built on top of urban environments, yellow arrow is environment focused through psychogeographical engagement. The ability to leave a message in the environment and encouraging the user to point out features with yellow arrow stickers, is the interesting concept.
+links
+https://brianhouse.net/works/yellow_arrow/
+https://docubase.mit.edu/project/yellow-arrow/
+https://www.flickr.com/photos/yellowarrow/collections/
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="93">
+              <p>
+                <a href="../psychogeography/#D%C3%A9rive"
+                  > Dérive</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  psychogeography /  Definition
+A term originating from the work of Guy Debord, situated (accident-pun) in situationism, and apart of a broad number of psychogeographical terms. 
+
+The cool kids used to call it the dérive, the psychogeographical idea of hacking one’s mode of traveling through the city. Not so much a technique as an attitude, an active but intuitive way to alter normal patterns and ways of experiencing one’s environment that, done right, can break the malaise and rekindle wonder. Almost like surfing. The drift. Following the flow, while actively trying to get lost, and thereby creating opportunities for unexpected discovery. A trip without a plan.
+(From Christopher Brown's newsletter - Lost in America) 
+https://edgelands.substack.com/p/lost-in-america
+
+Dérive's aim is to...
+
+...[R]emedy the incompetence of guides... and to discover the places that really have no reason to exist.
+Antony, Rachel  &amp;  Henry, Joel  (Eds), The  Lonely  Planet Guide to Experimental Travel, p19/20 cited by Coverley, Merlin, Psychogeography (Pocket Essential series) p74
+
+Coverley referrers to the percipient as a dériveur, similar to flâneur.
+
+The dérive may lack a clear destination but it is not without purpose. On the contrary  the dériveur is conducting a psychogeographical investigation and is expected to return home having noted the ways in which the areas traversed resonate with particular moods and ambiences.
+Coverley, Merlin, Psychogeography (Pocket Essential series) p96
+
+The concept, accepting or disregarding the hints of philosophical-emotional hyperbole regardless, is a practical methodology to subvert monotonous urban environments for unexpected/unplanned situations. 
+Application during 2020/21 pandemic restrictions
+Frequent covid restrictions in my area have meant that daily walks to the [[edgelands]] have become an important escape -from stale suburbia and information overload. These daily unplanned wanderings have similarities with the dérive methodology. The results -dérive like unexpected occurrences have spawned projects like [[unoccupied]]. 
+Applying dérive to psychogeographical photographic practice and beyond
+
+Note the areas walked
+the weather
+the light / time of day
+feelings / thoughts produced
+
+
+Photograph the unexpected ✔️
+Get lost / go with the flow
+
+                </div>
+              </section>
+            </li>
+                  
+            <li data-question-id="111">
+              <p>
+                <a href="../bookcase/culture+nature/#Losing+Eden"
+                  > Losing Eden (2020)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  culture nature /  Why Our Minds Need the Wild by Lucy Jones
 Contemporary literary work on the British landscape tends to be a focus on nature, wilderness, or wonder. This, however, focuses on the wellbeing and health benefits of nature. Backed by scientific research, it features a substantial scientific and academic bibliography in conjunction with accessible writing.
 Introduction chapter
 Terms
@@ -134,20 +939,20 @@ Socioeconomic inequality in mental wellbeing was 40% narrower among people repor
 Bibliography
 Ingold, T. (2000) The Perception of the Environment: Essays on Livelihood, Dwelling and Skill. Psychology Press.
 Jones, L. (2020) Losing Eden
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="22">
-            <h2>
-              <a href="../bookcase/culture+nature/#beyond-the-nature-culture-dualism"
-                > Haila, Y. (2000) ‘Beyond the Nature-Culture Dualism’ </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Culture Nature /  Introduction
+            <li data-question-id="112">
+              <p>
+                <a href="../bookcase/culture+nature/#beyond-the-nature-culture-dualism"
+                  > Haila, Y. (2000) ‘Beyond the Nature-Culture Dualism’</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  culture nature /  Introduction
 Haila uses straightforward language in the opening paragraph to describe the dichotomy:
 
 Culture may be viewed as an agent that actively strives for domination over nature, or as a malicious tumor that tends to grow and exceed the limits set by nature. Nature may be regarded as a source of hardships and catastrophs that needs to be mastered by human rational action or, alternatively, as benign providence that offers advice. The common denominator of all these varieties is that culture and nature are opposite sides in a dualism. (Haila, 2000, p. 155)
@@ -182,20 +987,20 @@ Haila concludes that the boundary caused by the dualism should be thought of as 
 Bibliography
 Haila, Y. (2000) ‘Beyond the Nature-Culture Dualism’, Biology &amp; Philosophy, pp. 155–175. doi: 10.1023/a:1006625830102.
 Monbiot, G. (2014) Feral: Rewilding the Land, the Sea, and Human Life. University of Chicago Press.
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="31">
-            <h2>
-              <a href="../bookcase/margins/#Ambivalent-landscapes"
-                > Ambivalent landscapes—wilderness in the urban interstices (2007) </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Margins /  Jorgensen, A. and Tylecote, M. (2007), Landscape Research, 32(4), pp. 443–462
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="121">
+              <p>
+                <a href="../bookcase/margins/#Ambivalent-landscapes"
+                  > Ambivalent landscapes—wilderness in the urban interstices (2007)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  margins /  Jorgensen, A. and Tylecote, M. (2007), Landscape Research, 32(4), pp. 443–462
 A paper, preluding the Urban Wildscape anthology, that discusses ambivalent responses to contemporary urban landscapes where nature is in control. Furthermore, a wilderness is discussed in relation to successional nature found in urban interstitial spaces. Being that ambivalency is a core theme in relation to the urban landscape, this paper was appropriate reading for my essay as well as an introduction to historic anthropocentric views on land and nature. Some of the references and themes are featured and expanded within Jorgensen’s Urban landscape, however, this paper on its own has merit given its focus on liminal ambivalence and ambiguity in relation to culture and nature.
 Quotes
 
@@ -209,36 +1014,36 @@ Just as the pre-modern terra nullius was regarded as a void awaiting colonizatio
 If natural and human influences are all mixed up it is impossible to tell whether humans are in control. (Jorgensen and Tylecote, 2007, p. 445)
 The apparent relaxation of legal and social conventions in interstitial spaces creates welcome opportunities for people to do things that they would not be able to do in any other urban setting, such as young people gathering and travellers setting up encampments (Jorgensen and Tylecote, 2007, p. 445).
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="32">
-            <h2>
-              <a href="../bookcase/margins/#Urban-Wildscapes"
-                > Urban Wildscapes (2012) </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Margins /  Jorgensen, A. and Keenan, R.
+            <li data-question-id="122">
+              <p>
+                <a href="../bookcase/margins/#Urban-Wildscapes"
+                  > Urban Wildscapes (2012)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  margins /  Jorgensen, A. and Keenan, R.
 An anthology of essays discussing urban margins and interstices as urban wildscapes, ambiguous places where users subvert authority and seek recreation in the unregulated territory and autonomous nature. The definition is similar to Shoard, M. (2000) [[Edgelands of Promise]], however, the focus is not on interfacial space but a wider breadth of urban spaces that have a natural agency shaping the land.
 Broken into three parts, theorising, case studies and implications for practice, the anthology challenges preconceptions of urban space with the aim of convincing the reader (architects, urban planners, academics, perhaps artists) to engage with autonomous nature through a dichotomous conception of culture and nature. The contributors are from a wide range of disciplines from environmentalists, academic researchers, social scientists, artists, architects and landscape planners. The wide breadth gives the anthology a significant weight for defining these spaces. Additionally, the large number of international contributions, both author and subject wise, provides a western post-industrial perspective with different viewpoints from US and European perspectives. Of the contributions, Jorgensen’s introduction is relatable with its photographic illustrations of Sheffield -locations and scenes I am familiar with, while ‘Places to be wild in nature’ by  Thompson, C. W explores societies relationship with the natural world through public open spaces, ‘Learning from Detroit’ by Woodward, C looks to the post-industrial rust belt of Detroit and its contemporary ruins for inspiration as tourism and urban gardening activities are carried out.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="33">
-            <h2>
-              <a href="../bookcase/margins/#Edgelands-Journeys-Into-Englands-True-Wilderness"
-                > Edgelands: Journeys Into England's True Wilderness (2011) </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Margins /  Roberts, M. S. and Farley, P. (2011).
+            <li data-question-id="123">
+              <p>
+                <a href="../bookcase/margins/#Edgelands-Journeys-Into-Englands-True-Wilderness"
+                  > Edgelands: Journeys Into England's True Wilderness (2011)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  margins /  Roberts, M. S. and Farley, P. (2011).
 An anthology of essays by English poets, Paul Farley and Michael Symmons Roberts, on the subject of Edgeland -a term originally defined by Marion Shoard for interfacial spaces between urban and rural. The authors use the term, explore the etymology and the characteristics of the space within individual essays, under short direct titles such as paths, dens, gardens and woodlands. The author’s voice, which is indistinguishable with Farley and Roberts writing as one, is melancholic and romantic yet descriptive and accurate of the spaces themselves with the intended audience of psychogeographers and landscape narrative fiction. Farley and Roberts criticise contemporary landscape authors for romanticising wilderness within the British landscape as a misanthropic fascination rather than taking advantage of nearby nature in the Edgelands. The authors also criticise psychogeographer authors and their use of Edgelands as a backdrop and a means of negative misanthropic observations
 Further reading
 
@@ -250,20 +1055,20 @@ Critique
 
 # Bibliography 
 Macfarlane, R. (2011) Edgelands by Paul Farley and Michael Symmons Roberts - review, the Guardian. Available at: http://www.theguardian.com/books/2011/feb/19/edgelands-farley-symmons-roberts-review.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="34">
-            <h2>
-              <a href="../bookcase/margins/#Edgelands-of-Promise"
-                > Edgelands of Promise </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Margins /  Shoard, M. (2000), Landscapes, pp. 117–146.
+            <li data-question-id="124">
+              <p>
+                <a href="../bookcase/margins/#Edgelands-of-Promise"
+                  > Edgelands of Promise</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  margins /  Shoard, M. (2000), Landscapes, pp. 117–146.
 Marion Shoard’s defining edgelands essay in which observations on the interfacial landscape between urban and rural characterize the space and are argued as spaces for wildlife and plants, in the process questioning if these sites need protection from planners. Though written in 2000 it is still relevant today and is often cited within contemporary work on Edgelands.
 Quotes
 
@@ -273,20 +1078,20 @@ The aura of excitement which goes with the apparent lawlessness of the edgelands
 Interfacial sites often enjoy biological diversity partly because they are ignored. Being ignored, they go unmanaged. The clutter of the interface, which would be tidied out of sight by 
 those concerned with creating an acceptable landscape there, often enhances wildlife by creating new niches which wild creatures can exploit. (Shoard, 2000, p. 129)
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="35">
-            <h2>
-              <a href="../bookcase/margins/#Making-of-Edgelands"
-                > The Making of Edgelands (2016) </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Margins /  Symmons Roberts, M. (2016), in Habermann, I. and Keller, D. (eds) English Topographies in Literature and Culture.
+            <li data-question-id="125">
+              <p>
+                <a href="../bookcase/margins/#Making-of-Edgelands"
+                  > The Making of Edgelands (2016)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  margins /  Symmons Roberts, M. (2016), in Habermann, I. and Keller, D. (eds) English Topographies in Literature and Culture.
 This keynote originally for the University of Basel, as stated in title, reads as a making-of and commentation of Symmons Roberts co-authored work (2011) Edgelands. Symmons Roberts discusses the rationale, influences and the work itself while providing insight and perspective on the Edgeland space. As the work is more recent than his earlier work (2011) Edgelands and Shoard’s (2000) Edgelands of Promise, this paper reinforces the Edgelands as a contemporary concept. Additionally, Roberts writes about the wilderness aspect of the neglected interfacial space and the subversive edge characteristic. While the language is clear-cut it does not deviate from northern post-industrial sensibility established by the 2011 work, therefore can be seen as an epilogue to the later.
 Quotes
 
@@ -297,20 +1102,20 @@ Marion Shoard’s coining of ‘edgelands’ seemed to conjure exactly our exper
 ... the edgelands were not simply dystopias. They were the places where, as children, we felt free and inspired. (Roberts, 2016, p. 20)
 Why then use the word ‘wilderness’ at all in relation to the edgelands? Well, it is partly their lack of honouring, of lifting up, even of documentation. If a stretch of edgelands – say, the stretch around Barton Bridge on the M60 outside Manchester – is less walked through, less watched, less written about and less managed than a Highlands glen, then is it not more worthy of the term ‘wilderness’? Add to that the un-named qualities of England’s edgelands, and the case is very strong. A place with pools, woodlands, ruins and meadows all without names sounds pretty much like a wilderness to me. (Roberts, 2016, p. 21)
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="36">
-            <h2>
-              <a href="../bookcase/margins/#Land-Matters"
-                > Land Matters: Landscape Photography, Culture and Identity </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Margins /  Wells, L. (2011)
+            <li data-question-id="126">
+              <p>
+                <a href="../bookcase/margins/#Land-Matters"
+                  > Land Matters: Landscape Photography, Culture and Identity</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  margins /  Wells, L. (2011)
 An anthology of landscape photography essays written by Liz Wells, an established professor in photographic culture who also edited two popular academic books The Photography Reader and Photography: A Critical Introduction. This anthology, like previous, provides an academic and extensive analysis of its subject both historically and contemporary. The first essay Landscape: Time, Space, Place, Aesthetics is an introductory argument that landscape is a physical space given meaning through human ideological processes. Landscape as art, through a historical narrative, is discussed in relation to landscape as a construct, the values of which are reiterated through representational aesthetics in art. Another essay of interest is Pastoral Heritage: Britain viewed through a critical lens which argues that all land, even the coastal seas, in Britain is managed and landscaped through multi-layered socio-cultural legacies of which are amplified through the scarcity of the island land conveying monetary cultural attitudes and power and therefore celebrating it. The essays interpretation of the British landscape as a constructed land informs and justifies my works contextual narrative of managed and non-managed space.
 Wells enforcing landscape as a social construct:
 
@@ -325,20 +1130,20 @@ Wells states that landscape images are representations but also responses to spa
 
 Landscape pictures thus centrally contribute to the representation of space as place and, crucially, imply responses to particular places. (Wells, 2011, p. 25)
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="37">
-            <h2>
-              <a href="../bookcase/margins/#Isn%E2%80%99t-All-Public-Space-Terrain-Vague"
-                > Isn’t All Public Space Terrain Vague? </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Margins /  Karen A. Franck (2013)
+            <li data-question-id="127">
+              <p>
+                <a href="../bookcase/margins/#Isn%E2%80%99t-All-Public-Space-Terrain-Vague"
+                  > Isn’t All Public Space Terrain Vague?</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  margins /  Karen A. Franck (2013)
 Notes
 
 “a conceptual framework consisting of four factors: (1) qualities of the space; (2) types of activity; (3) time and duration of activities; and (4) originator of the activity.” (Franck, 2013, p. 154)
@@ -365,20 +1170,20 @@ Terrain vague spaces “exist outside the city’s effective circuits and produc
 
 Bibliography
 Franck, K. A. (2013) ‘Isn’t All Public Space Terrain Vague?’, Terrain Vague: Interstices at the Edge of the Pale, p. 153.
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="41">
-            <h2>
-              <a href="../bookcase/psychogeography/#The+Art+of+Flaneuring"
-                > The Art of Flaneuring (2019) </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Psychogeography /  by Erika Owen. 
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="131">
+              <p>
+                <a href="../bookcase/psychogeography/#The+Art+of+Flaneuring"
+                  > The Art of Flaneuring (2019)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  psychogeography /  by Erika Owen. 
 A short lifestyle guide to a subject associated with historic Parisian men in top hats or the contemporary psychogeographer stereotype of a white male with walking boots, shorts and hiking bag prowling urban spaces. The author sidesteps esotericism and repackages the flaneur pursuit as a laid back hygge-equivalent lifestyle to aid wellbeing. 
 Flaneurism as a lifestyle is not an outlandish proposal. Think back to when Instagram was fun and engaging. I know it was a long time ago, but content synonymous with the [[Flâneur]] like food, drink and travel was popular. The app at one time seemed like a plug for a spontaneous-engaging lifestyle. A more relevant simile is the conventional and contemporary domestic tourist navigating the city by foot from tourist attraction to hospitality.
 Notes on The Art of Flaneuring:
@@ -429,789 +1234,103 @@ Race:
 
 A black flaneur in the hood
 
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="51">
-            <h2>
-              <a href="../botany/#stinkhorns"
-                > Notes on stinkhorn fungi </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="141">
+              <p>
+                <a href="../misc/typography/#jost"
+                  > Indestructible type</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  typography /  https://indestructibletype.com
+Notable type faces
+
+Jost 
+Besley
+Bodoni
+
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Botany /  Stinky fungi found in clumber park.
-
-Notes on stinkhorns: starts its life cycle as an egg-like fungus, then leaves the ground as a phallus which smells like rotting meat. The aroma lures insects like blowflies to a surgery liquid laced with spores. The  spores piggyback on the fly to other areas like dung. It’s edible (but  why would you?) at the egg stage. Found in broadleaf and coniferous  woodlands. Sometimes I see them in late autumn within edgeland  plantations.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="52">
-            <h2>
-              <a href="../botany/#poppy"
-                > The poppy </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Botany /  The corn poppy belongs in the field alongside other arable weeds and  cultivated grain crops. A single poppy can produce a thousand seeds.  These seeds lay dormant in the ground for decades, made permanent by the plough they churn into the earth dormant until the right conditions. 
-This continual permanence provides its moniker: corn poppy. The significance of which is lost to chemical weedkillers. Like those  simplistic herbicide advertisements depicting a spray bottle killing a  dandelion till it wilts into nothing, herbicides also kill association. Religated from field to leftover spaces, its contemporary moniker is now the common poppy.  
-The construction of the new housing estate - the removal of the  agricultural topsoil and further levelling of the earth has created an  abundance of poppies. Their dormant resilience to human disruption,  construction or destruction, is their significant defining  characteristic besides their colour.
-There probably isn't a weed  more appropriated in terms of imagery than the poppy. Early  civilisations associated them with blood, a semiotic foundation  underpinning today's cultural interpretation. Meanwhile, I wonder how  many dormant poppy seeds lay in wait underneath my garden topsoil as the remnants of historic agriculture.
-From newsletter.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="53">
-            <h2>
-              <a href="../botany/#broad-buckler-fern"
-                > Broad Buckler fern </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Botany /  Observation: widespread, broad, dark green fronds and a single crown.
-
-Grows in acidic woodland and plantations.
-Pinnules curl down at the edge.
-Scales have a dark stripe.
-In spring: early juvenile dark and curly fiddleheads.
-
-https://www.getty.edu/art/collection/objects/64835/anna-atkins-and-anne-dixon-lastrea-dilatato-british-british-1853/?dz=0.6138,0.6138,0.61
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="54">
-            <h2>
-              <a href="../botany/#douglas+fir"
-                > Douglas Fir </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Botany /  Pseudotsuga menziesii
-An evergreen conifer.
-
-Native to North America.
-Introduced to the UK in 1827 as timber.
-Bark is non-flammable.
-Prefers Western UK and its heavy rainfall.
-Green-grey trunk but red blisters with age.
-White stripes on needle underside.
-Has both male and female reproductive cones.
-Seed cones, developed from female cone, have a three point bract.
-
-Seed cone
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="55">
-            <h2>
-              <a href="../botany/#Fern+anatomy"
-                > Fern anatomy </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Botany /  img
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="56">
-            <h2>
-              <a href="../botany/#willow"
-                > Wasteland willows </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Botany /  
-grey willow (f) hybrid
-
-Goat willow, which I assumed to be a simple tree, is, in fact, several hybridized variations between goat (salix caprea) and grey (salix cinerea) willow -amongst others. I often encounter it within overlooked spaces, and  like many plants associated with weeds, I dismissed it as commonplace.  You can often find it as a deciduous shrub or modest scruffy tree  growing in a sheltered and damp space. 
-I have a female hybrid  willow in my garden. As tall as the house and leaning into the lawn, I  often contemplate cutting it down. The times I've almost fallen out of  it when attempting to prune its limbs extending over the neighbours  fencing. 
-On occasion, I've whittled spoons out of off-cuts. The  prepared wood is bone white, saturated with water and easy to work with  when wiped with a cloth. The worked wood gradually turns off white with  cooking and eating, obtaining a coffee-coloured patina. It's a practical softwood suitable for coppicing, fast-growing as a living hedge, and  lauded by insect pollinators in spring. For all its benefits, I still  associate it with wasteland.
-Despite there being 400+ species under the willow/Salix genus, the word willow brings to mind the ornamental weeping willow. As a cultivated tree, it is  found in urban parks and estate grounds. Its long branches drape over  lawns, paths and waterways. This familiar landscape feature is a  naturalised Chinese species, introduced into Britain and hybridized with the native white willow. 
-Before the cultural disregard, the goat willow once held religious associations for use on Palm Sunday. Its male trees, which produce attractive yellow catkins, were sought  after as an alternative to palms used in processions. This tradition is  redundant becoming frowned upon by early modern Britain. This book of  the Kew series of Natural History from the 1950s uses negative  connotations to describe the practice: hordes of trippers, ramblers and gypsies.
- Top left. British trees and shrubs (Kew series) 1958 by R D Meikle
-
-The fostered weeping willow is coveted while the native goat/grey willow is neglected within cultural memory. Its religious appropriation is  retired, while it also lacks horticultural ornamental fancy and a  monetary value as lumber. Symbolic then that it now resides within  informal wildlife-focused gardens, nature reserves and leftover spaces.
-From an environmental perspective, both goat and grey willow are undervalued native species that provide an early food source for early pollinators in turn contributing a habitat for foraging birds. Fortunate then there is a female goat willow on my patch of edgelands located by a road  drainage ditch. Like the willow in my garden, it could be a hybrid but  it resembles the darker hairy branches of the goat willow. 
-This  specimen is weed-like with a crowded crown of stems vying for space with the dominant hawthorn and blackthorn. Though well established the  willow is singular, with no others in the area. Deer and rabbit are  partial to willow saplings, both of which are in the area and could  damage exposed willow saplings.
-Goat willow (f) in my edgelands
-
-The main trunk of the goat willow
-
-Dark stem of the goat willow and its cat’s paw catkin
-
-Snippet taken from newsletter: https://roadsidepicnic.substack.com/p/issue017-wasteland-willows
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="57">
-            <h2>
-              <a href="../botany/#garlic+mustard"
-                > Garlic Mustard </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Botany /  Alliaria Petiolata (Garlic Mustard, Jack-by-the-hedge)
-
-Traditionally it is used as a herb for fish. While contemporary foraging guides designate it as a raw salad leaf. Aside from human appropriation, it is also a food source of the colourful orange-tip butterfly. 
-Orange tip - A Colour Guide to Familiar Butterflies, Caterpillars and Chrysalides 1974 by Josef Moucha
-
-Garlic Mustard by a rusted gate
-
-As a weed: Jack-by-the-hedge thrives in the sheltered margins of hedgerows. Urban environments can provide the same, if not similar, shelter. Consequently, like the weeds discussed in last weeks issue 015, it has an invasive characteristic and is found on brownfield wastelands and car parks.  
-Snippet from https://roadsidepicnic.substack.com/p/issue016-poor-mans-garlic-and-an
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="58">
-            <h2>
-              <a href="../botany/#wild+garlic"
-                > Wild garlic </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Botany /  The surreal mundane familiarity of the roadside layby ends with a stride into the adjacent woodland. Among last year's leaf fall, the floor is populated by wild garlic. Their pungent leaves, elongated and pointing to the forest floor, paint the spring woodland in a fresh green. Its Latin designation, Allium uranium, ursus referring to bears attributing to its other name bear garlic, suggests that brown bears would enjoy this place. With none in sight, we collect some, using them throughout the week for pesto, cheese scones, and lasagne. It differs from conventional garlic, I find that it has a warm chive taste. Given its uncultivated and brief availability, it signifies spring. 
-
-Snippet taken from Roadside picnic newsletter.
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="61">
-            <h2>
-              <a href="../development/#static+search"
-                > Search implementation for static sites </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Development /  Options:
-
-tinysearch - Rust. The most promising but can't run for Error: No such file or directory (os error 2). Even on the docker image and on ubuntu. 
-lunr.js - js, popular option but overkill as the garden/wiki is not js heavy. This codepen example looks simple enough, and this codepen using on the fly html to json is even simpler - no messing with index creation. Used by mkdocs. 
-elasticlunr - similar to above.
-fuse.js - js fuzzy search library. 
-stork - js, ui focused. Simple codepen example but ran into this error on installing the cli. Both on windows and linux. 
-crane - inspired by above, writen in go.
-
-For this digital garden/wiki I went with lunr.js with a html &gt; JSON function. Considering that it uses a custom python static site generator, I can bypass indexing and instead include a page with all the notes that can be searched.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="62">
-            <h2>
-              <a href="../development/#commentsforstaticsites"
-                > Comment implementation for static sites </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Development /  In the future, I would like to implement a comment system in my static-based digital garden ecosystem. However, I want to avoid third-party services that track and sell data. Nasty.
-Possible methodologies
-
-https://webmention.io/
-https://cactus.chat/demo/
-email?
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="63">
-            <h2>
-              <a href="../development/#kivymd"
-                > KivyMD notes </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Development /  buildozer.spec requirements
-For building KivyMD apps you have to include the pillow package otherwise it will build the apk without error but crash on android.
-For example:
-# (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,kivymd==0.104.1,pillow
-
-
-Problems
-kivyMD material icons not loading on android. 
-Solution: include kivymd master.zip and sdl2 in buildozer.spec.
-# (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow
-
-
-Documents
-
-https://kivymd.readthedocs.io/en/latest/
-
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="71">
-            <h2>
-              <a href="../digital+gardening/#inspiration"
-                > Inspirational gardens </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Digital Gardening /  Favourites:
-
-https://100r.co
-https://tomcritchlow.com/wiki
-https://scottnesbitt.online/
-
-Lists:
-
-https://github.com/kyrose/awesome-digital-gardens
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="72">
-            <h2>
-              <a href="../digital+gardening/#googleslides"
-                > Antistatic </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Digital Gardening /  Google slides as a digital [[zine]] / digital garden.
-https://docs.google.com/presentation/d/1GWSFltGp0Qr9YKzu4cc_4eGhFcWCrzGN0zn5G0vp3mE/edit?usp=sharing
-
-A collaborative online slide deck where we collect thoughts and ideas  that need more than a tweet but less than a blog. Anyone is welcome to  view and comment. (Google Slides, ongoing, co-authored).
-
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="81">
-            <h2>
-              <a href="../film/#Stalker-1979"
-                > Stalker (1979) </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Film /  Notes on Tarkovsky’s 1979 science fiction movie, Stalker, and [[Terrain vague]].
-
-In Stalker, {terrain vague} becomes the material embodiment of an idea—that the world around us is, ultimately, the world we think into existence and, at the same time, the world that inhabits us. What is magical in this version of terrain vague (which, as Solà-Morales suggests, is indeed “evocative”—it “calls forth”) is that people bring their world into being, so that terrain vague, in its productive indeterminacy, becomes a tangible manifestation of an otherwise suppressed or forgotten dialogue between the human being and the physical environment. (Radović, 2013)
-
-(Tarkovsky, 1979)
-
-Bibliography
-Radović, S. (2013) ‘On the Threshold: Terrain Vague as Living Space in Andrei Tarkovsky’s Stalker’, Terrain Vague, Interstices at the Edge of the Pale., pp. 114–129.
-Tarkovsky, A. (1979) Stalker. Soviet Union.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="82">
-            <h2>
-              <a href="../film/#Annihilation-2018"
-                > Annihilation (2018) </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Film /  Notes on Alex Garland’s 2018 science fiction movie, Annihilation, and [[Terrain vague]].
-
-
-Alex Garland’s 2018 science fiction movie, Annihilation, features an alien entity which transforms organic material in a zone called the shimmer. The shimmer  concept is similar to Andrei Tarkovsky's 1979 movie, Stalker, in which a departed alien entity has transformed corridors of space subjected to unknown extra-terrestrial laws called the Zone. 
-
-
-Like Tarkovsky’s Zone, Garlands’ Shimmer  is a [[terrain vague]] territory, one that is visually post-apocalyptic and rewilded, however, due to the extra-terrestrial, nature constantly distorts and evolves. This constant change is also applied to the characters as Garland explores, metaphorically and visually, existential crises, terminal disease, relationships and trauma through the journey in the [[Terrain vague]] landscape. 
-
-
-On the surface the film is a straightforward extra-terrestrial action horror, however, Garland, like Tarkovsky, uses the concept of [[Terrain vague]] as an uncertain representational space as a metaphorical landscape, one that reflects the protagonist and characters. The shimmer's mutating DNA plot device echoes the ambiguous terrain vague with the characters themselves becoming uncertain of who or what they are. Subtle physical attributes and traumatic experiences are shared between the characters.
-
-
-The four supporting characters succumb to the shimmer. Two are absorbed into the physical environment. In the final, the protagonist questions who they are and if they are still themselves. The existential question is at the core of the film through the terrain vague metaphor, land is representational -it reflects ourselves, culturally and socially. The shimmer and the zone are metaphorical landscape devices open to interpretation just as there many interpretations of both films.
-
-
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="91">
-            <h2>
-              <a href="../horticulture/#perennialkale"
-                > Perennial kale </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Horticulture / ['gardening', 'kale'] Sometimes referred to as heritage kale, cottager's kale and collard trees. Perennial kale varieties are obscure in origin and difficult to obtain as they are propagated by cuttings. They are increasingly popular under permaculture practices.
-Varieties
-Taunton Deane kale
-West Country, UK, origins.
-Currently I have three cuttings under lights ready for 2022. The cuttings came from a farm in Doncaster through ebay. 
-Source:
-
-https://backyardlarder.co.uk/2020/03/march-plant-profile-taunton-deane-kale/
-
-Daubenton kale
-Originating from France, it is named after French naturalist Louis Jean-Marie Daubenton. 
-Has variations. One of which is variegated (marks and patches of different colours).
-Source:
-
-https://backyardlarder.co.uk/plants/daubenton-kale/
-
-Nine star
-Broccoli-cauliflower but often grouped into perennial kale. Produces heads. Some argue its not a true perennial. Mostly grown in the states.
-Couve Galega
-A tall Portuguese kale. 
-Used to make Portuguese caldo verde soup.
-Resistant to cold. ONLY a perennial in cold climates. I'm doubtful this would include the UK, what with its hot summers. Cuttings have to be taken for a constant supply.
-I bought some seed from ebay. Unlike [[seakale]] they germinated with ease, and at the time of writing they are surviving early autumnal weather.
-source:
-
-https://backyardlarder.co.uk/2014/09/portuguese-kale/
-https://pt.wikipedia.org/wiki/Couve-galega
-
-Seakale
-[[Seakale]] grows along European shorelines. I have seen it on beaches, but never paid it any attention.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="92">
-            <h2>
-              <a href="../horticulture/#hydrangea+ph"
-                > Hydrangea and pH </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Horticulture /  Hydrangeas can be used a natural litmus test using their colour shifts based on the soil pH.
-The more acidic the soil (lower the pH) the more blue the flowers are. Likewise, the more alkaline (higher the pH) the soil the more pink. 
-My hydrangea flowers sit between purple and pink.
-
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="93">
-            <h2>
-              <a href="../horticulture/#seakale"
-                > Quest for Seakale </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Horticulture /  A log of notes and images documenting my efforts to perennialize my vegpatch by introducing Seakale for 2022.
-29/7/2021
-The start. I receive seeds, they go straight into pots and under grow lights where they will live till next spring. Sceptical, I wait for germination. From what I gather they are difficult to germinate. 
-
-
-7/9/2021
-All the seeds failed to germinate. Some time in late August I restart-rethink. I try two methods: (1) soaking seeds in salt water for 24hours, and (2) sowing seeds in sand and leaving them outside under the porch. 
-The second method results in one successful germination. This is repotted in compost/sand, brought inside and placed under lights. The seeds need a period of cold stratification? 
-
-
-22/9/2021
-The seakale seedling has developed a leaf. It lives in a ikea socker greenhouse. I use a spray to keep the humidity up. 
-
-
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="101">
-            <h2>
-              <a href="../landscape/#edgelandcrime"
-                > Notes on edgelands and crime </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Landscape /  Through the lack of context and their subversive edgy characteristics, edgeland sites can harbour suspicion. These are out of town areas where the socially marginal meet for questionable or immoral activities.  These dystopias are enforced and exploited through film and tv.  Throughout the 1990's the backdrop of the indie crime movie was an  edgeland site. The place where money is exchanged, money is stolen, and the criminal-protagonist cover is walking the dog. Of course, the edginess is hyperbole, visually enhanced with banal  industrial architecture, debris and monotonous colour balances. Film  portrays them as landscapes where concluding conflict is played out. In  reality, these areas, besides the occasional glimpses of marginal  society (the attempted dog theft) spurring suspicion, are not  straightforward dystopias but banal urban peripheries with complex  social processes. 
-Author of the term:
-
-The aura of excitement which goes with the apparent lawlessness of the edgelands has been exploited in such films of the 1990s as Reservoir Dogs, Pulp Fiction, Seven, Things to Do in Denver When you’re Dead, Fargo and The Straight Story. (Shoard, 2000, p. 130)
-
-[[Roberts, M. S.]] co-author of edgelands Journeys Into England's True Wilderness (2011):
-
-Marion Shoard’s coining of ‘edgelands’ seemed to conjure exactly our experience of these places. They were, and are, edgy. In British tv drama and low budget films, the edgelands are always the place of the dénouement, the place where the drug gang is busted, the car chase ends, or the kidnap victim is rescued. These are places where anything could happen. And when it did, it was usually illegal or contravened every rule of health and safety. This sense of the edgelands as a dystopian landscape is a familiar trope of British popular culture in particular. (Roberts, 2016, pp. 19–20)
-
-Bibliography for this note
-Roberts, M. S. (2016) ‘[[The Making of Edgelands]]’, English Topographies in Literature and Culture, pp. 17–24.
-Shoard, M. (2000) ‘[[Edgelands of Promise]]’, Landscapes, pp. 117–146.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="102">
-            <h2>
-              <a href="../landscape/#Marginal-Space"
-                > Marginal space </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Landscape /  Empty, unoccupied or peripheral urban spaces.  
-Terminology
-
-Naming turns space into place (Wells, 2011, p. 3).
-
-
-
-[[Edgelands]] - indeterminate interfacial between urban and rural. 
-
-
-[[Urban Wildscape]] - urban spaces under the agency of nature.
-
-
-[[Third landscape]] - spaces left to natural evolution.
-
-
-[[Non-place]]  - contemporary urban spaces without history.
-
-
-[[Terrain vague]]  - imprecise spaces.
-
-
-Avoiding the predetermined
-As a " " landscape photographer " " I constantly need reminding, that despite the above definitions, landscape is a “highly differentiated discourse on representing space” (Bate, 2009, p. 93).
-Following a unique interpretation of a site whether that is through geography, autobiography, or metaphor, will create original work and avoid cliche.   
-Bibliography
-Bate, D. (2009) Photography: The Key Concepts. Berg.
-Wells, L. (2011) Land Matters: Landscape Photography, Culture and Identity. Bloomsbury Publishing.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="103">
-            <h2>
-              <a href="../landscape/#Non-place"
-                > Non-place </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Landscape /  Contemporary urban-culture areas of transit and commerce with a lack of history and “heightened sense of anonymity” (Barron, 2013, p. 6)
-Bibliography
-Barron, P. (2013) ‘Introduction: At the Edge of the Pale’. Routledge, pp. 1–23.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="104">
-            <h2>
-              <a href="../landscape/#Terrain-vague"
-                > Terrain vague </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Landscape /  French landscape theoretical term for indeterminate space, defined by Spanish architect, Ignasi de Solà- Morales, stating:
-
-It is impossible to capture in a single English word or phrase the meaning of terrain vague. The French term terrain connotes a more urban quality than the English land; thus terrain is an extension of the precisely limited ground fit for construction, for the city.” (de Solà- Morales, 2013, p. 26).
-
-Breaking down the etymology
-
-The term has duality stemming from Latin: “Vague descends from vacuus, giving us “vacant” and “vacuum” in English, which is to say “empty, unoccupied,” yet also “free, available, unengaged.”  
-A second meaning superimposed on the French vague derives from the Latin vagus, giving “vague” in English, too, in the sense of “indeterminate, imprecise, blurred, uncertain.” (de Solà- Morales, 2013, p. 26). 
-Solà- Morales uses the french term ‘terrain vague’ because the English vocabulary for these pockets of vacant landscape have negative connotations such as wasteland.
-
-My favourite explanation
-Stanka Radović has a clear definition in the essay ‘on the threshold’ - an essay using the Andrei Tarkovsky 1979 film, Stalker, to explore the term as a utopia:
-
-“... terrain vague escapes and challenges rigid definitions. Is it urban or is it natural? Is it a concept or a concrete place? Free or forlorn? The term “terrain vague” translates into English as “wasteland,” “derelict area,” or “vacant land,” and refers to abandoned or unoccupied portions of urban land that remain available for spontaneous use.” (Radović, 2013, p. 114)
-
-Early photography
-Man Ray Etude pour terrain vague , 1929
-
-
-Before de Solà- Morales, Man Ray, inspired by Eugène Atget, captioned these photographs 'Terrain Vague'. 
-Bibliography
-Radović, S. (2013) ‘On the Threshold: Terrain Vague as Living Space in Andrei Tarkovsky’s Stalker’, Terrain Vague: Interstices at the Edge of the Pale.
-de Solà- Morales, I. (2013) ‘Terrain Vague’, Terrain Vague: Interstices at the Edge of the Pale.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="105">
-            <h2>
-              <a href="../landscape/#Third-landscape"
-                > Third landscape </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Landscape /  ( Tiers-Paysage )
-A term for les délaissés (leftover spaces of urban development) for nature to colonise. Coined by Gilles Clément, a French garden designer, botanist, entomologist and writer, in a manifesto entitled ‘Manifeste du Tiers paysage’.
-In ‘Manifeste du Tiers paysage’, Clément argues that neglected and unexploited space is a reserve under the term third landscape. Left to evolution, biological processes and agency transform anthropized territories to natural spaces which provide biodiverse habitats for fauna and flora but can also be used by society as spaces for leisure and connection to the natural world.
-
-Clément's Derborence Island, an inaccessible urban "garden" left to nature.
-Manifesto from Clément's website
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="106">
-            <h2>
-              <a href="../landscape/#edgelands"
-                > Edgelands </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Landscape /  Coined by Marion Shoard (see [[Edgelands of Promise]]) and further popularised by Farley, P. and Symmons Roberts (See [[Edgelands Journeys Into Englands True Wilderness]]), the term can be confusing.
-The term can refer to:
-
-
-the indeterminate urban boundary between rural territories which can host infrastructure, golf courses, car parks and canals.
-
-
-marginal areas outside of conventional urban circuits like derelict and brownfield sites.
-
-
-non-places such as retail parks, service stations and transport infrastructure on the outskirts
-
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="107">
-            <h2>
-              <a href="../landscape/#Man-made-Peak"
-                > The Man made Peak </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Landscape /  
-… the conservation movement, while well intentioned, has sought to freeze living systems in time. It attempts to prevent animals and plants from either leaving or–if they do not live there already–entering. It seeks to manage nature as if tending a garden. Many of the ecosystems, such as heath and moorland, blanket bog and rough grass, that it tries to preserve are dominated by the low, scrubby vegetation which remains after forests have been repeatedly cleared and burnt.  This vegetation is cherished by wildlife groups, which prevent it from reverting to woodland through intensive grazing by sheep, cattle and horses. It is as if conservationists in the Amazon had decided to protect the cattle ranches, rather than the rainforest.  (Monbiot, 2014, p. 8)
-
-Management of moorland through cutting. 
-
-
-
-Out of 218 nations, the UK ranks 189th for the intactness of its living systems (rspb, 2016)
-… In Britain, as in most of Western Europe, land is managed; it follows that vistas or landscapes are constructed, which means that a sense of aesthetic principles, as well as social mores, are in play. (Wells, 2011, p. 28)
-
-Bibliography
-Monbiot, G. (2014) Feral: Rewilding the Land, the Sea, and Human Life. University of Chicago Press.
-rspb (2016) State of Nature 2016, https://www.rspb.org.uk/. Available at: https://www.rspb.org.uk/globalassets/downloads/documents/conservation-projects/state-of-nature/state-of-nature-uk-report-2016.pdf (Accessed: 15 November 2019).
-Wells, L. (2011) Land Matters: Landscape Photography, Culture and Identity. I.B.Tauris.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="108">
-            <h2>
-              <a href="../landscape/#wilderness"
-                > Wilderness in Britain </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Landscape /  
-E. M. Forster in 1964 wrote that two world wars had enveloped the wildness of Britain. “‘Two great wars demanded and bequeathed regimentation,’ wrote E. M. Forster in 1964, ‘science lent her aid, and the wildness of these islands, never extensive, was stamped upon and built over and patrolled in no time. There is no forest or fell to escape to today, no cave in which to curl up, and no deserted valley.’” (Macfarlane 2009, p.8)
-
-Jonathan Raban claims Britain lost its wilderness much earlier in the 1860s with population and industry:
-
-so thickly peopled, so intensively farmed, so industrialised, so citified, that there was nowhere to go to be truly alone, or to have … adventures, except to sea. (Jonathan Raban Cited in (Macfarlane 2009, p.8))
-
-Macfarlane states population and the road network is really to blame for the lack of wilderness or remoteness:
-
-In Britain, over sixty-one million people now live in 93,000 square miles of land. Remoteness has been almost abolished, and the main agents of that abolition have been the car and the road. Only a small and diminishing proportion of terrain is now more than five miles from a motorable surface. There are nearly thirty million cars in use in Britain, and 210,000 miles of road on the mainland alone. (Macfarlane 2009, p.9)
-
-George Monbiot argues that there is a wildness paradox, that Britain's gardens have more wildlife in them than barren uplands:
-
-Spend two hours sitting in a bushy suburban garden anywhere in Britain, and you are likely to see more birds, and of a wider range of species, than you would while walking five miles across almost any open landscape in the uplands. (Monbiot 2014, p.69)
-
-Liz Wells argues Britain is a managed land and notes the paradox of the pictorial countryside as safe, clean, and undisturbed rather than managed.
-
-...British land is managed – there is no wilderness; even the coastal littoral is overseen (by the Environment Agency). It follows that landscapes and vistas are human constructs, which means that aesthetic principles, as well as social mores, were and are in play within the actual shaping of land. Pictorial renderings of countryside as pastoral depict Britain as undisturbed and undisturbing, thus contributing to constructing a simplified and benign rural imaginary, to picturing countryside as safe. (Wells 2011, p.164)
-
-The lack of wild animals like wolves, beaver and boar:
-
-So few wild creatures, relatively, remain in Britain and Ireland: so few, relatively, in the world. Pursuing our project of civilisation, we have pushed thousands of species towards the brink of disappearance, and many thousands more over that edge. The loss, after it is theirs, is ours. Wild animals, like wild places, are invaluable to us precisely because they are not us. They are uncompromisingly different. (Macfarlane 2009, p.306,307)
-
-References
-Macfarlane, R., 2009. The Wild Places, Granta Books.
-Monbiot, G., 2014. Feral: Rewilding the Land, the Sea, and Human Life, University of Chicago Press.
-Wells, L., 2011. Land Matters: Landscape Photography, Culture and Identity, I.B.Tauris.
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="111">
-            <h2>
-              <a href="../newsletter/#lowtech"
-                > Low tech </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Newsletter / www Inspiring low tech/low impact (solar punk?) focused online magazine running on solar power
-Low-tech Magazine is an online magazine, based in Barcelona. The owners/authors and their very involved readers research how obsolete technology could help solve high-tech problems.
-Article of note: How to Build a Low-tech Website?
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="112">
-            <h2>
-              <a href="../newsletter/#newsletter+links"
-                > Newsletters </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Newsletter /  Newsletters, like the digital garden trend, are replacing over commercialized vanilla flavours of social media. Think of the dreaded influencer dominating the blogosphere and instagram, its tiresome. 
-Newsletters are slower, have purpose. They are usually produced for a specified niche or interest, giving them a focus. They are digital spaces, comparable to zines and pamphlets, filled by their authors unrestrained by the likes of Facebook. 
-I read the following.
-
-
-
-Newsletter (in no order)
-Notes
-
-
-
-
-https://craigmod.com/ridgeline/
-Walking, photography, literature, casual field notes and travel stories. Craig Mod posts weekly from Japan.
-
-
-https://craigmod.com/ridgeline/117/
-Mod also produces mini 'pop up' newsletters for hikes. Like a daily travel log.
-
-
-https://fieldnotes.christopherbrown.com
-Weekly slice of the Midwest edgelands.
-
-
-https://bryanformhals.substack.com
-Co-author of one of my favourite books, Photographers’ Sketchbooks. Formhals sends a weekly letter about walking and photography. Always has interesting links.
-
-
-https://treetrailpark.substack.com
-Formhals new letter focused on parks and nature.
-
-
-https://littlebrownmushroom.substack.com/
-Alec Soth's [[Zine]] like newsletter.
-
-
-
-              </div>
-            </section>
-          </li>
-                
-          <li data-question-id="131">
-            <h2>
-              <a href="../photography/digital+workflow/#fujifilm-xf10"
-                > Fujifilm xf10 </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Digital Workflow /  Lightroom ISO adaptive preset
+            <li data-question-id="142">
+              <p>
+                <a href="../misc/typography/#vignelli"
+                  > Massimo Vignelli</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  typography /  Massimo Vignelli’s A Few Basic Typefaces
+
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="151">
+              <p>
+                <a href="../photography/digital+workflow/#fujifilm-xf10"
+                  > Fujifilm xf10</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  digital workflow /  Lightroom ISO adaptive preset
 by MtPython
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="132">
-            <h2>
-              <a href="../photography/digital+workflow/#silkypix-xf10-profile"
-                > Silkypix profile for the fuji xf10 </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Digital Workflow /  My silkypix 10 xf10 Chrome low saturation, slight hdr, sharpening, and low noise removal.
+            <li data-question-id="152">
+              <p>
+                <a href="../photography/digital+workflow/#silkypix-xf10-profile"
+                  > Silkypix profile for the fuji xf10</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  digital workflow /  My silkypix 10 xf10 Chrome low saturation, slight hdr, sharpening, and low noise removal.
 Can be downloaded on github gist as an ST6 file.
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="133">
-            <h2>
-              <a href="../photography/digital+workflow/#silkypix-noise-reduction"
-                > Silkypix noise reduction </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Digital Workflow /  For whatever reason, by default silkypix 10 applies a heavy noise reduction. Leaving the image like a watercolour. For my Fuji's, I use the fine detail setting and lower the smoothness. 
+            <li data-question-id="153">
+              <p>
+                <a href="../photography/digital+workflow/#silkypix-noise-reduction"
+                  > Silkypix noise reduction</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  digital workflow /  For whatever reason, by default silkypix 10 applies a heavy noise reduction. Leaving the image like a watercolour. For my Fuji's, I use the fine detail setting and lower the smoothness. 
 Noise reduction panel
 
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="141">
-            <h2>
-              <a href="../photography/essay/#Artist+statement+for+Snag++Inflorescence"
-                > Artist statement for Snag / Inflorescence </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Essay /  
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="161">
+              <p>
+                <a href="../photography/essay/#Artist+statement+for+Snag++Inflorescence"
+                  > Artist statement for Snag / Inflorescence</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  essay /  
 📝 The following is a mini essay / artist statement  for Snag / Inflorescence - a project conducted during my masters in photography.
 
 
@@ -1248,20 +1367,20 @@ Jorgensen, A. and Tylecote, M. (2007) ‘Ambivalent landscapes—wilderness in t
 Jorgensen, A. and Keenan, R. (2012), Urban Wildscapes. Routledge.
 Mariani, M. and Barron, P. (2014) Terrain Vague: Interstices at the Edge of the Pale. Routledge.    
 Wells, L. (2011) Land Matters: Landscape Photography, Culture and Identity. .B.Tauris.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="142">
-            <h2>
-              <a href="../photography/essay/#toy+camera+landscape"
-                > Exploring a landscape with handmade cameras </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Essay /  Revised forward: Originally published on a blog after finishing a degree project in 2018. Preserved for demonstrating past methodologies/concepts. 
+            <li data-question-id="162">
+              <p>
+                <a href="../photography/essay/#toy+camera+landscape"
+                  > Exploring a landscape with handmade cameras</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  essay /  Revised forward: Originally published on a blog after finishing a degree project in 2018. Preserved for demonstrating past methodologies/concepts. 
 
 Foreword: this is a summary of a recent project that was undertaken as a final for a photography course. The article involves theory as well as practical elements. It is not a howto, but you are welcome to ask questions.
 
@@ -1316,20 +1435,20 @@ Sontag, On Photography. Page 52.
 Scott, C. (1999). Spoken Image: Photography and Language. Page 22.
 Weston, E. (2003). Seeing photographically. In L. Wells (Ed.), The Photography Reader. Page 107. (Original work published 1930)
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="143">
-            <h2>
-              <a href="../photography/essay/#Fays-Land"
-                > Fays Land </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Essay /  An essay about Fay Godwin and the British landscape, written during my degree in 2017.
+            <li data-question-id="163">
+              <p>
+                <a href="../photography/essay/#Fays-Land"
+                  > Fays Land</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  essay /  An essay about Fay Godwin and the British landscape, written during my degree in 2017.
 The notion of ‘Landscape’ in Britain implores images of coastlines, rivers, canals, fields, moorland, hills, mountains, villages and gardens. Though broad in scope, these designations and types of environment are far away from the notion of ‘wilderness’. Like the extinct wolves and lynxes which were indigenous to the British isles so to has the swathes of untouched forest and moorland become extinct, carved up, transformed and managed. The entire land and sea is managed, creating a link between the British landscape and the idea of land ownership. The British ‘countryside’ is a social construct of history, privilege, and ownership with hedges, fences and stonewalls carving up the land, whilst castles to village cottages lay claim to land. Pictorial British landscapes only enforce this idea of ownership, as Berger suggests ‘To have a thing painted and put on a canvas is not unlike buying it and putting it in your house. If you buy a painting you also buy the look of the thing it represents’ (Berger, 2008, p. 83). Furthermore the British pastoral countryside, through land management and its association of ownership, is often depicted as a safe rural idyll regardless of recent hardships such as floods and culling of diseased animals. (Wells, 2011, p. 164).
 A photographer that explored the British landscape and the subsequent countryside social construct was Fay Godwin. Godwin was active from the mid 70’s to the early 1990’s with the most famous work being in the accessible printed form of books namely ‘Land’, 1985, and ‘Our Forbidden land’ printed in 1990. Both books, with their different agendas, offer the viewer an insight into the British landscape at the end of the 20th century and are the subject of this essay.
 Land
@@ -1412,20 +1531,20 @@ Photography, and Film. Oxford University Press.
 Sontag, S. (2014). On Photography. Penguin UK.
 Wells, L. (2011). Land Matters: Landscape Photography, Culture and Identity. I.B.Tauris.
 Wells, L. (2015). Photography: A Critical Introduction. Routledge.
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="151">
-            <h2>
-              <a href="../photography/hack/#classic+chrome"
-                > Classic Chrome on xpro1 </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Hack /  The x-pro1 lacks my go-to fuji film simulation. 
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="171">
+              <p>
+                <a href="../photography/hack/#classic+chrome"
+                  > Classic Chrome on xpro1</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  hack /  The x-pro1 lacks my go-to fuji film simulation. 
 Solution: Use PRO Neg. Std with the following recipe
 It makes a near match and saves time in post.
 
@@ -1444,20 +1563,20 @@ from https://fujixweekly.com/2020/04/10/classic-chrome-for-those-who-dont-have-i
 Another solution is to use a dcp profile in post
 My .dcp I baked is at https://github.com/rjcalow/Fujixpro1chrome/
 Results were mixed. You can try baking your own at abpy/FujifilmCameraProfiles.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="152">
-            <h2>
-              <a href="../photography/hack/#e-ink"
-                > E-ink </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Hack /  termux-camera-to-kindle.sh
+            <li data-question-id="172">
+              <p>
+                <a href="../photography/hack/#e-ink"
+                  > E-ink</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  hack /  termux-camera-to-kindle.sh
 Inspired by Antony Cairns. This short script was a tiny side project during my COVID restricted masters in photography. With no access to a darkroom I experimented with obscure/misunderstood digital technologies for image-making. 
 The aim is to demonstrate e-ink technology as a medium for reproduction and the act of repurposing a commercial artefact for unconventional means (in this case appropriating monochrome images -the more indeterminate and abstract the better). 
 
@@ -1476,20 +1595,20 @@ To reproduce images on the Kindle, I purposefully chose vague and abstract subje
 
 Reflection
 This started as a unconventional experiment during the pandemic quarantine, one that approaches {nature-culture} theme from a different approach. The more I reflect on it, the less unreasonable it becomes. The act of repurposing cultural artefact for another purpose is a subversive act, mimicking an aspect of the core theme. Additionally it offers discourse on cultural/digital appropriation of nature.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="153">
-            <h2>
-              <a href="../photography/hack/#Lumix-TZ10-infrared-conversion"
-                > LUMIX TZ10 INFRARED CONVERSION </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Hack /  
+            <li data-question-id="173">
+              <p>
+                <a href="../photography/hack/#Lumix-TZ10-infrared-conversion"
+                  > LUMIX TZ10 INFRARED CONVERSION</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  hack /  
 
 Remove the back panel by removing screws on the sides and bottom. Carefully remove the panel, and unclip the lcd power and data cables by opening their latches. This can be fiddly so take time. Also the preview switch (top right) can fly-out when taking the back off, but its not hard to put back.
 The back panel
@@ -1509,20 +1628,20 @@ Tiny filter
 Apply an infrared filter and set the camera to black and white.
 Result
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="154">
-            <h2>
-              <a href="../photography/hack/#35mm+Holga"
-                > 35mm film in a Holga </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Hack /  orginally from a blog post
+            <li data-question-id="174">
+              <p>
+                <a href="../photography/hack/#35mm+Holga"
+                  > 35mm film in a Holga</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  hack /  orginally from a blog post
 [[Holga]] setup involving foam packaging and rubber bands:
  Foam packaging peanuts jammed around a 35mm canister and a 120 spool fitted with 2 elastic bands
 
@@ -1537,20 +1656,20 @@ Guildhall
 
 Wordsworth street
 
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="161">
-            <h2>
-              <a href="../photography/make/#Cardboard+hard+cover"
-                > Cardboard hardcover for diy photobook </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Make /  Materials: cheap 6x4 photo prints, tape, glue and cardboard.
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="181">
+              <p>
+                <a href="../photography/make/#Cardboard+hard+cover"
+                  > Cardboard hardcover for diy photobook</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  make /  Materials: cheap 6x4 photo prints, tape, glue and cardboard.
 My process right now: I take two prints and tape them at the back  creating a simple book signature. I then double sticky tape one end to  the back of another signature. And repeat. To make it even stronger:  glue and tape the spine. 
 For this experiment, binding some  leftover prints: I made a hardcover out of spare cardboard and more  tape. The spine of the signatures and the hardcover is simply glued together. I made it all a little too tight, stopping the book from being a flat lay. It’s okay for the first try. To really finish it, it needs a cover. I hope to make more with mini-projects.
 
@@ -1559,20 +1678,20 @@ For this experiment, binding some  leftover prints: I made a hardcover out of sp
 
 
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="162">
-            <h2>
-              <a href="../photography/make/#epson-xp-3100+booklet+printing"
-                > Printing a zine or booklet on a epson xp-3100 </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Make /  Things to consider:
+            <li data-question-id="182">
+              <p>
+                <a href="../photography/make/#epson-xp-3100+booklet+printing"
+                  > Printing a zine or booklet on a epson xp-3100</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  make /  Things to consider:
 
 Its a cheap printer-scanner with expensive inks.
 Terrible photo output with marks on glossy papers.
@@ -1596,20 +1715,20 @@ Fold and staple papers.
 
 
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="163">
-            <h2>
-              <a href="../photography/make/#Cyanotypes-via-artificial-light"
-                > Cyanotypes with artificial light </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Make /  Dark winter days have a left a blue void, creating a need toward a suitable light source for printing cyanotypes. 
+            <li data-question-id="183">
+              <p>
+                <a href="../photography/make/#Cyanotypes-via-artificial-light"
+                  > Cyanotypes with artificial light</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  make /  Dark winter days have a left a blue void, creating a need toward a suitable light source for printing cyanotypes. 
 Using google for the subject. You find terrible archived forums advocating repurposing UV tanning appliances/bulbs and a blather of pointless arguments on different lighting types. 
 Setting this rubbish aside I found a small amount of more credible information via books as well as asking artists and friends. 
 Wavelength of the light source is important. Many of the cheaper light sources are vague and questionable. The apparent magic number often seen is 365nm, while 405nm which is usually used for resin curing does not work, but given the obscurity of some products mileage may vary. 
@@ -1619,20 +1738,20 @@ A basic setup with a desk lamp.
 Things to do
 Rig up two lights for faster exposure. This could be done with cheap pendent lights and a box. A lid could hold the lights in place allowing for consistent results. I could even use a smart extension plug to time the exposure. 
 Figure out and dial in exposure. I need to work out a process for creating a suitable negative for cyanotype printing. This is normally done with a curves tool to limit the dynamic range.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="164">
-            <h2>
-              <a href="../photography/make/#inkjet-paper-negatives"
-                > Inkjet paper negatives </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Make /  Using oil
+            <li data-question-id="184">
+              <p>
+                <a href="../photography/make/#inkjet-paper-negatives"
+                  > Inkjet paper negatives</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  make /  Using oil
 Using this method preparing for the cyanotype process, but it is adaptable for others.
 Basic process
 
@@ -1658,20 +1777,20 @@ Overtime the oil dries within the paper negative, becoming denser. They have a s
 Example outcome with the cyanotype process
 
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="165">
-            <h2>
-              <a href="../photography/make/#Making+Zines+from+cheap+photo+prints"
-                > Making Zines from cheap photo prints </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Make /  
+            <li data-question-id="185">
+              <p>
+                <a href="../photography/make/#Making+Zines+from+cheap+photo+prints"
+                  > Making Zines from cheap photo prints</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  make /  
 
 Having lost my canon photo printer to printhead rot, I have been using cheap/free services of 6x4 prints for my photo sketchbook. The prints are respectable for, at times, the price of postage and almost the right size for my a5 concertina sketchbook. Having used these cheap prints for weeks in my sketchbook, I started playing with the idea of making mini sketchbooks/zines/booklets for projects.
 I tried Japanese stab binding, concertinas, and perfect bound techniques. These were either too awkward, time consuming, or failures - particularly perfect bound as the print papers are too thin for the application of glue. Additionally, given that I am dealing with single prints or "loose leaf",  having one print per "page" made it very limiting. 
@@ -1700,37 +1819,37 @@ There MUST be better methods for loose leaf binding, but they are obscure and th
 Cheap photo papers, by themselves, are difficult to perfect bound.
 If you are making a large quantity or seek perfection, just use a cheap book production service.
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="166">
-            <h2>
-              <a href="../photography/make/#coffee+can+pinhole+camera"
-                > Coffee can pinhole camera </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Make /  Camera
+            <li data-question-id="186">
+              <p>
+                <a href="../photography/make/#coffee+can+pinhole+camera"
+                  > Coffee can pinhole camera</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  make /  Camera
 
 direct positive paper
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="167">
-            <h2>
-              <a href="../photography/make/#Infrared-cyanotypes"
-                > Infrared Cyanotypes </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Make /  Using the obsolete digital camera featured in [[Lumix TZ10]] infrared conversion. I combined defunct digital technology with traditional print making. 
+            <li data-question-id="187">
+              <p>
+                <a href="../photography/make/#Infrared-cyanotypes"
+                  > Infrared Cyanotypes</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  make /  Using the obsolete digital camera featured in [[Lumix TZ10]] infrared conversion. I combined defunct digital technology with traditional print making. 
 The images
 
 
@@ -1753,59 +1872,59 @@ Conceptualisation of defunct processes.
 An anachronism of photographic technologies.
 Liminal outcomes.
 
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="171">
-            <h2>
-              <a href="../photography/photographic+works/#Tokyo+Tape+%282016%29"
-                > Steven Seidenberg, Tokyo Tape (2016) </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Photographic Works /  Photography of the overlooked: Steven Seidenberg's Tokyo Tape (2016).
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="191">
+              <p>
+                <a href="../photography/photographic+works/#Tokyo+Tape+%282016%29"
+                  > Steven Seidenberg, Tokyo Tape (2016)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  photographic works /  Photography of the overlooked: Steven Seidenberg's Tokyo Tape (2016).
 
 
 I keep thinking about this work.
 Tape is a common material found on Tokyo streets and train platforms. It is used as directional signage and as masking tape during construction. Over time the application of tape builds into layers of colourful textured surfaces while residual applications fade and linger without context blending into the urban interface. 
 Seidenberg work composes the tape as two-dimensional surfaces. They are abstract observations with bright repetitious shapes against a variable backdrop of monotone textures.
 View the images on Seidenberg’s website.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="172">
-            <h2>
-              <a href="../photography/photographic+works/#Works+about+parks"
-                > Photographic works about parks </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Photographic Works /  
+            <li data-question-id="192">
+              <p>
+                <a href="../photography/photographic+works/#Works+about+parks"
+                  > Photographic works about parks</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  photographic works /  
 Paul Hill’s White Peak, Dark Peak (1978-1989) - obviously I would include a project about the Peak District.
 Simon Roberts’ Urban parks (2015-2016) highlights the conflict between urbanisation and open space. 
 Sophia Springs’s Parklife (2020) a contemporary look at London’s parks and their users during the pandemic. 
 Donavon Smallwood’s Languor (2019-2021?) is a collection of portraits taken in central park.
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="173">
-            <h2>
-              <a href="../photography/photographic+works/#Backyard+photog"
-                > Backyard photography </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Photographic Works /  Many of these are from Alec Soths video on backyard photographs.
+            <li data-question-id="193">
+              <p>
+                <a href="../photography/photographic+works/#Backyard+photog"
+                  > Backyard photography</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  photographic works /  Many of these are from Alec Soths video on backyard photographs.
 Jem Southam, Landscape Stories
 Book. 
 Introductory essay by Andy Grundberg.
@@ -1840,37 +1959,37 @@ Book.
 Images of Adams' backyard through seasons. Typical of Adams' style, Black white, straight images but of suburbia. 
 
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="174">
-            <h2>
-              <a href="../photography/photographic+works/#the+forest"
-                > Paul Seawright, the Forest, 2001 </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Photographic Works /  Photographic works that conceptualize ambiguity: Paul Seawright’s the Forest. 
+            <li data-question-id="194">
+              <p>
+                <a href="../photography/photographic+works/#the+forest"
+                  > Paul Seawright, the Forest, 2001</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  photographic works /  Photographic works that conceptualize ambiguity: Paul Seawright’s the Forest. 
 Untitled - Paul Seawright The Forest
 
 Consisting of seventeen images taken at night and lit with a warm amber light.  Roadside embankments and forest tree lines are depicted. The  illumination of which raises equivocal narratives open to  interpretation. Is the warm orange light a gesture of safety, an urban  street light, from whatever is in the night? or are they ominous car  lights illuminating a landscape witnessing a macabre act?
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="175">
-            <h2>
-              <a href="../photography/photographic+works/#call+to+action"
-                > James E Smith, Call to action, 2016 </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Photographic Works /  Usher gallery, the collection, Lincoln.
+            <li data-question-id="195">
+              <p>
+                <a href="../photography/photographic+works/#call+to+action"
+                  > James E Smith, Call to action, 2016</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  photographic works /  Usher gallery, the collection, Lincoln.
 
 
 
@@ -1878,53 +1997,53 @@ Consisting of seventeen images taken at night and lit with a warm amber light.  
 
 
 http://www.jamesesmith.info/index.php?/work/call-to-action/
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="181">
-            <h2>
-              <a href="../photography/pinhole/#holga+wpc"
-                > Holga wpc exposure table </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Pinhole /  https://www.flickr.com/photos/mrwhitemanphotos/5727896394
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="201">
+              <p>
+                <a href="../photography/pinhole/#holga+wpc"
+                  > Holga wpc exposure table</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  pinhole /  https://www.flickr.com/photos/mrwhitemanphotos/5727896394
 
 6x12 (6 photos) use frame count pointing at 12 and shoot at frames:
 1, 3, 5, 7, 9 &amp; 11
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="191">
-            <h2>
-              <a href="../photography/sketchbook/#estovers"
-                > Estovers </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Sketchbook /  
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="211">
+              <p>
+                <a href="../photography/sketchbook/#estovers"
+                  > Estovers</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  sketchbook /  
 
 Estovers : the right to the wood on a common. This might be whole trees or coppicing for firewood. The word Estovers derives from old french estovoir -to be necessary, and Latin est opus -there is need (collins). The etymology emphases appropriating land as a necessity.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="192">
-            <h2>
-              <a href="../photography/sketchbook/#monachopsis"
-                > Monachopsis </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Sketchbook /  Noun. The subtle but persistent feeling of being out of place, as maladapted to your surroundings as a seal on a beach.
+            <li data-question-id="212">
+              <p>
+                <a href="../photography/sketchbook/#monachopsis"
+                  > Monachopsis</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  sketchbook /  Noun. The subtle but persistent feeling of being out of place, as maladapted to your surroundings as a seal on a beach.
 I came across this term reading Losing Eden. A lot of my work fits the concept.
 
 
@@ -1947,20 +2066,20 @@ Bibliography
 Jorgensen, A. and Tylecote, M. (2007) Ambivalent landscapes—wilderness in the urban interstices, Landscape Research, 32(4), pp. 443–462.
 Shoard, M. (2000). Edgelands of Promise. https://doi.org/10.1179/lan.2000.1.2.74
 Snippet from https://roadsidepicnic.substack.com/p/nature-and-monachopsis
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="193">
-            <h2>
-              <a href="../photography/sketchbook/#Unoccupied"
-                > Unoccupied </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Sketchbook /  I found this abandoned tent last year whilst carrying out photographic work for my masters. Since then I've made repeated visits to this [[wildscape]] between an encroaching urban housing estate, recreational field, and banal rural agrarian fields.   
+            <li data-question-id="213">
+              <p>
+                <a href="../photography/sketchbook/#Unoccupied"
+                  > Unoccupied</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  sketchbook /  I found this abandoned tent last year whilst carrying out photographic work for my masters. Since then I've made repeated visits to this [[wildscape]] between an encroaching urban housing estate, recreational field, and banal rural agrarian fields.   
 In summer I captured the surrounding nature engulf the collapsed tent, only to fall in the wet autumn, and later snow in the winter. I am wondering what the long term effects are going to be. Will the freezing winter break down the plastic or will next years bramble and fern completely envelop it and grow through the material. 
 Despite the passing of time and the repeated visits, I have only just started making suitable sequences. Photographic projects can be slow.
 Beside the environmental documentation, the aim is part of a larger personal project escaping stale urbanity (and covid) for the liberating {marginal spaces} and their {tiers-paysage} nature. A similar contemporary narrative lifted from [[Stalker]].
@@ -1971,39 +2090,39 @@ Autumn
 Winter
 
 At the time of writing, better resolution images can be found on the main website.
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="201">
-            <h2>
-              <a href="../photography/walking/#Line+made+by+walking"
-                > Line made by walking, Richard Long, 1967 </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Walking / walking page 112
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="221">
+              <p>
+                <a href="../photography/walking/#Line+made+by+walking"
+                  > Line made by walking, Richard Long, 1967</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  walking / walking page 112
 
 
 In 1967 art student Richard Long caught a train from Waterloo to an unknown destination in Surrey. He ended up in a field of grass where he 'drew' a line by walking backwards and forwards repeatedly. A black and white snapshot recorded the event and has since been endlessly reproduced in diverse art publications around the world. Indeed, A Line Made by Walking is now the subject of an entire book by critic and curator Dieter Roelstraete, published by Afterall Books, London, in 2010. Deliberately. Roelstraerte meanders as he attempts to scrutinise a straight line. Some obvious contexts, such as early Conceptual Art, Land Art and Performance Art are all dealt with briskly. But he is particularly inspiring when a digression relates Long's work to the less obvious context of slapstick. Slapstick is generally defined as knockabout humour. However, Roelstraerte more specifically pinpoints a deadpan dumbness in Long's 'drawing' that he associates with Samuel Beckett and a comic actor greatly admired by Beckett, namely Buster Keaton.
 
 From the art of walking.
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="202">
-            <h2>
-              <a href="../photography/walking/#Proposal"
-                > Proposal, Peter Liversidge, 2012 </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Walking / None 
+            <li data-question-id="222">
+              <p>
+                <a href="../photography/walking/#Proposal"
+                  > Proposal, Peter Liversidge, 2012</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  walking / None 
 PROPOSAL FOR DAVID EVANS FOR THE BOOK THE ART OF WALKING: A FIELD GUIDE. BLACK DOG PUBLISHING, 10a ACTON STREET, LONDON, WC1X 9NG, UNITED KINGDOM. June 2012.
 I propose to walk exactly one kilometre whilst carrying my 35mm film camera. The one kilometer walk would start when the first photograph is taken, then every 27.77 steps I will stop, place the camera up to my left eye and take a single photograph of whatever is in front of me at that exact point.
 The walk would be regulated by my own locomotion and gait, and also recorded by 36 photographs of the journey from start to finish.
@@ -2014,39 +2133,39 @@ sheet-1
 
 sheet-2
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="203">
-            <h2>
-              <a href="../photography/walking/#zone"
-                > Zone, David Bate, 2011 </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Walking / walking, stalker 
+            <li data-question-id="223">
+              <p>
+                <a href="../photography/walking/#zone"
+                  > Zone, David Bate, 2011</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  walking / walking, stalker 
 
 
 Zone is the story of a city at the beginning of the twenty-first century. It is also the story of a city marked by a film. New rules were changing the old ways forever. The city had seen many changes. The pictures are the story of a city (Tallinn) haunted by the image of a film. The film ([[Stalker]]) tells the story of a writer and a scientist who go into an alien zone, where it is said a room exists in which your deepest desire will be granted. After the aliens had left many still feared this zone and its strange logic that few knew or understood. The zone could turn against you; it altered when someone moved through it, and so people found it hard to orient themselves within it. A guide was needed, the stalker, who volunteered to take the writer and scientist into the zone.
 
 From the art of walking.
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="211">
-            <h2>
-              <a href="../photography/zines/#Fl%C3%A2neur"
-                > Flâneur </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Zines /  Zine: I got my hands-on a zine produced by my friend @connorjirving. 
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="231">
+              <p>
+                <a href="../photography/zines/#Fl%C3%A2neur"
+                  > Flâneur</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  zines /  Zine: I got my hands-on a zine produced by my friend @connorjirving. 
 Titled Flâneur, the French term for an observer of contemporary urban life,  Connor returned to his hometown as a visitor. He engaged nostalgic urban scenery with a psychogeographic methodology capturing candid street  photography and banal new topographic imagery.
 Here are some of my favourite spreads.
 The invasive buddleia, a plant that escaped Kew gardens in the 1890’s next to a permit sign.
@@ -2060,20 +2179,20 @@ Gardens are always interesting cultural spaces, they say a lot about their custo
 The photographer and Flâneur: Susan Sontag defines the photographer as an armed flâneur seeking the subversive underlining rather than the  authorities suggested identity. The armed flâneur is an archetype  photographer dating to the medium's inception.  
 On Photography, Sontag, page 55
 
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="212">
-            <h2>
-              <a href="../photography/zines/#the-garden-weed-project"
-                > The Garden Weed project </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Zines /  Friend and artist, Kim Watson, sent me her work 'The garden weed project'. A delicate handmade book of unfixed lumen contact prints depicting weeds found in the garden. 
+            <li data-question-id="232">
+              <p>
+                <a href="../photography/zines/#the-garden-weed-project"
+                  > The Garden Weed project</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  zines /  Friend and artist, Kim Watson, sent me her work 'The garden weed project'. A delicate handmade book of unfixed lumen contact prints depicting weeds found in the garden. 
 The work is a re-examination of unwanted nuisance plants (weeds) as an assortment of versatile species and a valuable resource that is beneficial for our connection to nature as well as a food source for wildlife. 
 The methodology follows the re-examination with a conceptual play of circumventing traditional botanical cyanotype printing for the less recognizable lumen process.  
 The front cover
@@ -2081,166 +2200,136 @@ The front cover
 My favourite spread
 
 https://kimwphotography.co.uk/
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="213">
-            <h2>
-              <a href="../photography/zines/#one+punks+guide"
-                > One Punk’s Guide to Gardening by Jon Mule </a
-              >
-            </h2>
+                </div>
+              </section>
+            </li>
             
-            <section>
-              <div class="snippet">
-                Zines /  Part of Razorcake press's DIY "one punks guide to" series. This traditional alternative zine stands out as it discusses horticulture within a DIY context.  
+            <li data-question-id="233">
+              <p>
+                <a href="../photography/zines/#one+punks+guide"
+                  > One Punk’s Guide to Gardening by Jon Mule</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  zines /  Part of Razorcake press's DIY "one punks guide to" series. This traditional alternative zine stands out as it discusses horticulture within a DIY context.  
 A PDF is available at  https://razorcake.org/one-punks-guide-gardening-jon-mule/
-              </div>
-            </section>
-          </li>
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="241">
+              <p>
+                <a href="../www/digital+gardening/#inspiration"
+                  > Inspirational gardens</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  digital gardening /  Favourites:
+
+https://100r.co
+https://tomcritchlow.com/wiki
+https://scottnesbitt.online/
+
+Lists:
+
+https://github.com/kyrose/awesome-digital-gardens
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="242">
+              <p>
+                <a href="../www/digital+gardening/#googleslides"
+                  > Antistatic</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  digital gardening /  Google slides as a digital [[zine]] / digital garden.
+https://docs.google.com/presentation/d/1GWSFltGp0Qr9YKzu4cc_4eGhFcWCrzGN0zn5G0vp3mE/edit?usp=sharing
+
+A collaborative online slide deck where we collect thoughts and ideas  that need more than a tweet but less than a blog. Anyone is welcome to  view and comment. (Google Slides, ongoing, co-authored).
+
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="251">
+              <p>
+                <a href="../www/newsletters/#lowtech"
+                  > Low tech</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  newsletters / www Inspiring low tech / low impact (solar punk?) focused online magazine running on solar power
+Low-tech Magazine is an online magazine, based in Barcelona. The owners/authors and their very involved readers research how obsolete technology could help solve high-tech problems.
+Article of note: How to Build a Low-tech Website?
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="252">
+              <p>
+                <a href="../www/newsletters/#newsletter+links"
+                  > Newsletters</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  newsletters /  Newsletters, like the digital garden trend, are replacing over commercialized vanilla flavours of social media. Think of the dreaded influencer dominating the blogosphere and instagram, its tiresome. 
+Newsletters are slower, have purpose. They are usually produced for a specified niche or interest, giving them a focus. They are digital spaces, comparable to zines and pamphlets, filled by their authors unrestrained by the likes of Facebook. 
+I read the following.
+
+
+
+Newsletter (in no order)
+Notes
+
+
+
+
+https://craigmod.com/ridgeline/
+Walking, photography, literature, casual field notes and travel stories. Craig Mod posts weekly from Japan.
+
+
+https://craigmod.com/ridgeline/117/
+Mod also produces mini 'pop up' newsletters for hikes. Like a daily travel log.
+
+
+https://fieldnotes.christopherbrown.com
+Weekly slice of the Midwest edgelands.
+
+
+https://bryanformhals.substack.com
+Co-author of one of my favourite books, Photographers’ Sketchbooks. Formhals sends a weekly letter about walking and photography. Always has interesting links.
+
+
+https://treetrailpark.substack.com
+Formhals new letter focused on parks and nature.
+
+
+https://littlebrownmushroom.substack.com/
+Alec Soth's [[Zine]] like newsletter.
+
+
+
+                </div>
+              </section>
+            </li>
              
-          <li data-question-id="221">
-            <h2>
-              <a href="../psychogeography/#latourex"
-                > Latourex </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Psychogeography /  👉 https://www.latourex.org
-A collection of, mostly French, hyperlink and pdf documents around psychogeography by Joel Henry. 
-Each document has ideas, experiments, and invitations. Some are in The Lonely Planet Guide to Experimental Travel, and this collection can be seen as an extension of the book.
-Examples:
-
-ALTERNATING-TRAVEL
-Leave your home on foot. Take the first road on the right, then the next on the left, then the next on the right, then the next on the left, etc. Carry on until something, a no man's land, a building or a stretch of water, blocks your path and you can go no farther.
-ANACHRONISTIC-TRAVEL
-
-Travel using a means of transport that is old-fashioned or obsolete eg, sedan-chair, palankeen, galley, hackney cab, track motorcar, 2 CV, airship, etc.
-Visit a foreign town using an old edition of a guidebook.
-
-With the help of a telephone directory (internet, or other method) find a person called Ariadne in a town of your choice.
-Give Mr or Ms Ariadne a call and ask him/her what his/her favourite 21 places in the town are.
-Mark each place on a map and visit them in a logical order.
-
-MONOPOLYTOURISME
-Méthode d’exploration urbaine qui consiste à découvrir une capitale selon la cartographie particulière de son plateau de Monopoly. En visiter les rues, gares, prison, parking, compagnie des eaux et d’électricité… en réglant ses déplacements à coups de dé conformément aux règles du jeu officielles.
-MONOPOLYTOURISM
-Urban exploration method which consists in discovering a capital according to the particular cartography of its Monopoly board. Visit the streets, stations, prison, car park, water and electricity company… by paying for trips with the dice in accordance with the official rules of the game.
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="222">
-            <h2>
-              <a href="../psychogeography/#yellow+arrow"
-                > Yellow Arrow (2004-2008) </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Psychogeography /  A defunct and pioneering interactive art project that pairs physical media with SMS mobile technology.
-
-The YellowArrow is a global public art project that merges graffiti and sticker culture with wireless media, creating an interactive forum for people to leave and discover messages pointing out what counts in their environment. Participants place arrows to draw attention to different locations and objects
-YellowArrow.org (2005)
-
-Why it's interesting today
-Reminds me of geocaching, pokemon go, and munzee. But unlike these, rather than being games built on top of urban environments, yellow arrow is environment focused through psychogeographical engagement. The ability to leave a message in the environment and encouraging the user to point out features with yellow arrow stickers, is the interesting concept.
-links
-https://brianhouse.net/works/yellow_arrow/
-https://docubase.mit.edu/project/yellow-arrow/
-https://www.flickr.com/photos/yellowarrow/collections/
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="223">
-            <h2>
-              <a href="../psychogeography/#D%C3%A9rive"
-                > Dérive </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Psychogeography /  Definition
-A term originating from the work of Guy Debord, situated (accident-pun) in situationism, and apart of a broad number of psychogeographical terms. 
-
-The cool kids used to call it the dérive, the psychogeographical idea of hacking one’s mode of traveling through the city. Not so much a technique as an attitude, an active but intuitive way to alter normal patterns and ways of experiencing one’s environment that, done right, can break the malaise and rekindle wonder. Almost like surfing. The drift. Following the flow, while actively trying to get lost, and thereby creating opportunities for unexpected discovery. A trip without a plan.
-(From Christopher Brown's newsletter - Lost in America) 
-https://edgelands.substack.com/p/lost-in-america
-
-Dérive's aim is to...
-
-...[R]emedy the incompetence of guides... and to discover the places that really have no reason to exist.
-Antony, Rachel  &amp;  Henry, Joel  (Eds), The  Lonely  Planet Guide to Experimental Travel, p19/20 cited by Coverley, Merlin, Psychogeography (Pocket Essential series) p74
-
-Coverley referrers to the percipient as a dériveur, similar to flâneur.
-
-The dérive may lack a clear destination but it is not without purpose. On the contrary  the dériveur is conducting a psychogeographical investigation and is expected to return home having noted the ways in which the areas traversed resonate with particular moods and ambiences.
-Coverley, Merlin, Psychogeography (Pocket Essential series) p96
-
-The concept, accepting or disregarding the hints of philosophical-emotional hyperbole regardless, is a practical methodology to subvert monotonous urban environments for unexpected/unplanned situations. 
-Application during 2020/21 pandemic restrictions
-Frequent covid restrictions in my area have meant that daily walks to the [[edgelands]] have become an important escape -from stale suburbia and information overload. These daily unplanned wanderings have similarities with the dérive methodology. The results -dérive like unexpected occurrences have spawned projects like [[unoccupied]]. 
-Applying dérive to psychogeographical photographic practice and beyond
-
-Note the areas walked
-the weather
-the light / time of day
-feelings / thoughts produced
-
-
-Photograph the unexpected ✔️
-Get lost / go with the flow
-
-              </div>
-            </section>
-          </li>
-             
-          <li data-question-id="231">
-            <h2>
-              <a href="../typography/#jost"
-                > Indestructible type </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Typography /  https://indestructibletype.com
-Notable type faces
-
-Jost 
-Besley
-Bodoni
-
-              </div>
-            </section>
-          </li>
-          
-          <li data-question-id="232">
-            <h2>
-              <a href="../typography/#vignelli"
-                > Massimo Vignelli </a
-              >
-            </h2>
-            
-            <section>
-              <div class="snippet">
-                Typography /  Massimo Vignelli’s A Few Basic Typefaces
-
-              </div>
-            </section>
-          </li>
-           
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
-
+    </main>
     <script>
       console.clear();
 
@@ -2261,7 +2350,7 @@ Bodoni
         // in this case: {id: , title: , ref: }
         var documents = htmlElementsToJSON(listSelector, function ($element) {
           var ref = $element.attr("data-question-id"),
-            title = $element.find("h2 a").text(),
+            title = $element.find("p a").text(),
             body = $element.find("section").text();
 
           return { id: ref, title: title, body: body };
@@ -2320,7 +2409,10 @@ Bodoni
       //});
 
       var queryString = window.location.search;
-      queryString = queryString.replaceAll("?=", "").replaceAll("+", " ").replaceAll("%20"," ");
+      queryString = queryString
+        .replaceAll("?=", "")
+        .replaceAll("+", " ")
+        .replaceAll("%20", " ");
       $("#searchterm").val(queryString);
       console.log(queryString);
       if (queryString != "") {

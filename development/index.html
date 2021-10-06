@@ -1,62 +1,171 @@
-
-
+  
 
 <!DOCTYPE html>
 <html>
   <meta charset="utf-8" />
-  <title>Development</title>
+  <title>development</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../assets/style.css" />
-  <script src="../assets/scripts.js"></script>
+  <link rel="stylesheet" href="../assets/2.css" />
+
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
   <meta name="author" content="R J Calow" />
-  <body onload="boot()">
-    <div class="content">
-      <header><h6><a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a></h6></header>
 
-      <!-- DIR of page -->
+  <body>
+    <main>
+      <header>
+        <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
+        <a href="https://wiki.rjcalow.co.uk#about">about</a> <a href="#index">index</a>
+
+        <nav id="index">
+            
+          <ul>
+             
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/bookcase">bookcase</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/botany">botany</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/development">development</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/film">film</a>
+            </li>
+             
+          </ul>
+             
+          <ul>
+             
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/horticulture">horticulture</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/landscape">landscape</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/misc">misc</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/photography">photography</a>
+            </li>
+             
+          </ul>
+             
+          <ul>
+             
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/psychogeography">psychogeography</a>
+            </li>
+                
+            <li>
+              <a href="https://wiki.rjcalow.co.uk/www">www</a>
+            </li>
+                     
+          </ul>
+           
+        </nav>
+      </header>
 
       <nav>
         <p>
-          <a href="https://wiki.rjcalow.co.uk">$HOME</a>/Development
+          ./development
         </p>
-        <section>
-           
-
-          <a class="button" href="#static+search"
-            ><img
-              src="../assets/doc_32.png"
-              style="width: 32px"
-            /><br />Search implementation for static sites</a
-          >
+        <ul>
           
-
-          <a class="button" href="#commentsforstaticsites"
-            ><img
-              src="../assets/doc_32.png"
-              style="width: 32px"
-            /><br />Comment implementation for static sites</a
-          >
+          <li class="note">
+            <a href="#SVG+filters">SVG filters</a>
+          </li>
           
-
-          <a class="button" href="#kivymd"
-            ><img
-              src="../assets/doc_32.png"
-              style="width: 32px"
-            /><br />kivyMD notes</a
-          >
+          <li class="note">
+            <a href="#Dither+images">Dither?</a>
+          </li>
           
-        </section>
+          <li class="note">
+            <a href="#static+search">Search implementation for static sites</a>
+          </li>
+          
+          <li class="note">
+            <a href="#commentsforstaticsites">Comment implementation for static sites</a>
+          </li>
+          
+          <li class="note">
+            <a href="#kivymd">kivyMD notes</a>
+          </li>
+          
+        </ul>
+
+        
       </nav>
 
       <!-- doc -->
 
        
-      <article>
-        <a id="static+search" href="#static+search">
-          <h1>Search implementation for static sites</h1>
-        </a>
+      <article id="SVG+filters">
+        <h1>
+          <a id="SVG+filters" href="#SVG+filters">SVG filters</a>
+        </h1>
+
+        <p>Online generators:</p>
+<ul>
+<li><a href="https://svgfilters.com/">https://svgfilters.com/</a></li>
+<li><a href="https://yoksel.github.io/svg-filters/#/">https://yoksel.github.io/svg-filters/#/</a></li>
+</ul> 
+        <footer>
+          
+          <p>Date 4/10/2021</p>
+          <p>./development/SVG filters.md</p>
+        </footer>
+        <hr />
+        <p style="text-align: center"><a href="#top">⌅</a></p>
+      </article>
+
+      
+      <article id="Dither+images">
+        <h1>
+          <a id="Dither+images" href="#Dither+images">Dither?</a>
+        </h1>
+
+        <p>Why dither?</p>
+<ul>
+<li><a href="https://endtimes.dev/why-you-should-dither-images/">https://endtimes.dev/why-you-should-dither-images/</a></li>
+<li>[[<a href="#Dither+imagesNotes">low tech</a>]] magazine mentions dithering as a means to minimize resources <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website/">https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website/</a></li>
+</ul>    
+        
+        <h3>Further notes</h3>
+        
+
+        <p>
+          <a id="Dither+imagesNotes">↳</a>  Low tech mentioned in:
+          <a
+            href="https://wiki.rjcalow.co.uk/www/newsletters/#lowtech"
+            >Low tech</a
+          >
+
+          <a href="../search/?=low+tech">🔍</a>
+        </p>
+          
+        <footer>
+          
+          <p>Date 3/10/2021</p>
+          <p>./development/Dither images.md</p>
+        </footer>
+        <hr />
+        <p style="text-align: center"><a href="#top">⌅</a></p>
+      </article>
+
+      
+      <article id="static+search">
+        <h1>
+          <a id="static+search" href="#static+search">Search implementation for static sites</a>
+        </h1>
 
         <p>Options:</p>
 <ul>
@@ -68,20 +177,20 @@
 <li><a href="https://github.com/healeycodes/crane-search">crane</a> - inspired by above, writen in go.</li>
 </ul>
 <p>For this digital garden/wiki I went with <a href="https://codepen.io/GDur/pen/gMpzXz">lunr.js with a html &gt; JSON function</a>. Considering that it uses a custom python static site generator, I can bypass indexing and instead include a page with all the notes that can be searched.</p> 
-        
-        
         <footer>
-          # ./development/static search.md | 25/9/2021 
+          
+          <p>Date 25/9/2021</p>
+          <p>./development/static search.md</p>
         </footer>
         <hr />
-        <p class=""><a href="#top">Back to top</a></p>
+        <p style="text-align: center"><a href="#top">⌅</a></p>
       </article>
 
       
-      <article>
-        <a id="commentsforstaticsites" href="#commentsforstaticsites">
-          <h1>Comment implementation for static sites</h1>
-        </a>
+      <article id="commentsforstaticsites">
+        <h1>
+          <a id="commentsforstaticsites" href="#commentsforstaticsites">Comment implementation for static sites</a>
+        </h1>
 
         <p>In the future, I would like to implement a comment system in my static-based digital garden ecosystem. However, I want to avoid third-party services that track and sell data. Nasty.</p>
 <p>Possible methodologies</p>
@@ -90,20 +199,20 @@
 <li><a href="https://cactus.chat/demo/">https://cactus.chat/demo/</a></li>
 <li>email?</li>
 </ul> 
-        
-        
         <footer>
-          # ./development/commentsforstaticsites.md | 2/8/2021 
+          
+          <p>Date 2/8/2021</p>
+          <p>./development/commentsforstaticsites.md</p>
         </footer>
         <hr />
-        <p class=""><a href="#top">Back to top</a></p>
+        <p style="text-align: center"><a href="#top">⌅</a></p>
       </article>
 
       
-      <article>
-        <a id="kivymd" href="#kivymd">
-          <h1>kivyMD notes</h1>
-        </a>
+      <article id="kivymd">
+        <h1>
+          <a id="kivymd" href="#kivymd">kivyMD notes</a>
+        </h1>
 
         <h4>buildozer.spec requirements</h4>
 <p>For building KivyMD apps you have to include the pillow package otherwise it will build the apk without error but crash on android.</p>
@@ -112,7 +221,6 @@
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy==2.0.0,kivymd==0.104.1,pillow
 </code></pre>
-
 <h4>Problems</h4>
 <p>kivyMD material icons not loading on android. </p>
 <p>Solution: include kivymd master.zip and sdl2 in buildozer.spec.</p>
@@ -120,33 +228,30 @@ requirements = python3,kivy==2.0.0,kivymd==0.104.1,pillow
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow
 </code></pre>
-
 <h4>Documents</h4>
 <ul>
 <li><a href="https://kivymd.readthedocs.io/en/latest/">https://kivymd.readthedocs.io/en/latest/</a></li>
 </ul> 
-        
-        
         <footer>
-          # ./development/kivymd.md | 30/7/2021 | Updated 1/8/2021
+          
+          <p>Amended 1/8/2021</p>
+          
+          <p>Date 30/7/2021</p>
+          <p>./development/kivymd.md</p>
         </footer>
         <hr />
-        <p class=""><a href="#top">Back to top</a></p>
+        <p style="text-align: center"><a href="#top">⌅</a></p>
       </article>
 
       
-    </div>
+    </main>
 
     <!-- footer -->
     <footer>
       <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
 
       <p>📧 8t2pg3mf0@relay.firefox.com.</p>
-      <p>Generated: 29/09/2021</p>
-      <p>
-        <button onclick="change_mode('lightmode');">☀️</button>
-        <button onclick="change_mode('darkmode');">🌔</button>
-      </p>
+      <p>Generated: 06/10/2021</p>
     </footer>
   </body>
 </html>
