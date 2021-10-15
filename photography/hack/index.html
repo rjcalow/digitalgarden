@@ -5,19 +5,22 @@
   <meta charset="utf-8" />
   <title>hack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../assets/2.css" />
+
+  <link rel="stylesheet" href="../../assets/mini.css" />
 
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
   <meta name="author" content="R J Calow" />
 
   <body>
-    <main>
+    <div class="container">
       <header>
         <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
-        <a href="https://wiki.rjcalow.co.uk#about">about</a> <a href="#index">index</a>
+        <a href="https://wiki.rjcalow.co.uk#about">about</a>
+        <a href="https://wiki.rjcalow.co.uk/search">search</a>
 
-        <nav id="index">
+        <details id="index">
+          <summary>./index</summary>
             
           <ul>
              
@@ -71,48 +74,57 @@
                      
           </ul>
            
-        </nav>
+        </details>
       </header>
 
-      <nav>
-        <p>
-          ./<a
-            href="https://wiki.rjcalow.co.uk/photography/"
-            >photography</a
-          >/hack
-        </p>
-        <ul>
+      <main>
+         
+        <details id="notes" class="rcorner" open="">
           
-          <li class="note">
-            <a href="#classic+chrome">Classic Chrome on xpro1</a>
-          </li>
-          
-          <li class="note">
-            <a href="#e-ink">E-ink</a>
-          </li>
-          
-          <li class="note">
-            <a href="#Lumix-TZ10-infrared-conversion">LUMIX TZ10 INFRARED CONVERSION</a>
-          </li>
-          
-          <li class="note">
-            <a href="#35mm+Holga">35mm film in a Holga</a>
-          </li>
-          
-        </ul>
 
-        
-      </nav>
+            <summary>
+              ./<a
+                href="https://wiki.rjcalow.co.uk/photography/"
+                >photography</a
+              >/hack
+            </summary>
+            <ul>
+              
+              <li class="note">
+                <a href="#classic+chrome">Classic Chrome on xpro1</a>
+              </li>
+              
+              <li class="note">
+                <a href="#e-ink">E-ink</a>
+              </li>
+              
+              <li class="note">
+                <a href="#Lumix-TZ10-infrared-conversion">LUMIX TZ10 INFRARED CONVERSION</a>
+              </li>
+              
+              <li class="note">
+                <a href="#35mm+Holga">35mm film in a Holga</a>
+              </li>
+              
+            </ul>
 
-      <!-- doc -->
+             
+          </details>
+          
 
-       
-      <article id="classic+chrome">
-        <h1>
-          <a id="classic+chrome" href="#classic+chrome">Classic Chrome on xpro1</a>
-        </h1>
+        <!-- doc -->
 
-        <p>The x-pro1 lacks my go-to fuji film simulation. </p>
+         
+
+        <article id="classic+chrome">
+          <div class="column articlebody">
+            <h1>
+              <a id="classic+chrome" href="#classic+chrome"
+                >Classic Chrome on xpro1</a
+              >
+            </h1>
+
+            <p>The x-pro1 lacks my go-to fuji film simulation. </p>
 <h4>Solution: Use PRO Neg. Std with the following recipe</h4>
 <p>It makes a near match and saves time in post.</p>
 <blockquote>
@@ -130,23 +142,30 @@
 </blockquote>
 <h4>Another solution is to use a dcp profile in post</h4>
 <p>My .dcp I baked is at <a href="https://github.com/rjcalow/Fujixpro1chrome/">https://github.com/rjcalow/Fujixpro1chrome/</a></p>
-<p>Results were mixed. You can try baking your own at <a href="https://github.com/abpy/FujifilmCameraProfiles">abpy/FujifilmCameraProfiles</a>.</p> 
-        <footer>
+<p>Results were mixed. You can try baking your own at <a href="https://github.com/abpy/FujifilmCameraProfiles">abpy/FujifilmCameraProfiles</a>.</p>
+
+            <footer>
+              
+              <p>Date 29/4/2021</p>
+              <p>./photography/hack/classic chrome.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <p>Date 29/4/2021</p>
-          <p>./photography/hack/classic chrome.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-      <article id="e-ink">
-        <h1>
-          <a id="e-ink" href="#e-ink">E-ink</a>
-        </h1>
+        
 
-        <h4>termux-camera-to-kindle.sh</h4>
+        <article id="e-ink">
+          <div class="column articlebody">
+            <h1>
+              <a id="e-ink" href="#e-ink"
+                >E-ink</a
+              >
+            </h1>
+
+            <h4>termux-camera-to-kindle.sh</h4>
 <p>Inspired by <a href="https://www.bjp-online.com/2018/05/cairnstateshape/">Antony Cairns</a>. This short script was a tiny side project during my COVID restricted masters in photography. With no access to a darkroom I experimented with obscure/misunderstood digital technologies for image-making. </p>
 <p>The aim is to demonstrate e-ink technology as a medium for reproduction and the act of repurposing a commercial artefact for unconventional means (in this case appropriating monochrome images -the more indeterminate and abstract the better). </p>
 <figure><img alt="" src="../../imgs/kindle.jpg" /><figcaption></figcaption>
@@ -164,23 +183,30 @@
 <figure><img alt="" src="../../imgs/img20200501_11424010.jpg" /><figcaption></figcaption>
 </figure>
 <h4>Reflection</h4>
-<p>This started as a unconventional experiment during the pandemic quarantine, one that approaches {nature-culture} theme from a different approach. The more I reflect on it, the less unreasonable it becomes. The act of repurposing cultural artefact for another purpose is a subversive act, mimicking an aspect of the core theme. Additionally it offers discourse on cultural/digital appropriation of nature.</p> 
-        <footer>
+<p>This started as a unconventional experiment during the pandemic quarantine, one that approaches {nature-culture} theme from a different approach. The more I reflect on it, the less unreasonable it becomes. The act of repurposing cultural artefact for another purpose is a subversive act, mimicking an aspect of the core theme. Additionally it offers discourse on cultural/digital appropriation of nature.</p>
+
+            <footer>
+              
+              <p>Date 1/9/2020</p>
+              <p>./photography/hack/e-ink.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <p>Date 1/9/2020</p>
-          <p>./photography/hack/e-ink.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-      <article id="Lumix-TZ10-infrared-conversion">
-        <h1>
-          <a id="Lumix-TZ10-infrared-conversion" href="#Lumix-TZ10-infrared-conversion">LUMIX TZ10 INFRARED CONVERSION</a>
-        </h1>
+        
 
-        <figure><img alt="" src="../../imgs/img_20180602_001631.jpg" /><figcaption></figcaption>
+        <article id="Lumix-TZ10-infrared-conversion">
+          <div class="column articlebody">
+            <h1>
+              <a id="Lumix-TZ10-infrared-conversion" href="#Lumix-TZ10-infrared-conversion"
+                >LUMIX TZ10 INFRARED CONVERSION</a
+              >
+            </h1>
+
+            <figure><img alt="" src="../../imgs/img_20180602_001631.jpg" /><figcaption></figcaption>
 </figure>
 <p>Remove the back panel by removing screws on the sides and bottom. Carefully remove the panel, and unclip the lcd power and data cables by opening their latches. This can be fiddly so take time. Also the preview switch (top right) can fly-out when taking the back off, but its not hard to put back.</p>
 <figure><img alt="The back panel" src="../../imgs/img_20180601_1148401.jpg" /><figcaption>The back panel</figcaption>
@@ -199,24 +225,31 @@
 </figure>
 <p>Apply an infrared filter and set the camera to black and white.</p>
 <figure><img alt="Result" src="../../imgs/p1010001.jpg" /><figcaption>Result</figcaption>
-</figure> 
-        <footer>
+</figure>
+
+            <footer>
+              
+              <p>Date 11/9/2018</p>
+              <p>./photography/hack/Lumix-TZ10-infrared-conversion.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <p>Date 11/9/2018</p>
-          <p>./photography/hack/Lumix-TZ10-infrared-conversion.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-      <article id="35mm+Holga">
-        <h1>
-          <a id="35mm+Holga" href="#35mm+Holga">35mm film in a Holga</a>
-        </h1>
+        
 
-        <p><code>orginally from a blog post</code></p>
-<p>[[<a href="#35mm+HolgaNotes">Holga</a>]] setup involving foam packaging and rubber bands:</p>
+        <article id="35mm+Holga">
+          <div class="column articlebody">
+            <h1>
+              <a id="35mm+Holga" href="#35mm+Holga"
+                >35mm film in a Holga</a
+              >
+            </h1>
+
+            <p><code>orginally from a blog post</code></p>
+<p>[[Holga]] setup involving foam packaging and rubber bands:</p>
 <figure><img alt="Foam packaging peanuts jammed around a 35mm canister and a 120 spool fitted with 2 elastic bands" src="../../imgs/wp-image-1338463176jpg-e1488664116132.jpg" /> <figcaption>Foam packaging peanuts jammed around a 35mm canister and a 120 spool fitted with 2 elastic bands</figcaption>
 </figure>
 <p>The results show a lot of messed up compositions where I should have had the camera either lower or more to the left. Its hard to judge what will be in frame or not. The images I took are around Lincoln.</p>
@@ -229,44 +262,52 @@
 <figure> <img alt="Michaelgate" src="../../imgs/2017-03-04-00031.jpg" /><figcaption>Michaelgate</figcaption>
 </figure>
 <figure><img alt="Wordsworth street" src="../../imgs/2017-03-04-00091.jpg" /><figcaption>Wordsworth street</figcaption>
-</figure>    
-        
-        <h3>Further notes</h3>
-        
+</figure>
 
-        <p>
-          <a id="35mm+HolgaNotes">↳</a>  Holga mentioned in:
-          <a
-            href="https://wiki.rjcalow.co.uk/photography/essay/#toy+camera+landscape"
-            >Exploring a landscape with handmade cameras</a
-          >
+            <footer>
+              
+              <p>Date 4/3/2017</p>
+              <p>./photography/hack/35mm Holga.md</p>
+            </footer>
+          </div>
 
-          <a
-            href="https://wiki.rjcalow.co.uk/photography/pinhole/#holga+wpc"
-            >Holga wpc exposure table</a
-          >
-
-          <a href="../../search/?=holga">🔍</a>
-        </p>
+          <!-- backlinks -->
           
-        <footer>
+          <aside class="column">
+            <h4>Backlinks</h4>
+            
+            <ul>
+               Holga:
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/photography/essay/#toy+camera+landscape"
+                  >Exploring a landscape with handmade cameras</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/photography/pinhole/#holga+wpc"
+                  >Holga wpc exposure table</a
+                >
+              </li>
+
+              
+            </ul>
+
+            
+          </aside>
           
-          <p>Date 4/3/2017</p>
-          <p>./photography/hack/35mm Holga.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-    </main>
+        
+      </main>
 
-    <!-- footer -->
-    <footer>
-      <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
-
-      <p>📧 8t2pg3mf0@relay.firefox.com.</p>
-      <p>Generated: 06/10/2021</p>
-    </footer>
+      <!-- footer -->
+      <footer>
+        <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
+        <p>📧 8t2pg3mf0@relay.firefox.com.</p>
+        <p>⚙️ Generated on 15/10/2021.</p>
+      </footer>
+    </div>
   </body>
 </html>

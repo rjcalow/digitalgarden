@@ -5,19 +5,22 @@
   <meta charset="utf-8" />
   <title>digital workflow</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../assets/2.css" />
+
+  <link rel="stylesheet" href="../../assets/mini.css" />
 
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
   <meta name="author" content="R J Calow" />
 
   <body>
-    <main>
+    <div class="container">
       <header>
         <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
-        <a href="https://wiki.rjcalow.co.uk#about">about</a> <a href="#index">index</a>
+        <a href="https://wiki.rjcalow.co.uk#about">about</a>
+        <a href="https://wiki.rjcalow.co.uk/search">search</a>
 
-        <nav id="index">
+        <details id="index">
+          <summary>./index</summary>
             
           <ul>
              
@@ -71,100 +74,158 @@
                      
           </ul>
            
-        </nav>
+        </details>
       </header>
 
-      <nav>
-        <p>
-          ./<a
-            href="https://wiki.rjcalow.co.uk/photography/"
-            >photography</a
-          >/digital workflow
-        </p>
-        <ul>
+      <main>
+         
+        <details id="notes" class="rcorner" open="">
           
-          <li class="note">
-            <a href="#fujifilm-xf10">Fujifilm xf10</a>
-          </li>
+
+            <summary>
+              ./<a
+                href="https://wiki.rjcalow.co.uk/photography/"
+                >photography</a
+              >/digital workflow
+            </summary>
+            <ul>
+              
+              <li class="note">
+                <a href="#ffmpeg">FFmpeg</a>
+              </li>
+              
+              <li class="note">
+                <a href="#fujifilm-xf10">Fujifilm xf10</a>
+              </li>
+              
+              <li class="note">
+                <a href="#silkypix-xf10-profile">Silkypix profile for the fuji xf10</a>
+              </li>
+              
+              <li class="note">
+                <a href="#silkypix-noise-reduction">Silkypix noise reduction</a>
+              </li>
+              
+            </ul>
+
+             
+          </details>
           
-          <li class="note">
-            <a href="#silkypix-xf10-profile">Silkypix profile for the fuji xf10</a>
-          </li>
+
+        <!-- doc -->
+
+         
+
+        <article id="ffmpeg">
+          <div class="column articlebody">
+            <h1>
+              <a id="ffmpeg" href="#ffmpeg"
+                >FFmpeg</a
+              >
+            </h1>
+
+            <h3>Screencaping a video</h3>
+<p>Screenshot every 60 seconds:</p>
+<p><code>ffmpeg -i myvideo.avi -vf fps=1/60 img%03d.jpg</code></p>
+<h3>HQ jpegs</h3>
+<p>Use within command:</p>
+<p><code>qscale:v 1 -qmin 1 -qmax 1</code></p>
+
+            <footer>
+              
+              <p>Date 9/10/2021</p>
+              <p>./photography/digital+workflow/ffmpeg.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <li class="note">
-            <a href="#silkypix-noise-reduction">Silkypix noise reduction</a>
-          </li>
-          
-        </ul>
+        </article>
 
         
-      </nav>
 
-      <!-- doc -->
+        <article id="fujifilm-xf10">
+          <div class="column articlebody">
+            <h1>
+              <a id="fujifilm-xf10" href="#fujifilm-xf10"
+                >Fujifilm xf10</a
+              >
+            </h1>
 
-       
-      <article id="fujifilm-xf10">
-        <h1>
-          <a id="fujifilm-xf10" href="#fujifilm-xf10">Fujifilm xf10</a>
-        </h1>
-
-        <h4>Lightroom ISO adaptive preset</h4>
+            <h4>Lightroom ISO adaptive preset</h4>
 <p>by <a href="https://gist.github.com/MtPython">MtPython</a></p>
-<script src="https://gist.github.com/MtPython/1b384b44c9c53c7ce31140350e7de4de.js"></script> 
-        <footer>
+<script src="https://gist.github.com/MtPython/1b384b44c9c53c7ce31140350e7de4de.js"></script>
+
+            <footer>
+              
+              <p>Date 29/4/2021</p>
+              <p>./photography/digital+workflow/fujifilm-xf10.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <p>Date 29/4/2021</p>
-          <p>./photography/digital+workflow/fujifilm-xf10.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-      <article id="silkypix-xf10-profile">
-        <h1>
-          <a id="silkypix-xf10-profile" href="#silkypix-xf10-profile">Silkypix profile for the fuji xf10</a>
-        </h1>
+        
 
-        <p>My silkypix 10 xf10 Chrome low saturation, slight hdr, sharpening, and low noise removal.</p>
+        <article id="silkypix-xf10-profile">
+          <div class="column articlebody">
+            <h1>
+              <a id="silkypix-xf10-profile" href="#silkypix-xf10-profile"
+                >Silkypix profile for the fuji xf10</a
+              >
+            </h1>
+
+            <p>My silkypix 10 xf10 Chrome low saturation, slight hdr, sharpening, and low noise removal.</p>
 <p>Can be <a href="https://gist.github.com/rjcalow/b3cd80e6b440add0ffb8bcae1ab2d649">downloaded on github gist</a> as an ST6 file.</p>
-<script src="https://gist.github.com/rjcalow/b3cd80e6b440add0ffb8bcae1ab2d649.js"></script> 
-        <footer>
+<script src="https://gist.github.com/rjcalow/b3cd80e6b440add0ffb8bcae1ab2d649.js"></script>
+
+            <footer>
+              
+              <p>Date 16/11/2020</p>
+              <p>./photography/digital+workflow/silkypix-xf10-profile.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <p>Date 16/11/2020</p>
-          <p>./photography/digital+workflow/silkypix-xf10-profile.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-      <article id="silkypix-noise-reduction">
-        <h1>
-          <a id="silkypix-noise-reduction" href="#silkypix-noise-reduction">Silkypix noise reduction</a>
-        </h1>
+        
 
-        <p>For whatever reason, by default silkypix 10 applies a heavy noise reduction. Leaving the image like a watercolour. For my Fuji's, I use the fine detail setting and lower the smoothness. </p>
+        <article id="silkypix-noise-reduction">
+          <div class="column articlebody">
+            <h1>
+              <a id="silkypix-noise-reduction" href="#silkypix-noise-reduction"
+                >Silkypix noise reduction</a
+              >
+            </h1>
+
+            <p>For whatever reason, by default silkypix 10 applies a heavy noise reduction. Leaving the image like a watercolour. For my Fuji's, I use the fine detail setting and lower the smoothness. </p>
 <figure><img alt="Noise reduction panel" src="../../imgs/image-20201114204227312.jpg" /><figcaption>Noise reduction panel</figcaption>
-</figure> 
-        <footer>
+</figure>
+
+            <footer>
+              
+              <p>Date 14/11/2020</p>
+              <p>./photography/digital+workflow/silkypix-noise-reduction.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <p>Date 14/11/2020</p>
-          <p>./photography/digital+workflow/silkypix-noise-reduction.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-    </main>
+        
+      </main>
 
-    <!-- footer -->
-    <footer>
-      <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
-
-      <p>📧 8t2pg3mf0@relay.firefox.com.</p>
-      <p>Generated: 06/10/2021</p>
-    </footer>
+      <!-- footer -->
+      <footer>
+        <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
+        <p>📧 8t2pg3mf0@relay.firefox.com.</p>
+        <p>⚙️ Generated on 15/10/2021.</p>
+      </footer>
+    </div>
   </body>
 </html>

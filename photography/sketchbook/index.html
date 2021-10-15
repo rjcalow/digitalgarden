@@ -5,19 +5,22 @@
   <meta charset="utf-8" />
   <title>sketchbook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../assets/2.css" />
+
+  <link rel="stylesheet" href="../../assets/mini.css" />
 
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
   <meta name="author" content="R J Calow" />
 
   <body>
-    <main>
+    <div class="container">
       <header>
         <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
-        <a href="https://wiki.rjcalow.co.uk#about">about</a> <a href="#index">index</a>
+        <a href="https://wiki.rjcalow.co.uk#about">about</a>
+        <a href="https://wiki.rjcalow.co.uk/search">search</a>
 
-        <nav id="index">
+        <details id="index">
+          <summary>./index</summary>
             
           <ul>
              
@@ -71,62 +74,78 @@
                      
           </ul>
            
-        </nav>
+        </details>
       </header>
 
-      <nav>
-        <p>
-          ./<a
-            href="https://wiki.rjcalow.co.uk/photography/"
-            >photography</a
-          >/sketchbook
-        </p>
-        <ul>
+      <main>
+         
+        <details id="notes" class="rcorner" open="">
           
-          <li class="note">
-            <a href="#estovers">Estovers</a>
-          </li>
+
+            <summary>
+              ./<a
+                href="https://wiki.rjcalow.co.uk/photography/"
+                >photography</a
+              >/sketchbook
+            </summary>
+            <ul>
+              
+              <li class="note">
+                <a href="#estovers">Estovers</a>
+              </li>
+              
+              <li class="note">
+                <a href="#monachopsis">Monachopsis</a>
+              </li>
+              
+              <li class="note">
+                <a href="#Unoccupied">Unoccupied</a>
+              </li>
+              
+            </ul>
+
+             
+          </details>
           
-          <li class="note">
-            <a href="#monachopsis">Monachopsis</a>
-          </li>
+
+        <!-- doc -->
+
+         
+
+        <article id="estovers">
+          <div class="column articlebody">
+            <h1>
+              <a id="estovers" href="#estovers"
+                >Estovers</a
+              >
+            </h1>
+
+            <figure><img alt="" src="../../imgs/9a5ac841-a03b-4a0a-a494-9d71737cc583_1200x800.gif" /><figcaption></figcaption>
+</figure>
+<p><em>Estovers</em> : the right to the wood on a common. This might be whole trees or <a href="https://www.nationaltrust.org.uk/little-dartmouth/features/what-is-woodland-coppicing">coppicing</a> for firewood. The word <em>Estovers</em> derives from old french <em>estovoir</em> -to be necessary<em>,</em> and Latin <em>est opus</em> -there is need (<a href="https://www.collinsdictionary.com/dictionary/english/estovers">collins</a>). The etymology emphases appropriating land as a necessity.</p>
+
+            <footer>
+              
+              <p>Date 14/03/2021</p>
+              <p>./photography/sketchbook/estovers.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <li class="note">
-            <a href="#Unoccupied">Unoccupied</a>
-          </li>
-          
-        </ul>
+        </article>
 
         
-      </nav>
 
-      <!-- doc -->
+        <article id="monachopsis">
+          <div class="column articlebody">
+            <h1>
+              <a id="monachopsis" href="#monachopsis"
+                >Monachopsis</a
+              >
+            </h1>
 
-       
-      <article id="estovers">
-        <h1>
-          <a id="estovers" href="#estovers">Estovers</a>
-        </h1>
-
-        <figure><img alt="" src="../../imgs/9a5ac841-a03b-4a0a-a494-9d71737cc583_1200x800.gif" /><figcaption></figcaption>
-</figure>
-<p><em>Estovers</em> : the right to the wood on a common. This might be whole trees or <a href="https://www.nationaltrust.org.uk/little-dartmouth/features/what-is-woodland-coppicing">coppicing</a> for firewood. The word <em>Estovers</em> derives from old french <em>estovoir</em> -to be necessary<em>,</em> and Latin <em>est opus</em> -there is need (<a href="https://www.collinsdictionary.com/dictionary/english/estovers">collins</a>). The etymology emphases appropriating land as a necessity.</p> 
-        <footer>
-          
-          <p>Date 14/03/2021</p>
-          <p>./photography/sketchbook/estovers.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
-
-      
-      <article id="monachopsis">
-        <h1>
-          <a id="monachopsis" href="#monachopsis">Monachopsis</a>
-        </h1>
-
-        <p><em>Noun.</em> The subtle but persistent feeling of being out of place, as maladapted to your surroundings as a seal on a beach.</p>
+            <p><em>Noun.</em> The subtle but persistent feeling of being out of place, as maladapted to your surroundings as a seal on a beach.</p>
 <p>I came across this term reading <a href="https://www.penguin.co.uk/books/305/305463/losing-eden/9780141992617.html">Losing Eden</a>. A lot of my work fits the concept.</p>
 <figure><img alt="" src="../../imgs/50737bc3-cdad-4378-aaaa-045166abf021_710x517.jpeg" /><figcaption></figcaption>
 </figure>
@@ -148,112 +167,139 @@
 <h5><strong>Bibliography</strong></h5>
 <p>Jorgensen, A. and Tylecote, M. (2007) <em>Ambivalent landscapes—wilderness in the urban interstices</em>, Landscape Research, 32(4), pp. 443–462.</p>
 <p>Shoard, M. (2000). <em>Edgelands of Promise</em>. <a href="https://doi.org/10.1179/lan.2000.1.2.74">https://doi.org/10.1179/lan.2000.1.2.74</a></p>
-<p>Snippet from <a href="https://roadsidepicnic.substack.com/p/nature-and-monachopsis">https://roadsidepicnic.substack.com/p/nature-and-monachopsis</a></p> 
-        <footer>
+<p>Snippet from <a href="https://roadsidepicnic.substack.com/p/nature-and-monachopsis">https://roadsidepicnic.substack.com/p/nature-and-monachopsis</a></p>
+
+            <footer>
+              
+              <p>Date 28/2/2021</p>
+              <p>./photography/sketchbook/monachopsis.md</p>
+            </footer>
+          </div>
+
+          <!-- backlinks -->
           
-          <p>Date 28/2/2021</p>
-          <p>./photography/sketchbook/monachopsis.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-      <article id="Unoccupied">
-        <h1>
-          <a id="Unoccupied" href="#Unoccupied">Unoccupied</a>
-        </h1>
+        
 
-        <p>I found this abandoned tent last year whilst carrying out photographic work for my masters. Since then I've made repeated visits to this [[<a href="#UnoccupiedNotes">wildscape</a>]] between an encroaching urban housing estate, recreational field, and banal rural agrarian fields.   </p>
+        <article id="Unoccupied">
+          <div class="column articlebody">
+            <h1>
+              <a id="Unoccupied" href="#Unoccupied"
+                >Unoccupied</a
+              >
+            </h1>
+
+            <p>I found this abandoned tent last year whilst carrying out photographic work for my masters. Since then I've made repeated visits to this [[wildscape]] between an encroaching urban housing estate, recreational field, and banal rural agrarian fields.   </p>
 <p>In summer I captured the surrounding nature engulf the collapsed tent, only to fall in the wet autumn, and later snow in the winter. I am wondering what the long term effects are going to be. Will the freezing winter break down the plastic or will next years bramble and fern completely envelop it and grow through the material. </p>
 <p>Despite the passing of time and the repeated visits, I have only just started making suitable sequences. Photographic projects can be slow.</p>
-<p>Beside the environmental documentation, the aim is part of a larger personal project escaping stale urbanity (and covid) for the liberating {marginal spaces} and their {tiers-paysage} nature. A similar contemporary narrative lifted from [[<a href="#UnoccupiedNotes">Stalker</a>]].</p>
+<p>Beside the environmental documentation, the aim is part of a larger personal project escaping stale urbanity (and covid) for the liberating {marginal spaces} and their {tiers-paysage} nature. A similar contemporary narrative lifted from [[Stalker]].</p>
 <figure><img alt="Summer" src="../../imgs/tent_dec_2020.jpg" /><figcaption>Summer</figcaption>
 </figure>
 <figure><img alt="Autumn" src="../../imgs/tent_dec_2020_2.jpg" /><figcaption>Autumn</figcaption>
 </figure>
 <figure><img alt="Winter" src="../../imgs/tent_dec_2020_3.jpg" /><figcaption>Winter</figcaption>
 </figure>
-<p>At the time of writing, better resolution images can be found on the main website.</p>    
-        
-        <h3>Further notes</h3>
-        
+<p>At the time of writing, better resolution images can be found on the main website.</p>
 
-        <p>
-          <a id="UnoccupiedNotes">↳</a>  Wildscape mentioned in:
-          <a
-            href="https://wiki.rjcalow.co.uk/landscape/#Marginal-Space"
-            >Marginal space</a
-          >
+            <footer>
+              
+              <p>Date 18/12/2020</p>
+              <p>./photography/sketchbook/Unoccupied.md</p>
+            </footer>
+          </div>
 
-          <a
-            href="https://wiki.rjcalow.co.uk/photography/essay/#Artist+statement+for+Snag++Inflorescence"
-            >Artist statement for Snag / Inflorescence</a
-          >
-
-          <a
-            href="https://wiki.rjcalow.co.uk/bookcase/margins/#Ambivalent-landscapes"
-            >Ambivalent landscapes—wilderness in the urban interstices (2007)</a
-          >
-
-          <a
-            href="https://wiki.rjcalow.co.uk/bookcase/margins/#Urban-Wildscapes"
-            >Urban Wildscapes (2012)</a
-          >
-
-          <a href="../../search/?=wildscape">🔍</a>
-        </p>
-           
-        
-
-        <p>
-          <a id="UnoccupiedNotes">↳</a>  Stalker mentioned in:
-          <a
-            href="https://wiki.rjcalow.co.uk/landscape/#Terrain-vague"
-            >Terrain vague</a
-          >
-
-          <a
-            href="https://wiki.rjcalow.co.uk/photography/essay/#Artist+statement+for+Snag++Inflorescence"
-            >Artist statement for Snag / Inflorescence</a
-          >
-
-          <a
-            href="https://wiki.rjcalow.co.uk/film/#Stalker-1979"
-            >Stalker (1979)</a
-          >
-
-          <a
-            href="https://wiki.rjcalow.co.uk/film/#Annihilation-2018"
-            >Annihilation (2018)</a
-          >
-
-          <a
-            href="https://wiki.rjcalow.co.uk/photography/walking/#zone"
-            >Zone, David Bate, 2011</a
-          >
-
-          <a href="../../search/?=stalker">🔍</a>
-        </p>
+          <!-- backlinks -->
           
-        <footer>
+          <aside class="column">
+            <h4>Backlinks</h4>
+            
+            <ul>
+               Wildscape:
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/landscape/#Marginal-Space"
+                  >Marginal space</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/photography/essay/#Artist+statement+for+Snag++Inflorescence"
+                  >Artist statement for Snag / Inflorescence</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/bookcase/margins/#Ambivalent-landscapes"
+                  >Ambivalent landscapes—wilderness in the urban interstices (2007)</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/bookcase/margins/#Urban-Wildscapes"
+                  >Urban Wildscapes (2012)</a
+                >
+              </li>
+
+              
+            </ul>
+
+            
+            <ul>
+               Stalker:
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/landscape/#Terrain-vague"
+                  >Terrain vague</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/photography/essay/#Artist+statement+for+Snag++Inflorescence"
+                  >Artist statement for Snag / Inflorescence</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/film/#Stalker-1979"
+                  >Stalker (1979)</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/film/#Annihilation-2018"
+                  >Annihilation (2018)</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/photography/walking/#zone"
+                  >Zone, David Bate, 2011</a
+                >
+              </li>
+
+              
+            </ul>
+
+            
+          </aside>
           
-          <p>Date 18/12/2020</p>
-          <p>./photography/sketchbook/Unoccupied.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-    </main>
+        
+      </main>
 
-    <!-- footer -->
-    <footer>
-      <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
-
-      <p>📧 8t2pg3mf0@relay.firefox.com.</p>
-      <p>Generated: 06/10/2021</p>
-    </footer>
+      <!-- footer -->
+      <footer>
+        <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
+        <p>📧 8t2pg3mf0@relay.firefox.com.</p>
+        <p>⚙️ Generated on 15/10/2021.</p>
+      </footer>
+    </div>
   </body>
 </html>

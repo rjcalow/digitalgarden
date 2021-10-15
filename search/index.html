@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>wiki.rjcalow.co.uk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../assets/2.css" />
+  <link rel="stylesheet" href="../assets/mini.css" />
   <script src="../assets/scripts.js"></script>
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
@@ -12,14 +12,11 @@
   <script src="https://unpkg.com/lunr/lunr.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <style>
-  @media (prefers-color-scheme: dark){
-    #searchterm {
-      background: var(--bk);
-      color: var(--tc);
+    body {
+      transition: all 1s ease-in-out;
     }
-
-  }
-    .show{
+    /* for lame js search page */
+    .show {
       display: block !important;
     }
     .snippet {
@@ -28,16 +25,47 @@
     }
     #question-list-container li {
       display: none;
-      margin: 23px 0;
+      margin: 1em;
+      padding: 5px;
+      width: 100%;
+    }
+
+    #question-list-container ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .searchbox {
+      width: 95%;
+      margin: auto;
+    }
+
+    .searchbox input {
+      transition: width 0.4s ease-in-out;
+      width: 6em;
+      padding: 20px 12px;
+      font-family: monospace;
+      border: 1px solid lightgray;
+    }
+
+    .searchbox input:focus {
+      width: 100%;
+    }
+
+    .questions p {
+      display: inline;
+    }
+
+    main {
+      width: 95%;
     }
   </style>
   <body>
-    <main>
-      <header>
+     <header>
         <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
-        <a href="https://wiki.rjcalow.co.uk#about">about</a> <a href="#index">index</a>
-
-        <nav id="index">
+        <a href="https://wiki.rjcalow.co.uk/#about">about</a> <a href="#">search</a> 
+        <details id="index" >
+        <summary>index</summary>
             
           <ul>
              
@@ -91,16 +119,16 @@
                      
           </ul>
            
-        </nav>
+        </details>
       </header>
-
+    <main>
       <div class="searchbox">
         <input
           id="searchterm"
           class=""
           type="text"
           id="sample3"
-          placeholder="Search"
+          placeholder="🔍 Search"
         />
       </div>
 
@@ -1275,6 +1303,25 @@ Bodoni
                
             <li data-question-id="151">
               <p>
+                <a href="../photography/digital+workflow/#ffmpeg"
+                  > FFmpeg</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  digital workflow /  Screencaping a video
+Screenshot every 60 seconds:
+ffmpeg -i myvideo.avi -vf fps=1/60 img%03d.jpg
+HQ jpegs
+Use within command:
+qscale:v 1 -qmin 1 -qmax 1
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="152">
+              <p>
                 <a href="../photography/digital+workflow/#fujifilm-xf10"
                   > Fujifilm xf10</a
                 >
@@ -1289,7 +1336,7 @@ by MtPython
               </section>
             </li>
             
-            <li data-question-id="152">
+            <li data-question-id="153">
               <p>
                 <a href="../photography/digital+workflow/#silkypix-xf10-profile"
                   > Silkypix profile for the fuji xf10</a
@@ -1305,7 +1352,7 @@ Can be downloaded on github gist as an ST6 file.
               </section>
             </li>
             
-            <li data-question-id="153">
+            <li data-question-id="154">
               <p>
                 <a href="../photography/digital+workflow/#silkypix-noise-reduction"
                   > Silkypix noise reduction</a
@@ -2221,6 +2268,24 @@ A PDF is available at  https://razorcake.org/one-punks-guide-gardening-jon-mule/
                
             <li data-question-id="241">
               <p>
+                <a href="../www/digital+gardening/#compostheap"
+                  > I am a compost heap</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  digital gardening /  In the memoir, the getaway car (2011), writer Ann Patchett uses a gardening metaphor for creativity. 
+
+You will take bits from books you’ve read and movies you’ve seen and conversations you’ve had and stories friends have told you, and half the time you won’t even realize you’re doing it. I am a compost heap, and everything I interact with, every experience I’ve had, gets shoveled onto the heap where it eventually mulches down, is digested and excreted by worms, and rots. It’s from that rich, dark humus, the combination of what you encountered, what you know and what you’ve forgotten, that ideas start to grow - Ann Patchett.
+
+Source
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="242">
+              <p>
                 <a href="../www/digital+gardening/#inspiration"
                   > Inspirational gardens</a
                 >
@@ -2242,7 +2307,7 @@ https://github.com/kyrose/awesome-digital-gardens
               </section>
             </li>
             
-            <li data-question-id="242">
+            <li data-question-id="243">
               <p>
                 <a href="../www/digital+gardening/#googleslides"
                   > Antistatic</a

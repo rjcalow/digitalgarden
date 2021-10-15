@@ -5,19 +5,22 @@
   <meta charset="utf-8" />
   <title>psychogeography</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../assets/2.css" />
+
+  <link rel="stylesheet" href="../../assets/mini.css" />
 
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
   <meta name="author" content="R J Calow" />
 
   <body>
-    <main>
+    <div class="container">
       <header>
         <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
-        <a href="https://wiki.rjcalow.co.uk#about">about</a> <a href="#index">index</a>
+        <a href="https://wiki.rjcalow.co.uk#about">about</a>
+        <a href="https://wiki.rjcalow.co.uk/search">search</a>
 
-        <nav id="index">
+        <details id="index">
+          <summary>./index</summary>
             
           <ul>
              
@@ -71,38 +74,47 @@
                      
           </ul>
            
-        </nav>
+        </details>
       </header>
 
-      <nav>
-        <p>
-          ./<a
-            href="https://wiki.rjcalow.co.uk/bookcase/"
-            >bookcase</a
-          >/psychogeography
-        </p>
-        <ul>
+      <main>
+         
+        <details id="notes" class="rcorner" open="">
           
-          <li class="note">
-            <a href="#The+Art+of+Flaneuring">The Art of Flaneuring (2019)</a>
-          </li>
+
+            <summary>
+              ./<a
+                href="https://wiki.rjcalow.co.uk/bookcase/"
+                >bookcase</a
+              >/psychogeography
+            </summary>
+            <ul>
+              
+              <li class="note">
+                <a href="#The+Art+of+Flaneuring">The Art of Flaneuring (2019)</a>
+              </li>
+              
+            </ul>
+
+             
+          </details>
           
-        </ul>
 
-        
-      </nav>
+        <!-- doc -->
 
-      <!-- doc -->
+         
 
-       
-      <article id="The+Art+of+Flaneuring">
-        <h1>
-          <a id="The+Art+of+Flaneuring" href="#The+Art+of+Flaneuring">The Art of Flaneuring (2019)</a>
-        </h1>
+        <article id="The+Art+of+Flaneuring">
+          <div class="column articlebody">
+            <h1>
+              <a id="The+Art+of+Flaneuring" href="#The+Art+of+Flaneuring"
+                >The Art of Flaneuring (2019)</a
+              >
+            </h1>
 
-        <p>by Erika Owen. </p>
+            <p>by Erika Owen. </p>
 <p>A short lifestyle guide to a subject associated with historic Parisian men in top hats or the contemporary psychogeographer stereotype of a white male with walking boots, shorts and hiking bag prowling urban spaces. The author sidesteps esotericism and repackages the flaneur pursuit as a laid back <a href="https://en.wikipedia.org/wiki/Hygge">hygge</a>-equivalent lifestyle to aid wellbeing. </p>
-<p>Flaneurism as a lifestyle is not an outlandish proposal. Think back to when Instagram was fun and engaging. I know it was a long time ago, but content synonymous with the [[<a href="#The+Art+of+FlaneuringNotes">Flâneur</a>]] like food, drink and travel was popular. The app at one time seemed like a plug for a spontaneous-engaging lifestyle. A more relevant simile is the conventional and contemporary domestic tourist navigating the city by foot from tourist attraction to hospitality.</p>
+<p>Flaneurism as a lifestyle is not an outlandish proposal. Think back to when Instagram was fun and engaging. I know it was a long time ago, but content synonymous with the [[Flâneur]] like food, drink and travel was popular. The app at one time seemed like a plug for a spontaneous-engaging lifestyle. A more relevant simile is the conventional and contemporary domestic tourist navigating the city by foot from tourist attraction to hospitality.</p>
 <p>Notes on <em>The Art of Flaneuring</em>:</p>
 <p>Art:</p>
 <ul>
@@ -150,44 +162,52 @@
 <p>Race:</p>
 <ul>
 <li><a href="https://blackoutdoors.wordpress.com/2019/03/29/a-black-flaneur-in-the-hood/">A black flaneur in the hood</a></li>
-</ul>    
-        
-        <h3>Further notes</h3>
-        
+</ul>
 
-        <p>
-          <a id="The+Art+of+FlaneuringNotes">↳</a>  Flâneur mentioned in:
-          <a
-            href="https://wiki.rjcalow.co.uk/photography/zines/#Fl%C3%A2neur"
-            >Flâneur</a
-          >
+            <footer>
+              
+              <p>Date 16/07/2021</p>
+              <p>./bookcase/psychogeography/The Art of Flaneuring.md</p>
+            </footer>
+          </div>
 
-          <a
-            href="https://wiki.rjcalow.co.uk/psychogeography/#D%C3%A9rive"
-            >Dérive</a
-          >
-
-          <a href="../../search/?=fl%C3%A2neur">🔍</a>
-        </p>
+          <!-- backlinks -->
           
-        <footer>
+          <aside class="column">
+            <h4>Backlinks</h4>
+            
+            <ul>
+               Flâneur:
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/photography/zines/#Fl%C3%A2neur"
+                  >Flâneur</a
+                >
+              </li>
+
+              
+              <li>
+                <a href="https://wiki.rjcalow.co.uk/psychogeography/#D%C3%A9rive"
+                  >Dérive</a
+                >
+              </li>
+
+              
+            </ul>
+
+            
+          </aside>
           
-          <p>Date 16/07/2021</p>
-          <p>./bookcase/psychogeography/The Art of Flaneuring.md</p>
-        </footer>
-        <hr />
-        <p style="text-align: center"><a href="#top">⌅</a></p>
-      </article>
+        </article>
 
-      
-    </main>
+        
+      </main>
 
-    <!-- footer -->
-    <footer>
-      <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
-
-      <p>📧 8t2pg3mf0@relay.firefox.com.</p>
-      <p>Generated: 06/10/2021</p>
-    </footer>
+      <!-- footer -->
+      <footer>
+        <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
+        <p>📧 8t2pg3mf0@relay.firefox.com.</p>
+        <p>⚙️ Generated on 15/10/2021.</p>
+      </footer>
+    </div>
   </body>
 </html>
