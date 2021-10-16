@@ -41,7 +41,7 @@ blockquote,
 pre {
   background: white;
   width: 80%;
-  margin: auto;
+  margin: 0.5em auto;
   padding: 0.5em;
   border-radius: 10px;
 }
@@ -64,7 +64,7 @@ article {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  gap: 50px;
+  gap: 4em;
   margin-bottom: 4em;
 }
 
@@ -80,7 +80,7 @@ aside {
   flex: 1;
   align-items: right;
   justify-content: right;
-  max-width: 30ch; /* remove this and go full flex */
+  max-width: 40ch; /* remove this and go full flex */
 }
 aside h4 {
   padding: 0;
@@ -99,7 +99,7 @@ aside ul li {
 }
 
 main details ul li {
-  /*! margin-left:5%;*/
+  margin-left:2em;/*! remove? */
 }
 
 mark,
@@ -124,6 +124,17 @@ img {
   object-fit: contain;
 }
 
+pre,
+code {
+  word-break: break-word; /*! width: 80%; */
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
 #about {
   display: none;
   transition: all 0.5s ease;
@@ -141,14 +152,26 @@ hr {
   margin: 1em 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 799px) {
   body {
     max-width: 95%;
   }
   article {
     flex-direction: column;
+    gap:0;
   }
   .articlebody {
+    
   }
   aside {
     padding: 0;
