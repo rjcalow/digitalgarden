@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <meta charset="utf-8" />
-  <title>pinhole</title>
+  <title>diy micro irrigation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="stylesheet" href="../../assets/mini.css" />
@@ -84,14 +84,14 @@
 
             <summary>
               ./<a
-                href="https://wiki.rjcalow.co.uk/photography/"
-                >photography</a
-              >/pinhole
+                href="https://wiki.rjcalow.co.uk/horticulture/"
+                >horticulture</a
+              >/diy micro irrigation
             </summary>
             <ul>
               
               <li class="note">
-                <a href="#holga+wpc">Holga wpc exposure table</a>
+                <a href="#automated+micro+irrigation">Automated irrigation component research</a>
               </li>
               
             </ul>
@@ -104,18 +104,48 @@
 
          
 
-        <article id="holga+wpc">
+        <article id="automated+micro+irrigation">
           <div class="column articlebody">
             <h1>
-              <a id="holga+wpc" href="#holga+wpc"
-                >Holga wpc exposure table</a
+              <a id="automated+micro+irrigation" href="#automated+micro+irrigation"
+                >Automated irrigation component research</a
               >
             </h1>
 
-            <figure><img alt="https://www.flickr.com/photos/mrwhitemanphotos/5727896394" src="../../imgs/wpc.jpg" /><figcaption><a href="https://www.flickr.com/photos/mrwhitemanphotos/5727896394">https://www.flickr.com/photos/mrwhitemanphotos/5727896394</a></figcaption>
+            <h4>Soil sensors</h4>
+<h5>Warning: Commonplace generic sensors</h5>
+<figure><img alt="generic soil sensor" src="../../imgs/Sensor-Soil-Moist-PIC-1.jpg" /><figcaption>generic soil sensor</figcaption>
 </figure>
-<p>6x12 (6 photos) use frame count pointing at 12 and shoot at frames:
-1, 3, 5, 7, 9 &amp; 11</p>
+<ul>
+<li>Found throughout ecommerce and within economic kits.</li>
+<li>Shit. Only work short term.</li>
+<li>They are resistive, running a current through the soil, slowly destroying itself through <a href="https://en.wikipedia.org/wiki/Electrolysis">electrolysis</a>.</li>
+</ul>
+<p><strong>Solution: use a capacitive soil sensor.</strong> And furthermore: Use a <a href="https://en.wikipedia.org/wiki/Conformal_coating">conformal coating</a> or a plastic bag to separate the pcb from the water. [<a href="https://www.youtube.com/watch?v=pC5H6idirfM">Source</a>]. [<a href="https://www.youtube.com/watch?v=udmJyncDvw0">Source</a>].</p>
+<h4>Pump</h4>
+<h5>Generic micro DC centrifugal pump</h5>
+<ul>
+<li>submersible </li>
+<li>economical </li>
+<li>low power</li>
+<li>all over ebay</li>
+</ul>
+<p>Currently testing a unit in a pond. Using a direct hook-up to a 5v solar panel, it pumps water into a small watering can which flows back into the pond creating a water feature. </p>
+<p>I have found that:</p>
+<ul>
+<li>the intake, though small, it can become blocked easily </li>
+<li>in low light it is a trickle of water</li>
+<li>in strong direct light you can hear the pump underwater </li>
+<li>so far I think they are suitable for low power off grid applications that don't need a lot of water all at once.</li>
+</ul>
+<h4>Micro controllers</h4>
+<p>[[todo]]</p>
+<h4>Power supply</h4>
+<p>[[todo]]</p>
+<h4>Water supply</h4>
+<p>[[todo]]</p>
+<h4>Irrigation method</h4>
+<p>[[todo]]</p>
           </div>
 
           <!-- sidebar -->
@@ -124,8 +154,8 @@
             <footer>
               <h5>Meta</h5>
               
-              <p>Date: 1/1/2016</p>
-              <p>Source: ./photography/pinhole/holga wpc.md</p>
+              <p>Date: 19/10/2021</p>
+              <p>Source: ./horticulture/diy+micro+irrigation/automated micro irrigation.md</p>
             </footer>
 
             <!-- backlinks -->
