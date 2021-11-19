@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html>
   <meta charset="utf-8" />
-  <title>misc</title>
+  <title>other</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="../assets/mini.css" />
+  <link rel="stylesheet" href="../../assets/mini.css" />
 
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
@@ -83,78 +83,47 @@
           
 
             <summary>
-              ./misc
+              ./<a
+                href="https://wiki.rjcalow.co.uk/bookcase/"
+                >bookcase</a
+              >/other
             </summary>
             <ul>
               
               <li class="note">
-                <a href="#spin+down+usb+hdd">spin down usb hdd</a>
+                <a href="#Hokkaidohighwayblues">Hokkaido highway blues</a>
               </li>
               
             </ul>
 
              
-            <ul>
-              <p>
-                ./misc/<a
-                  href="./typography"
-                  >typography</a
-                >
-              </p>
-
-              
-              <li>
-                <a href="../misc/typography/#jost"
-                  >indestructible type</a
-                >
-              </li>
-
-              
-              <li>
-                <a href="../misc/typography/#vignelli"
-                  >Massimo Vignelli</a
-                >
-              </li>
-
-              
-            </ul>
-              
           </details>
           
 
         <!-- doc -->
 
-        
-        <p><i>For folders and notes that do not fit within existing headings, yet. Under construction.</i></p>
          
 
-        <article id="spin+down+usb+hdd">
+        <article id="Hokkaidohighwayblues">
           <div class="column articlebody">
             <h1>
-              <a id="spin+down+usb+hdd" href="#spin+down+usb+hdd"
-                >spin down usb hdd</a
+              <a id="Hokkaidohighwayblues" href="#Hokkaidohighwayblues"
+                >Hokkaido highway blues</a
               >
             </h1>
 
-            <p>Raspberry pi(x) will constantly run usb hard drives.</p>
-<p>Use hdparm (hard disk parameter) tool. </p>
-<p>On libreelec 9.2.</p>
-<p><code>$ nano /storage/.config/autostart.sh</code></p>
-<p>Enter:</p>
-<p><code>(sleep 60; hdparm -B 127 -M 254 -S 60 /dev/sda1 ) &amp;</code> </p>
-<p><em>-B</em> 127 allows spin down</p>
-<blockquote>
-<p>Possible settings range from values 1 through 127 (which permit spin-down), and values 128 through 254 (which do not permit spin-down). [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
-</blockquote>
-<p><em>-M</em> 254 sets the acoustic management</p>
-<blockquote>
-<p>128 is the most quiet (and therefore slowest) setting and 254 the fastest (and loudest). [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
-</blockquote>
-<p><em>-S</em> 60 puts the drive into idle low power mode with a timeout value</p>
-<blockquote>
-<p>Values from 1 to 240 specify multiples of 5 seconds, yielding timeouts from 5 seconds to 20 minutes.   [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
-</blockquote>
-<p><em>/dev/sda1</em>  points to the mount point. Depending on os mount point naming system.</p>
+            <p>Burakumin:</p>
+<p>The Japanese never talk about burakumin; they are the ghosts of the society. If you ask a colleague about this lower caste, he will either brush it off, or frown thoughtfully and try to change the subject. Those in even deeper stages of denial will insist that there is no such thing as burakumin. [...] (Burakumin towns traditionally did not exist; they were not marked on maps nor were they signposted, a habit that lingers in present municipal attitudes.) Page 173.</p>
+<p>Western society is no better:</p>
+<p>East Indians in England. Arabs in France. Aborigines in Australia. Natives in Canada and the United States. We have our own castes of outsiders. It is a human urge, this need to create outcasts; you will see it on Indian reservations and South African homelands. And in the burakumin villages of Japan. Page 173</p>
+<p>Ōishi Yoshio and the 47 Ronin story page 213.</p>
+<p>Genki. Genki-yo! Page 238</p>
+<p>Yamabushi. page 312</p>
+<p>Pizza toast. Page 328</p>
+<p>Konnyaku - "devil's tongue". Bar toilet Graffiti: what is konnyaku? Where does it come from and what does it want? page 341</p>
+<p><em>Hirosaki is the singularly most Japanese city I know. Not the finest or the prettiest or the oldest, but definitely the most Japanese.</em> Page 345</p>
+<p>Super Gaijin! TV show page 347</p>
+<p><em>I had spent more than a month surrounded by them, more than is possible, more than is natural. And it struck me then, with a deep sense of unease, that what I was doing was fundamentally wrong. The sakura are meant to be transitory, ephemeral. To try to cling to them was like trying to cling to youth. Following the Cherry Blossom Front was a denial of time, of seasons, of mortality even. It was like spraying lacquer on a lily. Like embalming a mirage. Like trying to stop time.</em> Page 353</p>
           </div>
 
           <!-- sidebar -->
@@ -163,8 +132,8 @@
             <footer>
               <h5>Meta</h5>
               
-              <p>Date: 20/10/2021</p>
-              <p>Source: ./misc/spin down usb hdd.md</p>
+              <p>Date: 16/11/2021</p>
+              <p>Source: ./bookcase/other/Hokkaidohighwayblues.md</p>
             </footer>
 
             <!-- backlinks -->

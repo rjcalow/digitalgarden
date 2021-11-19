@@ -192,10 +192,4 @@ h6 {
   a {
     color: white;
   }
-  pre,
-  code,
-  blockquote {
-    background-color: black;
-    color: white;
-  }
 }

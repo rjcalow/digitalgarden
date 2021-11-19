@@ -138,6 +138,34 @@
                  
             <li data-question-id="21">
               <p>
+                <a href="../botany/#loneliest+tree"
+                  > Loneliest tree</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  botany /  https://www.flickr.com/photos/theylooklikeus/49654406112  CC BY-NC-SA 2.0
+
+
+"the loneliest tree on the planet"
+a single Sitka spruce
+planted 1905
+sole survivor of a plantation 
+on Campbell Island / Motu Ihupuku
+records atomic bomb tests or the golden spike, tipping point and beginning of Anthropocene Epoch. 
+
+sources:
+
+https://www.bbc.com/news/science-environment-43113900
+https://www.amusingplanet.com/2018/03/the-worlds-loneliest-tree-and-how-it.html
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="22">
+              <p>
                 <a href="../botany/#stinkhorns"
                   > Notes on stinkhorn fungi</a
                 >
@@ -152,7 +180,7 @@ Notes on stinkhorns: starts its life cycle as an egg-like fungus, then leaves th
               </section>
             </li>
             
-            <li data-question-id="22">
+            <li data-question-id="23">
               <p>
                 <a href="../botany/#poppy"
                   > The poppy</a
@@ -170,7 +198,7 @@ From newsletter.
               </section>
             </li>
             
-            <li data-question-id="23">
+            <li data-question-id="24">
               <p>
                 <a href="../botany/#broad-buckler-fern"
                   > Broad Buckler fern</a
@@ -192,7 +220,7 @@ https://www.getty.edu/art/collection/objects/64835/anna-atkins-and-anne-dixon-la
               </section>
             </li>
             
-            <li data-question-id="24">
+            <li data-question-id="25">
               <p>
                 <a href="../botany/#douglas+fir"
                   > Douglas Fir</a
@@ -219,7 +247,7 @@ Seed cone
               </section>
             </li>
             
-            <li data-question-id="25">
+            <li data-question-id="26">
               <p>
                 <a href="../botany/#Fern+anatomy"
                   > Fern anatomy</a
@@ -234,7 +262,7 @@ Seed cone
               </section>
             </li>
             
-            <li data-question-id="26">
+            <li data-question-id="27">
               <p>
                 <a href="../botany/#willow"
                   > Wasteland willows</a
@@ -267,7 +295,7 @@ Snippet taken from newsletter: https://roadsidepicnic.substack.com/p/issue017-wa
               </section>
             </li>
             
-            <li data-question-id="27">
+            <li data-question-id="28">
               <p>
                 <a href="../botany/#garlic+mustard"
                   > Garlic Mustard</a
@@ -289,7 +317,7 @@ Snippet from https://roadsidepicnic.substack.com/p/issue016-poor-mans-garlic-and
               </section>
             </li>
             
-            <li data-question-id="28">
+            <li data-question-id="29">
               <p>
                 <a href="../botany/#wild+garlic"
                   > Wild garlic</a
@@ -305,7 +333,7 @@ Snippet taken from Roadside picnic newsletter.
               </section>
             </li>
             
-            <li data-question-id="29">
+            <li data-question-id="210">
               <p>
                 <a href="../botany/#buddleia"
                   > Buddleia</a
@@ -863,7 +891,39 @@ Wells, L., 2011. Land Matters: Landscape Photography, Culture and Identity, I.B.
                 </div>
               </section>
             </li>
-                     
+               
+            <li data-question-id="71">
+              <p>
+                <a href="../misc/#spin+down+usb+hdd"
+                  > Spin down usb hdd</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  misc /  Raspberry pi(x) will constantly run usb hard drives.
+Use hdparm (hard disk parameter) tool. 
+On libreelec 9.2.
+$ nano /storage/.config/autostart.sh
+Enter:
+(sleep 60; hdparm -B 127 -M 254 -S 60 /dev/sda1 ) &amp; 
+-B 127 allows spin down
+
+Possible settings range from values 1 through 127 (which permit spin-down), and values 128 through 254 (which do not permit spin-down). [source]
+
+-M 254 sets the acoustic management
+
+128 is the most quiet (and therefore slowest) setting and 254 the fastest (and loudest). [source]
+
+-S 60 puts the drive into idle low power mode with a timeout value
+
+Values from 1 to 240 specify multiples of 5 seconds, yielding timeouts from 5 seconds to 20 minutes.   [source]
+
+/dev/sda1  points to the mount point. Depending on os mount point naming system.
+                </div>
+              </section>
+            </li>
+                  
             <li data-question-id="91">
               <p>
                 <a href="../psychogeography/#latourex"
@@ -972,6 +1032,23 @@ Get lost / go with the flow
                   
             <li data-question-id="111">
               <p>
+                <a href="../bookcase/culture+nature/#Landscape+and+Memory"
+                  > Landscape And Memory - Simon Schama (1996)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  culture nature /  
+Landscapes are culture before they are nature; constructs of the imagination projected onto wood and water and rock. So goes the argument of this book. But it should also be acknowledged that once a certain  idea of landscape, a myth, a vision, establishes itself in an actual place, it has a peculiar way of muddling categories, of making metaphors more real than their referents; of becoming, in fact, part of the scenery.
+page 61
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="112">
+              <p>
                 <a href="../bookcase/culture+nature/#Losing+Eden"
                   > Losing Eden (2020)</a
                 >
@@ -1065,7 +1142,7 @@ Jones, L. (2020) Losing Eden
               </section>
             </li>
             
-            <li data-question-id="112">
+            <li data-question-id="113">
               <p>
                 <a href="../bookcase/culture+nature/#beyond-the-nature-culture-dualism"
                   > Haila, Y. (2000) ‘Beyond the Nature-Culture Dualism’</a
@@ -1115,7 +1192,7 @@ Monbiot, G. (2014) Feral: Rewilding the Land, the Sea, and Human Life. Universit
               </section>
             </li>
             
-            <li data-question-id="113">
+            <li data-question-id="114">
               <p>
                 <a href="../bookcase/culture+nature/#domesticwild"
                   > Ginn, F. (2017) Domestic Wild. Memory, Nature and Gardening in Suburbia</a
@@ -1378,6 +1455,81 @@ Franck, K. A. (2013) ‘Isn’t All Public Space Terrain Vague?’, Terrain Vagu
                
             <li data-question-id="131">
               <p>
+                <a href="../bookcase/other/#Hokkaidohighwayblues"
+                  > Hokkaido highway blues</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  other /  Burakumin:
+The Japanese never talk about burakumin; they are the ghosts of the society. If you ask a colleague about this lower caste, he will either brush it off, or frown thoughtfully and try to change the subject. Those in even deeper stages of denial will insist that there is no such thing as burakumin. [...] (Burakumin towns traditionally did not exist; they were not marked on maps nor were they signposted, a habit that lingers in present municipal attitudes.) Page 173.
+Western society is no better:
+East Indians in England. Arabs in France. Aborigines in Australia. Natives in Canada and the United States. We have our own castes of outsiders. It is a human urge, this need to create outcasts; you will see it on Indian reservations and South African homelands. And in the burakumin villages of Japan. Page 173
+Ōishi Yoshio and the 47 Ronin story page 213.
+Genki. Genki-yo! Page 238
+Yamabushi. page 312
+Pizza toast. Page 328
+Konnyaku - "devil's tongue". Bar toilet Graffiti: what is konnyaku? Where does it come from and what does it want? page 341
+Hirosaki is the singularly most Japanese city I know. Not the finest or the prettiest or the oldest, but definitely the most Japanese. Page 345
+Super Gaijin! TV show page 347
+I had spent more than a month surrounded by them, more than is possible, more than is natural. And it struck me then, with a deep sense of unease, that what I was doing was fundamentally wrong. The sakura are meant to be transitory, ephemeral. To try to cling to them was like trying to cling to youth. Following the Cherry Blossom Front was a denial of time, of seasons, of mortality even. It was like spraying lacquer on a lily. Like embalming a mirage. Like trying to stop time. Page 353
+                </div>
+              </section>
+            </li>
+               
+            <li data-question-id="141">
+              <p>
+                <a href="../bookcase/psychogeography/#soul+of+place"
+                  > Soul of place (2015)</a
+                >
+              </p>
+              
+              <section>
+                <div class="snippet">
+                  psychogeography /  by Linda Lappin.
+A creative landscape-writing workbook. Though aimed at literature/creative writing, it can be used as a source of inspiration for different mediums such as landscape-psychogeography photography projects. 
+
+Deep map
+Postcard fiction
+Word painting -visual descriptions of a place 
+Pilgrimage 
+Follow off the beaten track
+Visit a place no longer there
+A literary journey
+A quest: a journey in parts (1) a desire, (2) a conflict, and (3) breakthrough
+
+
+Finding the soul of the city 
+How do seasonal changes affect the place - holidays, weather
+History 
+Who lived there?
+Your personal mythology-geography 
+
+
+Parks
+Wild / cultivated dichotomy
+How the natural elements work together
+Pathways, design and purpose
+Animals and people
+Art - statues, design 
+
+
+Transportation links
+Types of commuter
+Modes
+
+
+Types of personal transport
+Drivers 
+Ruins
+
+                </div>
+              </section>
+            </li>
+            
+            <li data-question-id="142">
+              <p>
                 <a href="../bookcase/psychogeography/#The+Art+of+Flaneuring"
                   > The Art of Flaneuring (2019)</a
                 >
@@ -1440,7 +1592,7 @@ A black flaneur in the hood
               </section>
             </li>
                
-            <li data-question-id="141">
+            <li data-question-id="151">
               <p>
                 <a href="../horticulture/diy+micro+irrigation/#automated+micro+irrigation"
                   > Automated irrigation component research</a
@@ -1487,7 +1639,7 @@ Irrigation method
               </section>
             </li>
                
-            <li data-question-id="151">
+            <li data-question-id="161">
               <p>
                 <a href="../misc/typography/#jost"
                   > Indestructible type</a
@@ -1507,7 +1659,7 @@ Bodoni
               </section>
             </li>
             
-            <li data-question-id="152">
+            <li data-question-id="162">
               <p>
                 <a href="../misc/typography/#vignelli"
                   > Massimo Vignelli</a
@@ -1522,7 +1674,7 @@ Bodoni
               </section>
             </li>
                
-            <li data-question-id="161">
+            <li data-question-id="171">
               <p>
                 <a href="../photography/digital+workflow/#ffmpeg"
                   > FFmpeg</a
@@ -1541,7 +1693,7 @@ qscale:v 1 -qmin 1 -qmax 1
               </section>
             </li>
             
-            <li data-question-id="162">
+            <li data-question-id="172">
               <p>
                 <a href="../photography/digital+workflow/#fujifilm-xf10"
                   > Fujifilm xf10</a
@@ -1557,7 +1709,7 @@ by MtPython
               </section>
             </li>
             
-            <li data-question-id="163">
+            <li data-question-id="173">
               <p>
                 <a href="../photography/digital+workflow/#silkypix-xf10-profile"
                   > Silkypix profile for the fuji xf10</a
@@ -1573,7 +1725,7 @@ Can be downloaded on github gist as an ST6 file.
               </section>
             </li>
             
-            <li data-question-id="164">
+            <li data-question-id="174">
               <p>
                 <a href="../photography/digital+workflow/#silkypix-noise-reduction"
                   > Silkypix noise reduction</a
@@ -1589,7 +1741,7 @@ Noise reduction panel
               </section>
             </li>
                
-            <li data-question-id="171">
+            <li data-question-id="181">
               <p>
                 <a href="../photography/essay/#Artist+statement+for+Snag++Inflorescence"
                   > Artist statement for Snag / Inflorescence</a
@@ -1639,7 +1791,7 @@ Wells, L. (2011) Land Matters: Landscape Photography, Culture and Identity. .B.T
               </section>
             </li>
             
-            <li data-question-id="172">
+            <li data-question-id="182">
               <p>
                 <a href="../photography/essay/#toy+camera+landscape"
                   > Exploring a landscape with handmade cameras</a
@@ -1707,7 +1859,7 @@ Weston, E. (2003). Seeing photographically. In L. Wells (Ed.), The Photography R
               </section>
             </li>
             
-            <li data-question-id="173">
+            <li data-question-id="183">
               <p>
                 <a href="../photography/essay/#Fays-Land"
                   > Fays Land</a
@@ -1803,7 +1955,7 @@ Wells, L. (2015). Photography: A Critical Introduction. Routledge.
               </section>
             </li>
                
-            <li data-question-id="181">
+            <li data-question-id="191">
               <p>
                 <a href="../photography/hack/#classic+chrome"
                   > Classic Chrome on xpro1</a
@@ -1835,7 +1987,7 @@ Results were mixed. You can try baking your own at abpy/FujifilmCameraProfiles.
               </section>
             </li>
             
-            <li data-question-id="182">
+            <li data-question-id="192">
               <p>
                 <a href="../photography/hack/#e-ink"
                   > E-ink</a
@@ -1867,7 +2019,7 @@ This started as a unconventional experiment during the pandemic quarantine, one 
               </section>
             </li>
             
-            <li data-question-id="183">
+            <li data-question-id="193">
               <p>
                 <a href="../photography/hack/#Lumix-TZ10-infrared-conversion"
                   > LUMIX TZ10 INFRARED CONVERSION</a
@@ -1900,7 +2052,7 @@ Result
               </section>
             </li>
             
-            <li data-question-id="184">
+            <li data-question-id="194">
               <p>
                 <a href="../photography/hack/#35mm+Holga"
                   > 35mm film in a Holga</a
@@ -1928,7 +2080,7 @@ Wordsworth street
               </section>
             </li>
                
-            <li data-question-id="191">
+            <li data-question-id="201">
               <p>
                 <a href="../photography/make/#Cardboard+hard+cover"
                   > Cardboard hardcover for diy photobook</a
@@ -1950,7 +2102,7 @@ For this experiment, binding some  leftover prints: I made a hardcover out of sp
               </section>
             </li>
             
-            <li data-question-id="192">
+            <li data-question-id="202">
               <p>
                 <a href="../photography/make/#epson-xp-3100+booklet+printing"
                   > Printing a zine or booklet on a epson xp-3100</a
@@ -1987,7 +2139,7 @@ Fold and staple papers.
               </section>
             </li>
             
-            <li data-question-id="193">
+            <li data-question-id="203">
               <p>
                 <a href="../photography/make/#Cyanotypes-via-artificial-light"
                   > Cyanotypes with artificial light</a
@@ -2010,7 +2162,7 @@ Figure out and dial in exposure. I need to work out a process for creating a sui
               </section>
             </li>
             
-            <li data-question-id="194">
+            <li data-question-id="204">
               <p>
                 <a href="../photography/make/#inkjet-paper-negatives"
                   > Inkjet paper negatives</a
@@ -2049,7 +2201,7 @@ Example outcome with the cyanotype process
               </section>
             </li>
             
-            <li data-question-id="195">
+            <li data-question-id="205">
               <p>
                 <a href="../photography/make/#Making+Zines+from+cheap+photo+prints"
                   > Making Zines from cheap photo prints</a
@@ -2091,7 +2243,7 @@ If you are making a large quantity or seek perfection, just use a cheap book pro
               </section>
             </li>
             
-            <li data-question-id="196">
+            <li data-question-id="206">
               <p>
                 <a href="../photography/make/#coffee+can+pinhole+camera"
                   > Coffee can pinhole camera</a
@@ -2108,7 +2260,7 @@ direct positive paper
               </section>
             </li>
             
-            <li data-question-id="197">
+            <li data-question-id="207">
               <p>
                 <a href="../photography/make/#Infrared-cyanotypes"
                   > Infrared Cyanotypes</a
@@ -2144,7 +2296,7 @@ Liminal outcomes.
               </section>
             </li>
                
-            <li data-question-id="201">
+            <li data-question-id="211">
               <p>
                 <a href="../photography/misc/#quotes"
                   > Quotes for class</a
@@ -2213,7 +2365,7 @@ Kosuke Okahara. NHK Documentary on Fukushima nuclear disaster photographs by Oka
               </section>
             </li>
                
-            <li data-question-id="211">
+            <li data-question-id="221">
               <p>
                 <a href="../photography/photographic+works/#Tokyo+Tape+%282016%29"
                   > Steven Seidenberg, Tokyo Tape (2016)</a
@@ -2233,7 +2385,7 @@ View the images on Seidenberg’s website.
               </section>
             </li>
             
-            <li data-question-id="212">
+            <li data-question-id="222">
               <p>
                 <a href="../photography/photographic+works/#Works+about+parks"
                   > Photographic works about parks</a
@@ -2252,7 +2404,7 @@ Donavon Smallwood’s Languor (2019-2021?) is a collection of portraits taken in
               </section>
             </li>
             
-            <li data-question-id="213">
+            <li data-question-id="223">
               <p>
                 <a href="../photography/photographic+works/#Backyard+photog"
                   > Backyard photography</a
@@ -2300,7 +2452,7 @@ Images of Adams' backyard through seasons. Typical of Adams' style, Black white,
               </section>
             </li>
             
-            <li data-question-id="214">
+            <li data-question-id="224">
               <p>
                 <a href="../photography/photographic+works/#the+forest"
                   > Paul Seawright, the Forest, 2001</a
@@ -2317,7 +2469,7 @@ Consisting of seventeen images taken at night and lit with a warm amber light.  
               </section>
             </li>
             
-            <li data-question-id="215">
+            <li data-question-id="225">
               <p>
                 <a href="../photography/photographic+works/#call+to+action"
                   > James E Smith, Call to action, 2016</a
@@ -2338,7 +2490,7 @@ http://www.jamesesmith.info/index.php?/work/call-to-action/
               </section>
             </li>
                
-            <li data-question-id="221">
+            <li data-question-id="231">
               <p>
                 <a href="../photography/pinhole/#holga+wpc"
                   > Holga wpc exposure table</a
@@ -2355,7 +2507,7 @@ http://www.jamesesmith.info/index.php?/work/call-to-action/
               </section>
             </li>
                
-            <li data-question-id="231">
+            <li data-question-id="241">
               <p>
                 <a href="../photography/sketchbook/#estovers"
                   > Estovers</a
@@ -2371,7 +2523,7 @@ Estovers : the right to the wood on a common. This might be whole trees or coppi
               </section>
             </li>
             
-            <li data-question-id="232">
+            <li data-question-id="242">
               <p>
                 <a href="../photography/sketchbook/#monachopsis"
                   > Monachopsis</a
@@ -2407,7 +2559,7 @@ Snippet from https://roadsidepicnic.substack.com/p/nature-and-monachopsis
               </section>
             </li>
             
-            <li data-question-id="233">
+            <li data-question-id="243">
               <p>
                 <a href="../photography/sketchbook/#Unoccupied"
                   > Unoccupied</a
@@ -2431,7 +2583,7 @@ At the time of writing, better resolution images can be found on the main websit
               </section>
             </li>
                
-            <li data-question-id="241">
+            <li data-question-id="251">
               <p>
                 <a href="../photography/walking/#Line+made+by+walking"
                   > Line made by walking, Richard Long, 1967</a
@@ -2450,7 +2602,7 @@ From the art of walking.
               </section>
             </li>
             
-            <li data-question-id="242">
+            <li data-question-id="252">
               <p>
                 <a href="../photography/walking/#Proposal"
                   > Proposal, Peter Liversidge, 2012</a
@@ -2474,7 +2626,7 @@ sheet-2
               </section>
             </li>
             
-            <li data-question-id="243">
+            <li data-question-id="253">
               <p>
                 <a href="../photography/walking/#zone"
                   > Zone, David Bate, 2011</a
@@ -2493,7 +2645,7 @@ From the art of walking.
               </section>
             </li>
                
-            <li data-question-id="251">
+            <li data-question-id="261">
               <p>
                 <a href="../photography/zines/#Fl%C3%A2neur"
                   > Flâneur</a
@@ -2520,7 +2672,7 @@ On Photography, Sontag, page 55
               </section>
             </li>
             
-            <li data-question-id="252">
+            <li data-question-id="262">
               <p>
                 <a href="../photography/zines/#the-garden-weed-project"
                   > The Garden Weed project</a
@@ -2541,7 +2693,7 @@ https://kimwphotography.co.uk/
               </section>
             </li>
             
-            <li data-question-id="253">
+            <li data-question-id="263">
               <p>
                 <a href="../photography/zines/#one+punks+guide"
                   > One Punk’s Guide to Gardening by Jon Mule</a
@@ -2556,7 +2708,7 @@ A PDF is available at  https://razorcake.org/one-punks-guide-gardening-jon-mule/
               </section>
             </li>
                
-            <li data-question-id="261">
+            <li data-question-id="271">
               <p>
                 <a href="../www/digital+gardening/#compostheap"
                   > I am a compost heap</a
@@ -2574,7 +2726,7 @@ Source
               </section>
             </li>
             
-            <li data-question-id="262">
+            <li data-question-id="272">
               <p>
                 <a href="../www/digital+gardening/#inspiration"
                   > Inspirational gardens</a
@@ -2597,7 +2749,7 @@ https://github.com/kyrose/awesome-digital-gardens
               </section>
             </li>
             
-            <li data-question-id="263">
+            <li data-question-id="273">
               <p>
                 <a href="../www/digital+gardening/#googleslides"
                   > Antistatic</a
@@ -2615,7 +2767,7 @@ A collaborative online slide deck where we collect thoughts and ideas  that need
               </section>
             </li>
                
-            <li data-question-id="271">
+            <li data-question-id="281">
               <p>
                 <a href="../www/newsletters/#lowtech"
                   > Low tech</a
@@ -2631,7 +2783,7 @@ Article of note: How to Build a Low-tech Website?
               </section>
             </li>
             
-            <li data-question-id="272">
+            <li data-question-id="282">
               <p>
                 <a href="../www/newsletters/#newsletter+links"
                   > Newsletters</a
