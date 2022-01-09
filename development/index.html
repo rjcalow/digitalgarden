@@ -3,79 +3,76 @@
 <!DOCTYPE html>
 <html>
   <meta charset="utf-8" />
-  <title>development</title>
+  <title>Development</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="stylesheet" href="../assets/mini.css" />
-
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
   <meta name="author" content="R J Calow" />
+  <link rel="stylesheet" href="https://cloud-x52eok8sf-hack-club-bot.vercel.app/0hackclub.css">
 
+<style>
+    article {
+        padding-bottom: 2em;
+    }
+
+
+</style>
   <body>
     <div class="container">
             <header>
-        <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a>
-        <a href="https://wiki.rjcalow.co.uk#about">about</a> <a href="https://wiki.rjcalow.co.uk/log">log</a>
+        <a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a> &#x25E6; 
+        <a href="https://wiki.rjcalow.co.uk#about">about</a> &#x25E6;  <a href="https://wiki.rjcalow.co.uk/log">log</a> &#x25E6; 
         <a href="https://wiki.rjcalow.co.uk/search">search</a>
-
-        <details id="index" >
-          <summary>./index</summary>
-            
-          <ul>
-             
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/bookcase">bookcase</a>
-            </li>
-               
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/botany">botany</a>
-            </li>
-               
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/development">development</a>
-            </li>
-               
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/film">film</a>
-            </li>
-             
-          </ul>
-            
-          <ul>
-             
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/horticulture">horticulture</a>
-            </li>
-               
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/landscape">landscape</a>
-            </li>
-               
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/misc">misc</a>
-            </li>
-               
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/photography">photography</a>
-            </li>
-             
-          </ul>
-            
-          <ul>
-             
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/psychogeography">psychogeography</a>
-            </li>
-               
-            <li>
-              <a href="https://wiki.rjcalow.co.uk/www">www</a>
-            </li>
-                   
-          </ul>
-          
-        </details>
       </header>
+
+      <details id="index" >
+    <summary>./index</summary>
+      
+    <ul>
+       
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/bookcase">Bookcase</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/botany">Botany</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/development">Development</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/film">Film</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/horticulture">Horticulture</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/landscape">Landscape</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/misc">Misc</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/photography">Photography</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/psychogeography">Psychogeography</a>
+      </li>
+         
+      <li>
+        <a href="https://wiki.rjcalow.co.uk/www">Www</a>
+      </li>
+       
+    </ul>
+    
+  </details>
 
       <main>
          
@@ -132,19 +129,19 @@
 </ul>
           </div>
 
-          <!-- sidebar -->
-          <aside class="column">
+
             <!-- note footer -->
-            <footer>
-              <h5>Meta</h5>
+            <details>
+              <summary>Meta</summary>
               
               <p>Date: 4/10/2021</p>
               <p>Source: ./development/SVG filters.md</p>
-            </footer>
+            </details>
 
             <!-- backlinks -->
             
         </article>
+        <hr>
 
         
 
@@ -163,20 +160,19 @@
 </ul>
           </div>
 
-          <!-- sidebar -->
-          <aside class="column">
+
             <!-- note footer -->
-            <footer>
-              <h5>Meta</h5>
+            <details>
+              <summary>Meta</summary>
               
               <p>Date: 3/10/2021</p>
               <p>Source: ./development/Dither images.md</p>
-            </footer>
+            </details>
 
             <!-- backlinks -->
             
-
-            <h5>Backlinks</h5>
+            <details>
+            <summary>Backlinks</summary>
             
             <ul>
                Low tech:
@@ -188,12 +184,13 @@
 
               
             </ul>
-
+          </details>
             
-          </aside>
-          <!-- sidebar END-->
+
+
           
         </article>
+        <hr>
 
         
 
@@ -217,19 +214,19 @@
 <p>For this digital garden/wiki I went with <a href="https://codepen.io/GDur/pen/gMpzXz">lunr.js with a html &gt; JSON function</a>. Considering that it uses a custom python static site generator, I can bypass indexing and instead include a page with all the notes that can be searched.</p>
           </div>
 
-          <!-- sidebar -->
-          <aside class="column">
+
             <!-- note footer -->
-            <footer>
-              <h5>Meta</h5>
+            <details>
+              <summary>Meta</summary>
               
               <p>Date: 25/9/2021</p>
               <p>Source: ./development/static search.md</p>
-            </footer>
+            </details>
 
             <!-- backlinks -->
             
         </article>
+        <hr>
 
         
 
@@ -250,19 +247,19 @@
 </ul>
           </div>
 
-          <!-- sidebar -->
-          <aside class="column">
+
             <!-- note footer -->
-            <footer>
-              <h5>Meta</h5>
+            <details>
+              <summary>Meta</summary>
               
               <p>Date: 2/8/2021</p>
               <p>Source: ./development/commentsforstaticsites.md</p>
-            </footer>
+            </details>
 
             <!-- backlinks -->
             
         </article>
+        <hr>
 
         
 
@@ -294,21 +291,21 @@ requirements = python3,kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/mast
 </ul>
           </div>
 
-          <!-- sidebar -->
-          <aside class="column">
+
             <!-- note footer -->
-            <footer>
-              <h5>Meta</h5>
+            <details>
+              <summary>Meta</summary>
               
               <p>Update: 1/8/2021</p>
               
               <p>Date: 30/7/2021</p>
               <p>Source: ./development/kivymd.md</p>
-            </footer>
+            </details>
 
             <!-- backlinks -->
             
         </article>
+        <hr>
 
         
       </main>
@@ -318,7 +315,8 @@ requirements = python3,kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/mast
     <footer>
       <p>☕ Brewed w/ love. Hosted on github. Generated by <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
       <p>📧 8t2pg3mf0@relay.firefox.com.</p>
-      <p>⚙️ Generated on 19/11/2021.</p>
+      <p>⚙️ Generated on 09/01/2022.</p>
+      <a style="float: right;" href="#top">Go to top ↑</a>
     </footer>
     </div>
   </body>
