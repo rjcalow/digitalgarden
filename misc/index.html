@@ -8,15 +8,8 @@
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
   <meta name="author" content="R J Calow" />
-  <link rel="stylesheet" href="https://cloud-x52eok8sf-hack-club-bot.vercel.app/0hackclub.css">
-
-<style>
-    article {
-        padding-bottom: 2em;
-    }
-
-
-</style>
+  <style>
+@media only screen and (max-width: 950px){body{width:95%;font-size:18px}img{max-width:50vw;max-height:80vw;margin:0;padding:0}}body{margin:5% auto;background:#f2f2f2;color:#444444;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:16px;line-height:1.8;text-shadow:0 1px 0 #ffffff;max-width:60em}code{background:white}a{border-bottom:1px dotted #444444;color:#444444;text-decoration:none}a:hover{border-bottom-style:dashed}header{margin:20px 0}article{padding-bottom:2em}mark{background-color:black;color:white;padding:5px;text-shadow:0 1px 0 black}img{max-width:40em}article{padding-bottom:2em}@media (prefers-color-scheme: dark){body{background:#292929;color:#f2f2f2;text-shadow:0 1px 0 #292929}a{color:#f2f2f2;border-bottom:1px dotted #f2f2f2}}</style>
   <body>
     <div class="container">
             <header>
@@ -63,6 +56,10 @@
       </li>
          
       <li>
+        <a href="https://wiki.rjcalow.co.uk/pi">Pi</a>
+      </li>
+         
+      <li>
         <a href="https://wiki.rjcalow.co.uk/psychogeography">Psychogeography</a>
       </li>
          
@@ -85,11 +82,11 @@
             <ul>
               
               <li class="note">
-                <a href="#store+data+on+paper">Paper as data storage</a>
+                <a href="#LYWSD03MMC">Xiaomi Mijia LYWSD03MMC</a>
               </li>
               
               <li class="note">
-                <a href="#spin+down+usb+hdd">spin down usb hdd</a>
+                <a href="#store+data+on+paper">Paper as data storage</a>
               </li>
               
             </ul>
@@ -129,6 +126,95 @@
         <p><i>For folders and notes that do not fit within existing headings, yet. Under construction.</i></p>
          
 
+        <article id="LYWSD03MMC">
+          <div class="column articlebody">
+            <h1>
+              <a id="LYWSD03MMC" href="#LYWSD03MMC"
+                >Xiaomi Mijia LYWSD03MMC</a
+              >
+            </h1>
+
+            <h4>About</h4>
+<p>A cheap Bluetooth Low Energy (BLE) device that broadcasts and displays temperature and humidity. </p>
+<p>I did not pair the units with the Xiaomi app, but used python instead.</p>
+<h4>Aim</h4>
+<p>I wanted the ability to check and record temperature and humidity in my DIY mini greenhouse.</p>
+<h4>Python</h4>
+<p>Using the <a href="https://pypi.org/project/lywsd03mmc/">lywsd03mmc package</a>, I can retrieve data without the need to reflash the units.</p>
+<h5>Real time scraping or retrieve history?</h5>
+<p>I wrote a short script that would connect to the LYWSD03MMC and upload data to a google sheet. </p>
+<p>This is problematic as the signal is sketchy with distances. It wouldn't always connect. I had the script loop until the returning object has a temperature attribute. </p>
+<pre><code>while True:
+    print(&quot;connecting...&quot;)
+    try: client = connect(greenhouse)
+    except: pass
+    if hasattr(client, 'temp'):
+        break 
+</code></pre>
+<p>Another long term problem is battery life. Connecting at regular intervals will drain the battery. This is something the <a href="https://github.com/atc1441/ATC_MiThermometer">atc firmware</a> addresses. </p>
+<p>Another option is to retrieve history. The lywsd03mmc package has a tool for exporting this data to csv format.</p>
+<p><code>lywsd03mmc2csv A4:C1:38:12:34:56 --output data.csv</code></p>
+<p>The format has a max and min for each hour.</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Min temperature</th>
+<th>Min humidity</th>
+<th>Max temperature</th>
+<th>Max humidity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-01-31 13:15:52.717247</td>
+<td>15.1</td>
+<td>36</td>
+<td>19.1</td>
+<td>61</td>
+</tr>
+<tr>
+<td>2022-01-31 14:15:52.717247</td>
+<td>12</td>
+<td>51</td>
+<td>20</td>
+<td>66</td>
+</tr>
+</tbody>
+</table>
+<h4>Possible applications</h4>
+<ul>
+<li>
+<p>Telegram bot to alert if the greenhouse gets too hot in summer.</p>
+</li>
+<li>
+<p>Automate opening the greenhouse door/window.</p>
+</li>
+<li>
+<p>Automate watering if very hot.</p>
+</li>
+<li>
+<p>Compare records with weather forecast and gauge the efficiency of the greenhouse.</p>
+</li>
+</ul>
+          </div>
+
+
+            <!-- note footer -->
+            <details>
+              <summary>Meta</summary>
+              <p>Created: 1/2/2022</p>
+              
+              <p>Source: ./misc/LYWSD03MMC.md</p>
+            </details>
+
+            <!-- backlinks -->
+            
+        </article>
+        <hr>
+
+        
+
         <article id="store+data+on+paper">
           <div class="column articlebody">
             <h1>
@@ -147,54 +233,9 @@
             <!-- note footer -->
             <details>
               <summary>Meta</summary>
+              <p>Created: 3/1/2022</p>
               
-              <p>Date: 3/1/2022</p>
               <p>Source: ./misc/store data on paper.md</p>
-            </details>
-
-            <!-- backlinks -->
-            
-        </article>
-        <hr>
-
-        
-
-        <article id="spin+down+usb+hdd">
-          <div class="column articlebody">
-            <h1>
-              <a id="spin+down+usb+hdd" href="#spin+down+usb+hdd"
-                >spin down usb hdd</a
-              >
-            </h1>
-
-            <p>Raspberry pi(x) will constantly run usb hard drives.</p>
-<p>Use hdparm (hard disk parameter) tool. </p>
-<p>On libreelec 9.2.</p>
-<p><code>$ nano /storage/.config/autostart.sh</code></p>
-<p>Enter:</p>
-<p><code>(sleep 60; hdparm -B 127 -M 254 -S 60 /dev/sda1 ) &amp;</code> </p>
-<p><em>-B</em> 127 allows spin down</p>
-<blockquote>
-<p>Possible settings range from values 1 through 127 (which permit spin-down), and values 128 through 254 (which do not permit spin-down). [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
-</blockquote>
-<p><em>-M</em> 254 sets the acoustic management</p>
-<blockquote>
-<p>128 is the most quiet (and therefore slowest) setting and 254 the fastest (and loudest). [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
-</blockquote>
-<p><em>-S</em> 60 puts the drive into idle low power mode with a timeout value</p>
-<blockquote>
-<p>Values from 1 to 240 specify multiples of 5 seconds, yielding timeouts from 5 seconds to 20 minutes.   [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
-</blockquote>
-<p><em>/dev/sda1</em>  points to the mount point. Depending on os mount point naming system.</p>
-          </div>
-
-
-            <!-- note footer -->
-            <details>
-              <summary>Meta</summary>
-              
-              <p>Date: 20/10/2021</p>
-              <p>Source: ./misc/spin down usb hdd.md</p>
             </details>
 
             <!-- backlinks -->
@@ -205,12 +246,11 @@
         
       </main>
 
-      <!-- footer -->
           <!-- footer -->
     <footer>
       <p>☕ Brewed w/ love. Hosted on github. Generated with <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
       <p>📧 8t2pg3mf0@relay.firefox.com.</p>
-      <p>⚙️ Generated 10/01/2022.</p>
+      <p>⚙️ Generated 28/02/2022.</p>
       <a style="float: right;" href="#top">Go to top ↑</a>
     </footer>
     </div>

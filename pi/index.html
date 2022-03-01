@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <meta charset="utf-8" />
-  <title>Digital Workflow</title>
+  <title>Pi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
   <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
@@ -77,27 +77,16 @@
           
 
             <summary>
-              ./<a
-                href="https://wiki.rjcalow.co.uk/photography/"
-                >photography</a
-              >/digital Workflow
+              ./pi
             </summary>
             <ul>
               
               <li class="note">
-                <a href="#ffmpeg">FFmpeg</a>
+                <a href="#pi0">Raspberry pi zero setup</a>
               </li>
               
               <li class="note">
-                <a href="#fujifilm-xf10">Fujifilm xf10</a>
-              </li>
-              
-              <li class="note">
-                <a href="#silkypix-xf10-profile">Silkypix profile for the fuji xf10</a>
-              </li>
-              
-              <li class="note">
-                <a href="#silkypix-noise-reduction">Silkypix noise reduction</a>
+                <a href="#spin+down+usb+hdd">spin down usb hdd</a>
               </li>
               
             </ul>
@@ -110,29 +99,50 @@
 
          
 
-        <article id="ffmpeg">
+        <article id="pi0">
           <div class="column articlebody">
             <h1>
-              <a id="ffmpeg" href="#ffmpeg"
-                >FFmpeg</a
+              <a id="pi0" href="#pi0"
+                >Raspberry pi zero setup</a
               >
             </h1>
 
-            <h3>Screencaping a video</h3>
-<p>Screenshot every 60 seconds:</p>
-<p><code>ffmpeg -i myvideo.avi -vf fps=1/60 img%03d.jpg</code></p>
-<h3>HQ jpegs</h3>
-<p>Use within command:</p>
-<p><code>qscale:v 1 -qmin 1 -qmax 1</code></p>
+            <h3>Setup for headless operation.</h3>
+<h4>Install os</h4>
+<p>Just use rapsberry pi imager and install raspbian. There is a lack of stable, current os's for the pi0. That and the imager is easy.</p>
+<h4>Configure wifi</h4>
+<p>Mount the sd card. Within the boot directory, create a file: wpa_supplicant.conf. </p>
+<pre><code>country=us
+
+update_config=1
+
+ctrl_interface=/var/run/wpa_supplicant
+
+network={
+
+scan_ssid=1
+
+ssid=&quot;SSID&quot;
+
+psk=&quot;password&quot;
+
+} 
+</code></pre>
+<h4>Enable ssh</h4>
+<p>Within the boot directory create a file named ssh.</p>
+<p><code>touch ssh</code></p>
+<h3>Default login</h3>
+<p>Username: <code>pi</code>
+Password: <code>raspberry</code></p>
           </div>
 
 
             <!-- note footer -->
             <details>
               <summary>Meta</summary>
-              <p>Created: 9/10/2021</p>
+              <p>Created: 31/1/2022</p>
               
-              <p>Source: ./photography/digital+workflow/ffmpeg.md</p>
+              <p>Source: ./pi/pi0.md</p>
             </details>
 
             <!-- backlinks -->
@@ -142,84 +152,42 @@
 
         
 
-        <article id="fujifilm-xf10">
+        <article id="spin+down+usb+hdd">
           <div class="column articlebody">
             <h1>
-              <a id="fujifilm-xf10" href="#fujifilm-xf10"
-                >Fujifilm xf10</a
+              <a id="spin+down+usb+hdd" href="#spin+down+usb+hdd"
+                >spin down usb hdd</a
               >
             </h1>
 
-            <h4>Lightroom ISO adaptive preset</h4>
-<p>by <a href="https://gist.github.com/MtPython">MtPython</a></p>
-<script src="https://gist.github.com/MtPython/1b384b44c9c53c7ce31140350e7de4de.js"></script>
+            <p>Raspberry pi(x) will constantly run usb hard drives.</p>
+<p>Use hdparm (hard disk parameter) tool. </p>
+<p>On libreelec 9.2.</p>
+<p><code>$ nano /storage/.config/autostart.sh</code></p>
+<p>Enter:</p>
+<p><code>(sleep 60; hdparm -B 127 -M 254 -S 60 /dev/sda1 ) &amp;</code> </p>
+<p><em>-B</em> 127 allows spin down</p>
+<blockquote>
+<p>Possible settings range from values 1 through 127 (which permit spin-down), and values 128 through 254 (which do not permit spin-down). [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
+</blockquote>
+<p><em>-M</em> 254 sets the acoustic management</p>
+<blockquote>
+<p>128 is the most quiet (and therefore slowest) setting and 254 the fastest (and loudest). [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
+</blockquote>
+<p><em>-S</em> 60 puts the drive into idle low power mode with a timeout value</p>
+<blockquote>
+<p>Values from 1 to 240 specify multiples of 5 seconds, yielding timeouts from 5 seconds to 20 minutes.   [<a href="https://www.man7.org/linux/man-pages/man8/hdparm.8.html">source</a>]</p>
+</blockquote>
+<p><em>/dev/sda1</em>  points to the mount point. Depending on os mount point naming system.</p>
           </div>
 
 
             <!-- note footer -->
             <details>
               <summary>Meta</summary>
-              <p>Created: 29/4/2021</p>
+              <p>Created: 20/10/2021</p>
               
-              <p>Source: ./photography/digital+workflow/fujifilm-xf10.md</p>
-            </details>
-
-            <!-- backlinks -->
-            
-        </article>
-        <hr>
-
-        
-
-        <article id="silkypix-xf10-profile">
-          <div class="column articlebody">
-            <h1>
-              <a id="silkypix-xf10-profile" href="#silkypix-xf10-profile"
-                >Silkypix profile for the fuji xf10</a
-              >
-            </h1>
-
-            <p>My silkypix 10 xf10 Chrome low saturation, slight hdr, sharpening, and low noise removal.</p>
-<p>Can be <a href="https://gist.github.com/rjcalow/b3cd80e6b440add0ffb8bcae1ab2d649">downloaded on github gist</a> as an ST6 file.</p>
-<script src="https://gist.github.com/rjcalow/b3cd80e6b440add0ffb8bcae1ab2d649.js"></script>
-          </div>
-
-
-            <!-- note footer -->
-            <details>
-              <summary>Meta</summary>
-              <p>Created: 16/11/2020</p>
-              
-              <p>Source: ./photography/digital+workflow/silkypix-xf10-profile.md</p>
-            </details>
-
-            <!-- backlinks -->
-            
-        </article>
-        <hr>
-
-        
-
-        <article id="silkypix-noise-reduction">
-          <div class="column articlebody">
-            <h1>
-              <a id="silkypix-noise-reduction" href="#silkypix-noise-reduction"
-                >Silkypix noise reduction</a
-              >
-            </h1>
-
-            <p>For whatever reason, by default silkypix 10 applies a heavy noise reduction. Leaving the image like a watercolour. For my Fuji's, I use the fine detail setting and lower the smoothness. </p>
-<figure><img alt="Noise reduction panel" src="../../imgs/image-20201114204227312.jpg" /><figcaption>Noise reduction panel</figcaption>
-</figure>
-          </div>
-
-
-            <!-- note footer -->
-            <details>
-              <summary>Meta</summary>
-              <p>Created: 14/11/2020</p>
-              
-              <p>Source: ./photography/digital+workflow/silkypix-noise-reduction.md</p>
+              <p>Source: ./pi/spin down usb hdd.md</p>
             </details>
 
             <!-- backlinks -->
