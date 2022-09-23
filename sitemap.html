@@ -1,0 +1,264 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  
+  <title>index</title>
+  
+<style>
+
+
+/* $color-text: #dedce5; */
+/* Sakura.css v1.4.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 38em;
+  margin: auto;
+  color: #c9c9c9;
+  background-color: #222222;
+  padding: 13px;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem;
+  }
+}
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2.20em;
+}
+
+h2 {
+  font-size: 1.88em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+small, sub, sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  color: #e6e6e6;
+}
+a:hover {
+  color: #c9c9c9;
+  border-bottom: 2px solid #c9c9c9;
+}
+
+ul {
+  padding-left: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #ffffff;
+  margin-bottom: 2.5rem;
+  background-color: #4a4a4a;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+pre {
+  background-color: #4a4a4a;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+code, kbd, samp {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #4a4a4a;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+/* Tables */
+table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.5em;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+/* Buttons, forms and input */
+input, textarea {
+  border: 1px solid #c9c9c9;
+}
+input:focus, textarea:focus {
+  border: 1px solid #ffffff;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button, button, input[type=submit], input[type=reset], input[type=button] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 1px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
+  background-color: #c9c9c9;
+  border-color: #c9c9c9;
+  color: #222222;
+  outline: 0;
+}
+
+textarea, select, input {
+  color: #c9c9c9;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea:focus, select:focus, input:focus {
+  border: 1px solid #ffffff;
+  outline: 0;
+}
+
+input[type=checkbox]:focus {
+  outline: 1px dotted #ffffff;
+}
+
+label, legend, fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+</style>
+
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="RJCalow" />
+    <meta
+    name="description"
+    content="A personal wiki (or digital garden) of photography and landscape notes." />
+
+  </head>
+
+  <body>
+  
+<div style="padding-bottom:2em"><h1><a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a></h1>
+<h5><a href="https://wiki.rjcalow.co.uk/search.html">search</a> | <a href="https://wiki.rjcalow.co.uk/sitemap.html">index</a> </h5></div>
+
+  
+
+  <ul><h1>bookcase</h1><ul><h6>culturenature</h6><li><a href="./bookcase/culturenature/beyond-the-nature-culture-dualism.html">Haila, Y. (2000) ‘Beyond the Nature-Culture Dualism’</a></li><li><a href="./bookcase/culturenature/domesticwild.html">Ginn, F. (2017) Domestic Wild. Memory, Nature and Gardening in Suburbia</a></li><li><a href="./bookcase/culturenature/landscapeandmemory.html">Landscape And Memory - Simon Schama (1996)</a></li><li><a href="./bookcase/culturenature/losingeden.html">Losing Eden (2020)</a></li></ul><ul><h6>margins</h6><li><a href="./bookcase/margins/ambivalent-landscapes.html">Ambivalent landscapes—wilderness in the urban interstices (2007)</a></li><li><a href="./bookcase/margins/bastardcountryside.html">The Unofficial Countryside - Richard Mabey (1973)</a></li><li><a href="./bookcase/margins/edgelands-journeys-into-englands-true-wilderness.html">Edgelands: Journeys Into England's True Wilderness (2011)</a></li><li><a href="./bookcase/margins/edgelands-of-promise.html">Edgelands of Promise</a></li><li><a href="./bookcase/margins/isn’t-all-public-space-terrain-vague.html">Isn’t All Public Space Terrain Vague?</a></li><li><a href="./bookcase/margins/land-matters.html">Land Matters: Landscape Photography, Culture and Identity</a></li><li><a href="./bookcase/margins/making-of-edgelands.html">The Making of Edgelands (2016)</a></li><li><a href="./bookcase/margins/suburbia.html">Suburbia: A Far from Ordinary Place</a></li><li><a href="./bookcase/margins/urban-wildscapes.html">Urban Wildscapes (2012)</a></li></ul><ul><h6>other</h6><li><a href="./bookcase/other/hokkaidohighwayblues.html">Hokkaido highway blues</a></li></ul><ul><h6>psychogeography</h6><li><a href="./bookcase/psychogeography/soulofplace.html">Soul of place (2015)</a></li><li><a href="./bookcase/psychogeography/theartofflaneuring.html">The Art of Flaneuring (2019)</a></li></ul></ul><ul><h1>landscape</h1><li><a href="./landscape/edgelandcrime.html">Notes on edgelands and crime</a></li><li><a href="./landscape/edgelands.html">Edgelands</a></li><li><a href="./landscape/factsandfigs.html">Rural facts</a></li><li><a href="./landscape/man-made-peak.html">The Man made Peak</a></li><li><a href="./landscape/marginal-space.html">Marginal space</a></li><li><a href="./landscape/non-place.html">Non-place</a></li><li><a href="./landscape/terrain-vague.html">Terrain vague</a></li><li><a href="./landscape/third-landscape.html">Third landscape</a></li><li><a href="./landscape/wilderness.html">Wilderness in Britain</a></li></ul><ul><h1>photography</h1><ul><h6>digitalworkflow</h6><li><a href="./photography/digitalworkflow/ffmpeg.html">FFmpeg</a></li><li><a href="./photography/digitalworkflow/fujifilm-xf10.html">Fujifilm xf10</a></li><li><a href="./photography/digitalworkflow/silkypix-noise-reduction.html">Silkypix noise reduction</a></li><li><a href="./photography/digitalworkflow/silkypix-xf10-profile.html">Silkypix profile for the fuji xf10</a></li></ul><ul><h6>essay</h6><li><a href="./photography/essay/artiststatementforsnaginflorescence.html">Artist statement for Snag / Inflorescence</a></li><li><a href="./photography/essay/fays-land.html">Fays Land</a></li><li><a href="./photography/essay/toycameralandscape.html">Exploring a landscape with handmade cameras</a></li></ul><ul><h6>hack</h6><li><a href="./photography/hack/35mmholga.html">35mm film in a Holga</a></li><li><a href="./photography/hack/classicchrome.html">Classic Chrome on xpro1</a></li><li><a href="./photography/hack/e-ink.html">E-ink</a></li><li><a href="./photography/hack/lumix-tz10-infrared-conversion.html">LUMIX TZ10 INFRARED CONVERSION</a></li></ul><ul><h6>make</h6><li><a href="./photography/make/cardboardhardcover.html">Cardboard hardcover for diy photobook</a></li><li><a href="./photography/make/coffeecanpinholecamera.html">Coffee can pinhole camera</a></li><li><a href="./photography/make/cyanotypes-via-artificial-light.html">Cyanotypes with artificial light</a></li><li><a href="./photography/make/epson-xp-3100bookletprinting.html">Printing a zine or booklet on a epson xp-3100</a></li><li><a href="./photography/make/infrared-cyanotypes.html">Infrared Cyanotypes</a></li><li><a href="./photography/make/inkjet-paper-negatives.html">Inkjet paper negatives</a></li><li><a href="./photography/make/makingzinesfromcheapphotoprints.html">Making Zines from cheap photo prints</a></li></ul><ul><h6>misc</h6><li><a href="./photography/misc/quotes.html">Quotes for class</a></li></ul><ul><h6>photographicworks</h6><li><a href="./photography/photographicworks/backyardphotog.html">Backyard photography</a></li><li><a href="./photography/photographicworks/calltoaction.html">James E Smith, Call to action, 2016</a></li><li><a href="./photography/photographicworks/theforest.html">Paul Seawright, the Forest, 2001</a></li><li><a href="./photography/photographicworks/tokyotape(2016).html">Steven Seidenberg, Tokyo Tape (2016)</a></li><li><a href="./photography/photographicworks/worksaboutparks.html">Photographic works about parks</a></li></ul><ul><h6>pinhole</h6><li><a href="./photography/pinhole/holgawpc.html">Holga wpc exposure table</a></li></ul><ul><h6>sketchbook</h6><li><a href="./photography/sketchbook/estovers.html">Estovers</a></li><li><a href="./photography/sketchbook/monachopsis.html">Monachopsis</a></li><li><a href="./photography/sketchbook/unoccupied.html">Unoccupied</a></li></ul><ul><h6>walking</h6><li><a href="./photography/walking/linemadebywalking.html">line made by walking, Richard Long, 1967</a></li><li><a href="./photography/walking/proposal.html">Proposal, Peter Liversidge, 2012</a></li><li><a href="./photography/walking/zone.html">Zone, David Bate, 2011</a></li></ul><ul><h6>zines</h6><li><a href="./photography/zines/flâneur.html">Flâneur</a></li><li><a href="./photography/zines/onepunksguide.html">One Punk’s Guide to Gardening by Jon Mule</a></li><li><a href="./photography/zines/the-garden-weed-project.html">The Garden Weed project</a></li></ul></ul><ul><h1>psychogeography</h1><li><a href="./psychogeography/dérive.html">Dérive</a></li><li><a href="./psychogeography/latourex.html">Latourex</a></li><li><a href="./psychogeography/yellowarrow.html">Yellow Arrow (2004-2008)</a></li></ul></ul>
+
+  
+
+
+  </body>
+  </html>
+
+
+      

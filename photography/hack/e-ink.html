@@ -1,0 +1,223 @@
+<!doctypehtml><html lang=en><title>E-ink</title><style>/* $color-text: #dedce5; */
+/* Sakura.css v1.4.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 38em;
+  margin: auto;
+  color: #c9c9c9;
+  background-color: #222222;
+  padding: 13px;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem;
+  }
+}
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2.20em;
+}
+
+h2 {
+  font-size: 1.88em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+small, sub, sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  color: #e6e6e6;
+}
+a:hover {
+  color: #c9c9c9;
+  border-bottom: 2px solid #c9c9c9;
+}
+
+ul {
+  padding-left: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #ffffff;
+  margin-bottom: 2.5rem;
+  background-color: #4a4a4a;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+pre {
+  background-color: #4a4a4a;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+code, kbd, samp {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #4a4a4a;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+/* Tables */
+table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.5em;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+/* Buttons, forms and input */
+input, textarea {
+  border: 1px solid #c9c9c9;
+}
+input:focus, textarea:focus {
+  border: 1px solid #ffffff;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button, button, input[type=submit], input[type=reset], input[type=button] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 1px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
+  background-color: #c9c9c9;
+  border-color: #c9c9c9;
+  color: #222222;
+  outline: 0;
+}
+
+textarea, select, input {
+  color: #c9c9c9;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea:focus, select:focus, input:focus {
+  border: 1px solid #ffffff;
+  outline: 0;
+}
+
+input[type=checkbox]:focus {
+  outline: 1px dotted #ffffff;
+}
+
+label, legend, fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}</style><meta charset=utf-8><meta content=width=device-width,initial-scale=1 name=viewport><meta content=RJCalow name=author><meta content="A personal wiki (or digital garden) of photography and landscape notes."name=description><body><div style=padding-bottom:2em><h1><a href=https://wiki.rjcalow.co.uk>wiki.rjcalow.co.uk</a></h1><h5><a href=https://wiki.rjcalow.co.uk/search.html>search</a> | <a href=https://wiki.rjcalow.co.uk/sitemap.html>index</a></h5></div><h2>E-ink</h2><h6>1/9/2020</h6><h3>termux-camera-to-kindle.sh</h3><p>Inspired by <a href=https://www.bjp-online.com/2018/05/cairnstateshape/>Antony Cairns</a>. This short script was a tiny side project during my COVID restricted masters in photography. With no access to a darkroom I experimented with obscure/misunderstood digital technologies for image-making.<p>The aim is to demonstrate e-ink technology as a medium for reproduction and the act of repurposing a commercial artefact for unconventional means (in this case appropriating monochrome images -the more indeterminate and abstract the better).<p><img alt src=../../imgs/kindle.jpg><p>Originally a python script that called system commands, I rewrote the script in bash for less dependencies.</p><script src=https://gist.github.com/rjcalow/f584c24752d1d3c722b8ff8a0b9f9c7d.js></script><p>Besides the novelty of the process, it allowed me to understand how reproduction works on the e-ink screen, its behaviour and limitations. I found that having a strong contrast applied to images worked best, this may be down to the e-ink screen being limited to 3bit Greyscale (8 shades) -some of the lighter shades of grey lack clarity and are lost to the grey screen.<h3>Kindle ereader as a means of image reproduction</h3><p>To reproduce images on the Kindle, I purposefully chose vague and abstract subject matter playing with the metaphor of culture appropriating nature. These are scans of the Kindle and image.<p><img alt src=../../imgs/img20200501_11162913.jpg><p><img alt src=../../imgs/img20200501_11402077.jpg><p><img alt src=../../imgs/img20200501_11424010.jpg><h3>Reflection</h3><p>This started as a unconventional experiment during the pandemic quarantine, one that approaches {nature-culture} theme from a different approach. The more I reflect on it, the less unreasonable it becomes. The act of repurposing cultural artefact for another purpose is a subversive act, mimicking an aspect of the core theme. Additionally it offers discourse on cultural/digital appropriation of nature.

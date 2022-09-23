@@ -1,89 +1,305 @@
- 
-<!DOCTYPE html>
-<html>
-  <meta charset="utf-8" />
-  <title>wiki.rjcalow.co.uk</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A digital sketchbook, a personal wiki, a digital garden of notes" />
-  <meta name="keywords" content="digital garden, notes, photography, rjcalow" />
-  <meta name="author" content="R J Calow" />
-  <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" media="screen" />
-<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-dark.css" media="screen and (prefers-color-scheme: dark)" />
-  <body>
-          <header>
-        <h3>
-        <a href="https://wiki.rjcalow.co.uk">🏠</a> &#x25E6;
-        <a href="https://wiki.rjcalow.co.uk#about">about</a> &#x25E6;  <a href="https://wiki.rjcalow.co.uk/log">log</a> &#x25E6; 
-        <a href="https://wiki.rjcalow.co.uk/search">search</a>
-        </h3>
-      </header>
 
-    <details id="index" open="">
-    <summary>./index</summary>
-      
-    <ul>
-       
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/bookcase">Bookcase</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/botany">Botany</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/development">Development</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/film">Film</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/horticulture">Horticulture</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/landscape">Landscape</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/misc">Misc</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/photography">Photography</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/pi">Pi</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/psychogeography">Psychogeography</a>
-      </li>
-         
-      <li>
-        <a href="https://wiki.rjcalow.co.uk/www">Www</a>
-      </li>
-       
-    </ul>
-    
-  </details>
-    <main>
-      <div id="about"><h3>About.md</h3>
-<p>Inadequate biography: I am Richard. I usually go by @rjcalow. I am an artist-<a href="./photography/">photographer</a>, maker, writer focused on culture-nature dichotomy and overlooked spaces.</p>
-<p>Proposition: while <a href="https://rjcalow.co.uk">rjcalow.co.uk</a> is a portfolio, this is my digital sketchbook, a personal wiki, a <a href="https://maggieappleton.com/nontechnical-gardening">digital garden</a> of notes. Given its intermediate state, it should be considered incomplete, subject to change and as work in progress.</p>
-<p>Notes: range from <a href="./photography/">photography</a>, <a href="./horticulture">gardening</a>, and <a href="./bookcase">what I have read</a>  to rambling notes on on <a href="./landscape">landscape</a>. There is really no set topic. Some are connected, others are not coherent. </p>
-<p>Regarding design and specification: <a href="https://newrepublic.com/article/155993/can-internet-survive-climate-change">the internet is bloated and bad for the environment</a>, not to mention rife with spyware and walled gardens. Inspired by <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website.html">Low tech magazine</a> and <a href="https://512kb.club/">512kb.club</a>, this garden strives to be a minimalist DIY approach and homage to the personal homepage -from a time when the internet was fun.</p></div>
-    </main>
-    <!-- footer -->
-        <!-- footer -->
-    <footer>
-      <p>☕ Brewed w/ love. Hosted on github. Generated with <a href="https://github.com/rjcalow/roji.py">roji.py</a>.</p>
-      <p>📧 8t2pg3mf0@relay.firefox.com.</p>
-      <p>⚙️ Generated 02/08/2022, at 9667149 bytes.</p>
-      <a style="float: right;" href="#top">Go to top ↑</a>
-    </footer>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  
+  <title>index</title>
+  
+<style>
+
+
+/* $color-text: #dedce5; */
+/* Sakura.css v1.4.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 38em;
+  margin: auto;
+  color: #c9c9c9;
+  background-color: #222222;
+  padding: 13px;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem;
+  }
+}
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2.20em;
+}
+
+h2 {
+  font-size: 1.88em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+small, sub, sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  color: #e6e6e6;
+}
+a:hover {
+  color: #c9c9c9;
+  border-bottom: 2px solid #c9c9c9;
+}
+
+ul {
+  padding-left: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #ffffff;
+  margin-bottom: 2.5rem;
+  background-color: #4a4a4a;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+pre {
+  background-color: #4a4a4a;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+code, kbd, samp {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #4a4a4a;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+/* Tables */
+table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.5em;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+/* Buttons, forms and input */
+input, textarea {
+  border: 1px solid #c9c9c9;
+}
+input:focus, textarea:focus {
+  border: 1px solid #ffffff;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button, button, input[type=submit], input[type=reset], input[type=button] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 1px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
+  background-color: #c9c9c9;
+  border-color: #c9c9c9;
+  color: #222222;
+  outline: 0;
+}
+
+textarea, select, input {
+  color: #c9c9c9;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea:focus, select:focus, input:focus {
+  border: 1px solid #ffffff;
+  outline: 0;
+}
+
+input[type=checkbox]:focus {
+  outline: 1px dotted #ffffff;
+}
+
+label, legend, fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+</style>
+
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="RJCalow" />
+    <meta
+    name="description"
+    content="A personal wiki (or digital garden) of photography and landscape notes." />
+
+  </head>
+
+  <body>
+  
+<div style="padding-bottom:2em"><h1><a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a></h1>
+<h5><a href="https://wiki.rjcalow.co.uk/search.html">search</a> | <a href="https://wiki.rjcalow.co.uk/sitemap.html">index</a> </h5></div>
+
+  
+
+  <p>A personal wiki (or <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">garden</a>) of photography and landscape notes.</p>
+    <h3>Latest notes</h3><ul>
+
+        <li><small>[10/1/2022]</small> <a href="./bookcase/margins/bastardcountryside.html">The Unofficial Countryside - Richard Mabey (1973)</a> in margins</li>
+
+        
+
+        <li><small>[16/11/2021]</small> <a href="./bookcase/other/hokkaidohighwayblues.html">Hokkaido highway blues</a> in other</li>
+
+        
+
+        <li><small>[28/10/2021]</small> <a href="./bookcase/psychogeography/soulofplace.html">Soul of place (2015)</a> in psychogeography</li>
+
+        
+
+        <li><small>[23/10/2021]</small> <a href="./bookcase/culturenature/landscapeandmemory.html">Landscape And Memory - Simon Schama (1996)</a> in culture nature</li>
+
+        
+
+        <li><small>[16/10/2021]</small> <a href="./bookcase/margins/suburbia.html">Suburbia: A Far from Ordinary Place</a> in margins</li>
+
+        
+
+        <li><small>[9/10/2021]</small> <a href="./photography/digitalworkflow/ffmpeg.html">FFmpeg</a> in digital workflow</li>
+
+        
+
+        <li><small>[17/7/2021]</small> <a href="./photography/photographicworks/tokyotape%282016%29.html">Steven Seidenberg, Tokyo Tape (2016)</a> in photographic works</li>
+
+        
+
+        <li><small>[16/07/2021]</small> <a href="./bookcase/psychogeography/theartofflaneuring.html">The Art of Flaneuring (2019)</a> in psychogeography</li>
+
+        
+
+        <li><small>[04/07/2021]</small> <a href="./landscape/edgelandcrime.html">Notes on edgelands and crime</a> in landscape</li>
+
+        
+
+        <li><small>[26/6/2021]</small> <a href="./photography/make/cardboardhardcover.html">Cardboard hardcover for diy photobook</a> in make</li>
+
+        </ul>
+
+  
+
+
   </body>
-</html>
+  </html>
+
+
+      

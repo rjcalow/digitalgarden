@@ -1,0 +1,378 @@
+
+  <!DOCTYPE html>
+  <html>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="RJCalow" />
+    <meta
+    name="description"
+    content="A personal wiki (or digital garden) of photography and landscape notes." />
+
+    <title>Search engine</title>
+
+    
+<style>
+
+
+/* $color-text: #dedce5; */
+/* Sakura.css v1.4.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 38em;
+  margin: auto;
+  color: #c9c9c9;
+  background-color: #222222;
+  padding: 13px;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem;
+  }
+}
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2.20em;
+}
+
+h2 {
+  font-size: 1.88em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+small, sub, sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  color: #e6e6e6;
+}
+a:hover {
+  color: #c9c9c9;
+  border-bottom: 2px solid #c9c9c9;
+}
+
+ul {
+  padding-left: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #ffffff;
+  margin-bottom: 2.5rem;
+  background-color: #4a4a4a;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+pre {
+  background-color: #4a4a4a;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+code, kbd, samp {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #4a4a4a;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+/* Tables */
+table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.5em;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+/* Buttons, forms and input */
+input, textarea {
+  border: 1px solid #c9c9c9;
+}
+input:focus, textarea:focus {
+  border: 1px solid #ffffff;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button, button, input[type=submit], input[type=reset], input[type=button] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 1px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
+  background-color: #c9c9c9;
+  border-color: #c9c9c9;
+  color: #222222;
+  outline: 0;
+}
+
+textarea, select, input {
+  color: #c9c9c9;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea:focus, select:focus, input:focus {
+  border: 1px solid #ffffff;
+  outline: 0;
+}
+
+input[type=checkbox]:focus {
+  outline: 1px dotted #ffffff;
+}
+
+label, legend, fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+</style>
+  
+    
+<style>
+body{transition:all 1s ease-in-out}.show{display:block !important}.snippet{display:none;margin:0}#question-list-container li{display:none;margin:1em;padding:5px;width:100%}#question-list-container ul{margin:0;padding:0}.searchbox{margin:0;border-bottom:1px dodgerblue dotted;background:transparent}.searchbox input{color:grey;padding:20px 12px;font-family:monospace;font-size:30px;border:0 solid lightgray;background:transparent}.searchbox input:focus{width:100%;outline:none}.questions p{display:inline}@media (prefers-color-scheme: dark){.searchbox input{color:white}}
+</style>
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <body>
+      
+      
+<div style="padding-bottom:2em"><h1><a href="https://wiki.rjcalow.co.uk">wiki.rjcalow.co.uk</a></h1>
+<h5><a href="https://wiki.rjcalow.co.uk/search.html">search</a> | <a href="https://wiki.rjcalow.co.uk/sitemap.html">index</a> </h5></div>
+
+      <main>
+        
+        <div class="searchbox">
+          <input
+            id="searchterm"
+            class=""
+            type="text"
+            id="sample3"
+            placeholder="🔍 Search"
+          />
+        </div>
+
+        <div class="questions">
+          <div id="question-list-container">
+            <ul> 
+
+            <li data-question-id=100><p><a href=./landscape/wilderness.html>Wilderness in Britain</a></p> <section><div class=snippet>Wilderness in Britain <blockquote><p>E. M. Forster in 1964 wrote that two world wars had enveloped the wildness of Britain. “‘Two great wars demanded and bequeathed regimentation,’ wrote E. M. Forster in 1964, ‘science lent her aid, and the wildness of these islands, never extensive, was stamped upon and built over and patrolled in no time. There is no forest or fell to escape to today, no cave in which to curl up, and no deserted valley.’” (Macfarlane 2009, p.8)</blockquote><p>Jonathan Raban claims Britain lost its wilderness much earlier in the 1860s with population and industry:<blockquote><p>so thickly peopled, so intensively farmed, so industrialised, so citified, that there was nowhere to go to be truly alone, or to have … adventures, except to sea. (Jonathan Raban Cited in (Macfarlane 2009, p.8))</blockquote><p>Macfarlane states population and the road network is really to blame for the lack of wilderness or remoteness:<blockquote><p>In Britain, over sixty-one million people now live in 93,000 square miles of land. Remoteness has been almost abolished, and the main agents of that abolition have been the car and the road. Only a small and diminishing proportion of terrain is now more than five miles from a motorable surface. There are nearly thirty million cars in use in Britain, and 210,000 miles of road on the mainland alone. (Macfarlane 2009, p.9)</blockquote><p>George Monbiot argues that there is a wildness paradox, that Britain's gardens have more wildlife in them than barren uplands:<blockquote><p>Spend two hours sitting in a bushy suburban garden anywhere in Britain, and you are likely to see more birds, and of a wider range of species, than you would while walking five miles across almost any open landscape in the uplands. (Monbiot 2014, p.69)</blockquote><p>Liz Wells argues Britain is a managed land and notes the paradox of the pictorial countryside as safe, clean, and undisturbed rather than managed.<blockquote><p>...<strong>British land is managed – there is no wilderness</strong>; even the coastal littoral is overseen (by the Environment Agency). It follows that landscapes and vistas are human constructs, which means that aesthetic principles, as well as social mores, were and are in play within the actual shaping of land. Pictorial renderings of countryside as pastoral depict Britain as undisturbed and undisturbing, thus contributing to constructing a simplified and benign rural imaginary, to picturing countryside as safe. (Wells 2011, p.164)</blockquote><p>The lack of wild animals like wolves, beaver and boar:<blockquote><p>So few wild creatures, relatively, remain in Britain and Ireland: so few, relatively, in the world. Pursuing our project of civilisation, we have pushed thousands of species towards the brink of disappearance, and many thousands more over that edge. The loss, after it is theirs, is ours. Wild animals, like wild places, are invaluable to us precisely because they are not us. They are uncompromisingly different. (Macfarlane 2009, p.306,307)</blockquote><h3>References</h3><p>Macfarlane, R., 2009. The Wild Places, Granta Books.<p>Monbiot, G., 2014. Feral: Rewilding the Land, the Sea, and Human Life, University of Chicago Press.<p>Wells, L., 2011. Land Matters: Landscape Photography, Culture and Identity, I.B.Tauris.</div></section><li data-question-id=101><p><a href=./landscape/man-made-peak.html>The Man made Peak</a></p> <section><div class=snippet>The Man made Peak <blockquote><p>… the conservation movement, while well intentioned, has sought to freeze living systems in time. It attempts to prevent animals and plants from either leaving or–if they do not live there already–entering. It seeks to manage nature as if tending a garden. Many of the ecosystems, such as heath and moorland, blanket bog and rough grass, that it tries to preserve are dominated by the low, scrubby vegetation which remains after forests have been repeatedly cleared and burnt. <mark> This vegetation is cherished by wildlife groups, which prevent it from reverting to woodland through intensive grazing by sheep, cattle and horses. It is as if conservationists in the Amazon had decided to protect the cattle ranches, rather than the rainforest.  </mark>(Monbiot, 2014, p. 8)</blockquote><p>Management of moorland through cutting.<p><img alt src=../imgs/winhill2.jpg><blockquote><p>Out of 218 nations, the UK ranks 189th for the intactness of its living systems (rspb, 2016)<p>… In Britain, as in most of Western Europe, land is managed; it follows that vistas or landscapes are constructed, which means that a sense of aesthetic principles, as well as social mores, are in play. (Wells, 2011, p. 28)</blockquote><h3>Bibliography</h3><p>Monbiot, G. (2014) Feral: Rewilding the Land, the Sea, and Human Life. University of Chicago Press.<p>rspb (2016) State of Nature 2016, <a href=https://www.rspb.org.uk/>https://www.rspb.org.uk/</a>. Available at: <a href=https://www.rspb.org.uk/globalassets/downloads/documents/conservation-projects/state-of-nature/state-of-nature-uk-report-2016.pdf>https://www.rspb.org.uk/globalassets/downloads/documents/conservation-projects/state-of-nature/state-of-nature-uk-report-2016.pdf</a> (Accessed: 15 November 2019).<p>Wells, L. (2011) Land Matters: Landscape Photography, Culture and Identity. I.B.Tauris.</div></section><li data-question-id=102><p><a href=./landscape/third-landscape.html>Third landscape</a></p> <section><div class=snippet>Third landscape <h2>( Tiers-Paysage )</h2><p>A term for <em>les délaissés</em> (leftover spaces of urban development) for nature to colonise. Coined by Gilles Clément, a French garden designer, botanist, entomologist and writer, in a manifesto entitled ‘Manifeste du Tiers paysage’.<p>In ‘Manifeste du Tiers paysage’, Clément argues that neglected and unexploited space is a reserve under the term third landscape. Left to evolution, biological processes and agency transform anthropized territories to natural spaces which provide biodiverse habitats for fauna and flora but can also be used by society as spaces for leisure and connection to the natural world.<ul><li><a href=https://duckduckgo.com/?q=Derborence+Island+gillies+clement&iar=images>Clément's Derborence Island</a>, an inaccessible urban "garden" left to nature.<li><a href=http://www.gillesclement.com/fichiers/_tierspaypublications_92045_manifeste_du_tiers_paysage.pdf>Manifesto from Clément's website</a></ul></div></section><li data-question-id=103><p><a href=./landscape/edgelands.html>Edgelands</a></p> <section><div class=snippet>Edgelands <p>Coined by Marion Shoard (see <a class=wikilink href=../search.html?=Edgelands_of_Promise>Edgelands of Promise</a>) and further popularised by Farley, P. and Symmons Roberts (See <a class=wikilink href=../search.html?=Edgelands_Journeys_Into_Englands_True_Wilderness>Edgelands Journeys Into Englands True Wilderness</a>), the term can be confusing.<p>The term can refer to:<ul><li><p>the indeterminate urban boundary between rural territories which can host infrastructure, golf courses, car parks and canals.</p><li><p>marginal areas outside of conventional urban circuits like derelict and brownfield sites.</p><li><p>non-places such as retail parks, service stations and transport infrastructure on the <em>outskirts</em></p></ul></div></section><li data-question-id=104><p><a href=./landscape/edgelandcrime.html>Notes on edgelands and crime</a></p> <section><div class=snippet>Notes on edgelands and crime <p>Through the lack of context and their subversive <em>edgy</em> characteristics, edgeland sites can harbour suspicion. These are out of town areas where the socially marginal meet for questionable or immoral activities. These dystopias are enforced and exploited through film and tv. Throughout the 1990's the backdrop of the indie crime movie was an edgeland site. The place where <a href=https://www.youtube.com/watch?v=CLyajC5-gFs>money is exchanged</a>, <a href=https://www.youtube.com/watch?v=aaco4Ea5nXY>money is stolen</a>, and the criminal-protagonist cover is <a href=https://www.youtube.com/watch?v=xu8rdS5O7vo>walking the dog</a>. Of course, the edginess is hyperbole, visually enhanced with banal industrial architecture, debris and monotonous colour balances. Film portrays them as landscapes where concluding conflict is played out. In reality, these areas, besides the occasional glimpses of marginal society (the attempted dog theft) spurring suspicion, are not straightforward dystopias but banal urban peripheries with complex social processes.<p>Author of the term:<blockquote><p>The aura of excitement which goes with the apparent lawlessness of the edgelands has been exploited in such films of the 1990s as Reservoir Dogs, Pulp Fiction, Seven, Things to Do in Denver When you’re Dead, Fargo and The Straight Story. (Shoard, 2000, p. 130)</blockquote><p>[[Roberts, M. S.]] co-author of edgelands <em>Journeys Into England's True Wilderness</em> (2011):<blockquote><p>Marion Shoard’s coining of ‘edgelands’ seemed to conjure exactly our experience of these places. They were, and are, edgy. In British tv drama and low budget films, the edgelands are always the place of the dénouement, the place where the drug gang is busted, the car chase ends, or the kidnap victim is rescued. These are places where anything could happen. And when it did, it was usually illegal or contravened every rule of health and safety. This sense of the edgelands as a dystopian landscape is a familiar trope of British popular culture in particular. (Roberts, 2016, pp. 19–20)</blockquote><h4>Bibliography for this note</h4><p>Roberts, M. S. (2016) ‘<a class=wikilink href=../search.html?=The_Making_of_Edgelands>The Making of Edgelands</a>’, <em>English Topographies in Literature and Culture</em>, pp. 17–24.<p>Shoard, M. (2000) ‘<a class=wikilink href=../search.html?=Edgelands_of_Promise>Edgelands of Promise</a>’, <em>Landscapes</em>, pp. 117–146.</div></section><li data-question-id=105><p><a href=./landscape/terrain-vague.html>Terrain vague</a></p> <section><div class=snippet>Terrain vague <p>French landscape theoretical term for indeterminate space, defined by Spanish architect, Ignasi de Solà- Morales, stating:<blockquote><p>It is impossible to capture in a single English word or phrase the meaning of terrain vague. The French term terrain connotes a more urban quality than the English land; thus terrain is an extension of the precisely limited ground fit for construction, for the city.” (de Solà- Morales, 2013, p. 26).</blockquote><h2>Breaking down the etymology</h2><ul><li>The term has duality stemming from Latin: “Vague descends from vacuus, giving us “vacant” and “vacuum” in English, which is to say “empty, unoccupied,” yet also “free, available, unengaged.”<li>A second meaning superimposed on the French vague derives from the Latin vagus, giving “vague” in English, too, in the sense of <mark>“indeterminate, imprecise, blurred, uncertain.”</mark> (de Solà- Morales, 2013, p. 26).<li>Solà- Morales uses the french term ‘terrain vague’ because the English vocabulary for these pockets of vacant landscape have negative connotations such as wasteland.</ul><h2>My favourite explanation</h2><p>Stanka Radović has a clear definition in the essay ‘on the threshold’ - an essay using the Andrei Tarkovsky 1979 film, Stalker, to explore the term as a utopia:<blockquote><p>“... terrain vague escapes and challenges rigid definitions. Is it urban or is it natural? Is it a concept or a concrete place? Free or forlorn? The term “terrain vague” translates into English as “wasteland,” “derelict area,” or “vacant land,” and refers to abandoned or unoccupied portions of urban land that remain available for spontaneous use.” (Radović, 2013, p. 114)</blockquote><h2>Early photography</h2><h3>Man Ray Etude pour terrain vague , 1929</h3><p><img alt src=../imgs/man_ray_terrain_vague.jpg><p>Before de Solà- Morales, Man Ray, inspired by Eugène Atget, captioned these photographs 'Terrain Vague'.<h3>Bibliography</h3><p>Radović, S. (2013) ‘On the Threshold: Terrain Vague as Living Space in Andrei Tarkovsky’s Stalker’, Terrain Vague: Interstices at the Edge of the Pale.<p>de Solà- Morales, I. (2013) ‘Terrain Vague’, Terrain Vague: Interstices at the Edge of the Pale.</div></section><li data-question-id=106><p><a href=./landscape/non-place.html>Non-place</a></p> <section><div class=snippet>Non-place <p>Contemporary urban-culture areas of transit and commerce with a lack of history and “heightened sense of anonymity” (Barron, 2013, p. 6)<h3>Bibliography</h3><p>Barron, P. (2013) ‘Introduction: At the Edge of the Pale’. Routledge, pp. 1–23.</div></section><li data-question-id=107><p><a href=./landscape/factsandfigs.html>Rural facts</a></p> <section><div class=snippet>Rural facts <p>Woodland findings:<ul><li>The area of woodland in the UK at 31 March 2019 is estimated to be 3.19 million hectares. This represents 13% of the total land area in the UK, 10% in England, 15% in Wales, 19% in Scotland and 8% in Northern Ireland.<li>Of the total UK woodland area, 0.86 million hectares (27%) is owned or managed by Forestry England, Forestry and Land Scotland, Natural Resources Wales or the Forest Service (in Northern Ireland).<li>The total certified woodland area in the UK at 31 March 2019 is 1.40 million hectares, including all Forestry England/Forestry and Land Scotland1/Natural Resources Wales/Forest Service woodland. Overall, 44% of the UK woodland area is certified.<li>Thirteen thousand hectares of new woodland were created in the UK in 2018-19, with conifers accounting for 60% of this area.<li>A total of 842 sites were served with a Statutory Plant Health Notice in 2018-19, requiring a total of 3.8 thousand hectares of woodland to be felled. (This excludes areas felled within the Phytophthora ramorum management zone in south west Scotland, where a Statutory Plant Health Notice is not required).<li>(Forestry Commission, 2019)</ul><p>Rural affairs:<ul><li>In 2017/18 there were 545,000 businesses registered in rural areas, accounting for 24 per cent of all registered businesses in England.<li>Businesses registered in rural areas employed 3.6 million people, accounting for 13 per cent of all those employed by registered businesses in England.<li>There are more registered businesses per head of population in predominantly rural areas than in predominantly urban areas (excluding London).<li>There are proportionately more small businesses in rural areas.<li>In 2017 there were 46 registered business start-ups per 10,000 population in predominantly rural areas compared with 55 per 10,000 population in predominantly urban areas (excluding London).<li>(Department for Environment, Food & Rural Affairs, 2019a)</ul><p>Further rural affairs:<p><em>These figures are current until they are replaced on the 19th of December 2019.</em><p>Second estimate figures for 2018 compared to 2017, in current prices, show:<ul><li>Total Income from Farming fell by £971 million (17%) to £4,644 million<li>Agriculture contributed £9,548 million or 0.51% to the national economy (Gross Value Added), a decrease of £651 million (6%) on the year.</ul><p>The main drivers of these changes are:<ul><li><p>An increase of £538 million (2%) in gross output to £26,562 million</p><li><p>An increase of £1,189 million (8%) in the value of intermediate consumption to £17,014 million</p><li><ul><li>Crop output value rose by 0.9% to £9,265 million. The cold, wet spring followed by the dry, hot summer contributed to lower yields of key crops however better prices helped offset production falls.</ul><li>The value of total livestock output rose by 2% to £14,741 million. Prices were generally higher but the challenging weather conditions affected volumes; the late cold spring disrupted lambing and the hot, dry summer led to poor grass growth and difficulties feeding livestock.<li>In general all intermediate consumption costs rose, with fuel, feed and fertiliser costs showing the largest increases.<li>(Department for Environment, Food & Rural Affairs, 2019b)</ul><p>Bibliography<p>Department for Environment, Food & Rural Affairs (2019a) ‘Rural businesses’. Available at: <a href=https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/828079/Businesses_-_August_2019__includes_SME_update_.pdf>https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/828079/Businesses_-_August_2019__includes_SME_update_.pdf</a> (Accessed: 22 November 2019).<p>Department for Environment, Food & Rural Affairs (2019b) ‘Total Income from Farming in the United Kingdom First estimate for 2018’. Available at: <a href=https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/815301/agricaccounts-tiffstatsnotice-09jul19.pdf>https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/815301/agricaccounts-tiffstatsnotice-09jul19.pdf</a> (Accessed: 21 November 2019).<p>Forestry Commission (2019) ‘Forestry Statistics 2019’. Available at: <a href=https://www.forestresearch.gov.uk/documents/7435/Complete_FS2019_zIuGIog.pdf>https://www.forestresearch.gov.uk/documents/7435/Complete_FS2019_zIuGIog.pdf</a> (Accessed: 8 December 2019).</div></section><li data-question-id=108><p><a href=./landscape/marginal-space.html>Marginal space</a></p> <section><div class=snippet>Marginal space <p>Empty, unoccupied or peripheral urban spaces.<h2>Terminology</h2><blockquote><p>Naming turns space into place (Wells, 2011, p. 3).</blockquote><ul><li><a class=wikilink href=../search.html?=Edgelands>Edgelands</a> - indeterminate interfacial between urban and rural.<li><a class=wikilink href=../search.html?=Urban_Wildscape>Urban Wildscape</a> - urban spaces under the agency of nature.<li><a class=wikilink href=../search.html?=Third_landscape>Third landscape</a> - spaces left to natural evolution.<li><a class=wikilink href=../search.html?=Non-place>Non-place</a> - contemporary urban spaces without history.<li><a class=wikilink href=../search.html?=Terrain_vague>Terrain vague</a> - imprecise spaces.</ul><h2>Avoiding the predetermined</h2><p>As a " " landscape photographer " " I constantly need reminding, that despite the above definitions, landscape is a <mark>“highly differentiated discourse on representing space”</mark> (Bate, 2009, p. 93).<p>Following a unique interpretation of a site whether that is through geography, autobiography, or metaphor, will create original work and avoid cliche.<h2>Bibliography</h2><p>Bate, D. (2009) Photography: The Key Concepts. Berg.<p>Wells, L. (2011) Land Matters: Landscape Photography, Culture and Identity. Bloomsbury Publishing.</div></section><li data-question-id=109><p><a href=./psychogeography/d%C3%A9rive.html>Dérive</a></p> <section><div class=snippet>Dérive <h2>Definition</h2><p>A term originating from the work of Guy Debord, situated (accident-pun) in situationism, and apart of a broad number of psychogeographical terms.<blockquote><p>The cool kids used to call it the dérive, the psychogeographical idea of hacking one’s mode of traveling through the city. Not so much a technique as an attitude, an active but intuitive way to alter normal patterns and ways of experiencing one’s environment that, done right, can break the malaise and rekindle wonder. Almost like surfing. The drift. Following the flow, while actively trying to get lost, and thereby creating opportunities for unexpected discovery. A trip without a plan.<p>(From Christopher Brown's newsletter - Lost in America)<p><a href=https://edgelands.substack.com/p/lost-in-america>https://edgelands.substack.com/p/lost-in-america</a></blockquote><p>Dérive's aim is to...<blockquote><p>...[R]emedy the incompetence of guides... and to discover the places that really have no reason to exist.<p>Antony, Rachel & Henry, Joel (Eds), The Lonely Planet Guide to Experimental Travel, p19/20 cited by Coverley, Merlin, Psychogeography (Pocket Essential series) p74</blockquote><p>Coverley referrers to the percipient as a <em>dériveur</em>, similar to flâneur.<blockquote><p>The dérive may lack a clear destination but it is not without purpose. On the contrary the dériveur is conducting a psychogeographical investigation and is expected to return home having noted the ways in which the areas traversed resonate with particular moods and ambiences.<p>Coverley, Merlin, Psychogeography (Pocket Essential series) p96</blockquote><p>The concept, accepting or disregarding the hints of philosophical-emotional hyperbole regardless, is a practical methodology to subvert monotonous urban environments for unexpected/unplanned situations.<h2>Application during 2020/21 pandemic restrictions</h2><p>Frequent covid restrictions in my area have meant that daily walks to the <a class=wikilink href=../search.html?=edgelands>edgelands</a> have become an important escape -from stale suburbia and information overload. These daily unplanned wanderings have similarities with the dérive methodology. The results -dérive like unexpected occurrences have spawned projects like <a class=wikilink href=../search.html?=unoccupied>unoccupied</a>.<h3>Applying dérive to psychogeographical photographic practice and beyond</h3><ul><li>Note the areas walked<ul><li>the weather<li>the light / time of day<li>feelings / thoughts produced</ul><li>Photograph the unexpected ✔️<li>Get lost / go with the flow</ul></div></section><li data-question-id=110><p><a href=./psychogeography/yellowarrow.html>Yellow Arrow (2004-2008)</a></p> <section><div class=snippet>Yellow Arrow (2004-2008) <p>A defunct and pioneering interactive art project that pairs physical media with SMS mobile technology.<blockquote><h3>The YellowArrow is a global public art project that merges graffiti and sticker culture with wireless media, creating an interactive forum for people to leave and discover messages pointing out what counts in their environment. Participants place arrows to draw attention to different locations and objects</h3><p><a href=https://web.archive.org/web/20050222191554/http://www.yellowarrow.org/about.php><a href=http://YellowArrow.org>YellowArrow.org</a> (2005)</a></blockquote><h2>Why it's interesting today</h2><p>Reminds me of geocaching, pokemon go, and munzee. But unlike these, rather than being games built on top of urban environments, yellow arrow is environment focused through psychogeographical engagement. The ability to leave a message in the environment and encouraging the user to point out features with yellow arrow stickers, is the interesting concept.<h2>links</h2><p><a href=https://brianhouse.net/works/yellow_arrow/>https://brianhouse.net/works/yellow_arrow/</a><p><a href=https://docubase.mit.edu/project/yellow-arrow/>https://docubase.mit.edu/project/yellow-arrow/</a><p><a href=https://www.flickr.com/photos/yellowarrow/collections/>https://www.flickr.com/photos/yellowarrow/collections/</a></div></section><li data-question-id=111><p><a href=./psychogeography/latourex.html>Latourex</a></p> <section><div class=snippet>Latourex <h3>👉 <a href=https://www.latourex.org>https://www.latourex.org</a></h3><p>A collection of, mostly French, hyperlink and pdf documents around psychogeography by Joel Henry.<p>Each document has ideas, experiments, and invitations. Some are in <em>The Lonely Planet Guide to Experimental Travel</em>, and this collection can be seen as an extension of the book.<p>Examples:<blockquote><h3>ALTERNATING-TRAVEL</h3><p>Leave your home on foot. Take the first road on the right, then the next on the left, then the next on the right, then the next on the left, etc. Carry on until something, a no man's land, a building or a stretch of water, blocks your path and you can go no farther.<h3>ANACHRONISTIC-TRAVEL</h3><ol><li>Travel using a means of transport that is old-fashioned or obsolete eg, sedan-chair, palankeen, galley, hackney cab, track motorcar, 2 CV, airship, etc.<li>Visit a foreign town using an old edition of a guidebook.</ol><p>With the help of a telephone directory (internet, or other method) find a person called Ariadne in a town of your choice.<p>Give Mr or Ms Ariadne a call and ask him/her what his/her favourite 21 places in the town are.<p>Mark each place on a map and visit them in a logical order.<h3>MONOPOLYTOURISME</h3><p>Méthode d’exploration urbaine qui consiste à découvrir une capitale selon la cartographie particulière de son plateau de Monopoly. En visiter les rues, gares, prison, parking, compagnie des eaux et d’électricité… en réglant ses déplacements à coups de dé conformément aux règles du jeu officielles.<h3>MONOPOLYTOURISM</h3><p>Urban exploration method which consists in discovering a capital according to the particular cartography of its Monopoly board. Visit the streets, stations, prison, car park, water and electricity company… by paying for trips with the dice in accordance with the official rules of the game.</blockquote></div></section><li data-question-id=112><p><a href=./bookcase/other/hokkaidohighwayblues.html>Hokkaido highway blues</a></p> <section><div class=snippet>Hokkaido highway blues <p>Burakumin:<p>The Japanese never talk about burakumin; they are the ghosts of the society. If you ask a colleague about this lower caste, he will either brush it off, or frown thoughtfully and try to change the subject. Those in even deeper stages of denial will insist that there is no such thing as burakumin. [...] (Burakumin towns traditionally did not exist; they were not marked on maps nor were they signposted, a habit that lingers in present municipal attitudes.) Page 173.<p>Western society is no better:<p>East Indians in England. Arabs in France. Aborigines in Australia. Natives in Canada and the United States. We have our own castes of outsiders. It is a human urge, this need to create outcasts; you will see it on Indian reservations and South African homelands. And in the burakumin villages of Japan. Page 173<p>Ōishi Yoshio and the 47 Ronin story page 213.<p>Genki. Genki-yo! Page 238<p>Yamabushi. page 312<p>Pizza toast. Page 328<p>Konnyaku - "devil's tongue". Bar toilet Graffiti: what is konnyaku? Where does it come from and what does it want? page 341<p><em>Hirosaki is the singularly most Japanese city I know. Not the finest or the prettiest or the oldest, but definitely the most Japanese.</em> Page 345<p>Super Gaijin! TV show page 347<p><em>I had spent more than a month surrounded by them, more than is possible, more than is natural. And it struck me then, with a deep sense of unease, that what I was doing was fundamentally wrong. The sakura are meant to be transitory, ephemeral. To try to cling to them was like trying to cling to youth. Following the Cherry Blossom Front was a denial of time, of seasons, of mortality even. It was like spraying lacquer on a lily. Like embalming a mirage. Like trying to stop time.</em> Page 353</div></section><li data-question-id=113><p><a href=./bookcase/psychogeography/theartofflaneuring.html>The Art of Flaneuring (2019)</a></p> <section><div class=snippet>The Art of Flaneuring (2019) <p>by Erika Owen.<p>A short lifestyle guide to a subject associated with historic Parisian men in top hats or the contemporary psychogeographer stereotype of a white male with walking boots, shorts and hiking bag prowling urban spaces. The author sidesteps esotericism and repackages the flaneur pursuit as a laid back <a href=https://en.wikipedia.org/wiki/Hygge>hygge</a>-equivalent lifestyle to aid wellbeing.<p>Flaneurism as a lifestyle is not an outlandish proposal. Think back to when Instagram was fun and engaging. I know it was a long time ago, but content synonymous with the <a class=wikilink href=../../search.html?=Flâneur>Flâneur</a> like food, drink and travel was popular. The app at one time seemed like a plug for a spontaneous-engaging lifestyle. A more relevant simile is the conventional and contemporary domestic tourist navigating the city by foot from tourist attraction to hospitality.<p>Notes on <em>The Art of Flaneuring</em>:<p>Art:<ul><li><p>Agnès Varda flaneur-like filmmaking</p><li><p><a href=https://cardiffmiller.com/walks/>Janet Cardiff audio walks</a></p></ul><p>Beginner tips:<ul><li>Have good shoes.<li>Break.<li>Be playful -fight boredom.<li>Journal<li>Research new spaces</ul><p>Creative:<ul><li>Put a line or circle through a map. Follow it.<li>Trade walking journals.</ul><p>Feminist interpretation:<ul><li>The 19th-century flaneur: "<em>drunken, syphilitic men wandering around and allowing themselves to find romanticism or excitement or perversity.</em>"<li>Lack of acknowledged historic and contemporary female flaneurs.<li>Walking is freedom. No delays, no traffic, more personal space. Bypass designated travel methods and zones for your own route.<li>Book: <em>Flaneuse: Women Walk the City in Paris, New York, Tokyo, Venice and London</em> by Lauren Elkin<li>Elkin: <em>...tune in to your surroundings, no matter what they are, urban or not. And no matter who you are, just look around you and ask, "How is this world put together?" "How is it made easier for some people to navigate than others?" "What is my responsibility in this place where I spend every day, how am I a part of it, and how do I affect other people's experiences of it?"</em></ul><p>Health:<ul><li><a href=https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00722/full>Urban nature reduces stress</a></ul><p>Outside of France :<ul><li>Italy: passeggiata -an after-dinner stroll.<li>Australia: the walkabout.<li>Germany: geocaching remains popular.<li>The UK<li><em>Roamers (?)</em> are a British equivalent, wandering and appreciating tiny details. Does the author mean Ramblers? Perhaps urban or radical ramblers.<li><a href=https://www.ramblers.org.uk/dontloseyourway>Ramblers don't lose your way campaign to save paths</a></ul><p>Race:<ul><li><a href=https://blackoutdoors.wordpress.com/2019/03/29/a-black-flaneur-in-the-hood/>A black flaneur in the hood</a></ul></div></section><li data-question-id=114><p><a href=./bookcase/psychogeography/soulofplace.html>Soul of place (2015)</a></p> <section><div class=snippet>Soul of place (2015) <p>by Linda Lappin.<p>A creative landscape-writing workbook. Though aimed at literature/creative writing, it can be used as a source of inspiration for different mediums such as landscape-psychogeography photography projects.<ul><li><a href=https://en.m.wikipedia.org/wiki/Deep_map>Deep map</a><li>Postcard fiction<li>Word painting -visual descriptions of a place<li>Pilgrimage <ul><li>Follow off the beaten track<li>Visit a place no longer there<li>A literary journey<li>A quest: a journey in parts (1) a desire, (2) a conflict, and (3) breakthrough</ul><li><a href=https://www.louisianavoices.org/pdfs/Unit4/Lesson3/SpiritofPlaceWorksheet.pdf>Finding the soul of the city</a><li>How do seasonal changes affect the place - holidays, weather<li>History <ul><li>Who lived there?<li>Your personal mythology-geography</ul><li>Parks<ul><li>Wild / cultivated dichotomy<li>How the natural elements work together<li>Pathways, design and purpose<li>Animals and people<li>Art - statues, design</ul><li>Transportation links<ul><li>Types of commuter<li>Modes</ul><li>Types of personal transport<li>Drivers<li>Ruins</ul></div></section><li data-question-id=115><p><a href=./bookcase/culturenature/domesticwild.html>Ginn, F. (2017) Domestic Wild. Memory, Nature and Gardening in Suburbia</a></p> <section><div class=snippet>Ginn, F. (2017) Domestic Wild. Memory, Nature and Gardening in Suburbia <h3>Regarding nature and culture dichotomy</h3><blockquote><p>Instead of a nature–culture dualism that has been eroded by historical events, a broad movement across the social sciences and social theory has advanced the claim that the world has always been comprised of entanglements between humans, creatures and agents of all kinds. This movement has been inspired by the philosophies of, among others, Bruno Latour, Donna Haraway and Gilles Deleuze and their antipathy to ontological hygiene. (Ginn, 2017, p. 5)</blockquote><p>Ginn points to philosophers such as Bruno Latour, who’s 1991 work, <em>Nous n'avons jamais été modernes</em>, argues the dichotomy never existed.<blockquote><p>… nature and culture are conceptual abstractions and so our present era – although it is an era of great loss – is not a loss of the wild brought about by the enclosure of nature within culture. Rather, the twenty-first century has witnessed a step-change in the intensity of planetary circulation and metabolism (Ginn, 2017, p. 5).</blockquote><p>Ginn states that culture has not consumed nature (extinctions), but connected with nature through an increasing number of interconnections at a global level. This reminds me of fig.1.1 in Latours translated, <em>We have never been modern?</em> (Latour, 1993, p. 11) in which nonhuman nature and human culture are depicted along a second dichotomy separating the nature-culture dualism with that of a hybridised network of connections.<p><img alt src=../../imgs/333443243.jpg><blockquote><p>Gardening shrugs in the face of the nature–culture dualism. Gardening has never really been something done by humans to plants, but has always been a process of mutually beneficial interkingdom exchange. (Ginn, 2017, p. 6).</blockquote><p>In relation to <a class=wikilink href=../../search.html?=gardening>gardening</a>, the interconnections between nature-culture are apparent and beneficial for both.<blockquote><p>The Anthropocene seems to unite humanity. But it does so through ‘our’ unequally shared vulnerability to forces of capitalist world ecology and global environmental change. Instead of being united by negative unity – that of vulnerability and loss – might we not seek a more compassionate and affirmative acknowledgement of unity? Gardening, as the domestic wild, might allow us a way to imagine an earthly ethos fit for the Anthropocene. (Ginn, 2017, p. 142)</blockquote><p>Ginn’s concluding message is that gardening may provide a force for good in the anthropocene landscape as a positive interconnection between nonhuman and human culture.<h3>Bibliography</h3><p>Ginn, F. (2017) <em>Domestic Wild: Memory, Nature and Gardening in Suburbia</em>. Routledge, Taylor & Francis Group.<p>Latour, B. (1993) <em>We Have Never Been Modern</em>. Harvard University Press.</div></section><li data-question-id=116><p><a href=./bookcase/culturenature/beyond-the-nature-culture-dualism.html>Haila, Y. (2000) ‘Beyond the Nature-Culture Dualism’</a></p> <section><div class=snippet>Haila, Y. (2000) ‘Beyond the Nature-Culture Dualism’ <h2>Introduction</h2><h4>Haila uses straightforward language in the opening paragraph to describe the dichotomy:</h4><blockquote><p>Culture may be viewed as an agent that actively strives for domination over nature, or as a malicious tumor that tends to grow and exceed the limits set by nature. Nature may be regarded as a source of hardships and catastrophs that needs to be mastered by human rational action or, alternatively, as benign providence that offers advice. The common denominator of all these varieties is that culture and nature are opposite sides in a dualism. (Haila, 2000, p. 155)</blockquote><h4>Nature as the “other”:</h4><blockquote><p>On the level of cultural identity, nature is such an “other”. The relationship to the “other” is asymmetric and implies domination; Plumwood (1993) elaborates on this point. For instance, in oppositions such as male-female, city-country, and reason-emotion the second term is the “other” for the first one which is the dominant term. Similarly, culture, by being the sphere in which human historical identity is formed, is dominant to its “other”, nature; culture becomes a “something” in opposition to “something else” which is nature… (Haila, 2000, p. 157).</blockquote><p>Haila points to Descartes and cartesian thinking:<blockquote><p>Subject-object relationships and the ensuing dualisms become elevated to a metaphysical postulate that the subject-object dichotomy is an essential determinant of human existence. We owe this move largely to Descartes who drew a strict distinction between res cogitas and res extensa; the apparent necessity as well as the inadequacy of the Cartesian dualism have been recognized and analyzed by a number of authors (Haila, 2000, p. 157).</blockquote><h2>Pervasive dualism</h2><p>Haila is concerned with the effects of the dualism on Environmentalism:<blockquote><p>The form particularly relevant in ecological thinking in the era of the ecological crisis is as follows: We want to know what nature allows us. To reach an ultimate certainty we would like to distinguish between “nature by herself as a standard” and “nature modified and polluted by humans”. This, however, cannot be done. Humans are creatures of nature; consequently, discriminating between phenomena of nature as “natural” and phenomena of culture as “unnatural” does not make sense at all. Furthermore, as nature changes continuously due to natural processes, the fact that human actions change nature cannot be a diagnostic feature of their “unnaturalness” (Haila, 2000, p. 157).</blockquote><p>Haila’s argument that we want to standardise nature, reminds me of Monbiot’s arguments against idealistic conservation:<blockquote><p>… the conservation movement, while well intentioned, sought to freeze living systems in time. It attempts to prevent animals and plants from either leaving or–if they do not live there already–entering. It seeks to manage nature as if tending a garden (Monbiot, 2014, p. 8)</blockquote><p>Haila points to the models of first and second nature to deconstruct the dualism:<blockquote><p>First nature and second nature form historically unique combinations in different situations and cannot be separated from each other: where, then, is the nature-culture dualism? (Haila, 2000, p. 168).</blockquote><h2>Conclusion</h2><p>Haila concludes that the boundary caused by the dualism should be thought of as complex interactions, breaking down the individual and the collective systems:<blockquote><p>… <mark> the dualism may not be one but many </mark>, constructed in every instantiation anew albeit from common materials … the composition and structure of the materials have varied enormously through history. It is not quite obvious whether “nature” has been the same in different cultures except in the abstract sense of being outside each culture, and in the even more abstract sense of being part of the same physical reality (Haila, 2000, pp. 163–164).<p>...instead of assuming at the outset that humanity and nature form two distinct realms of reality, we ought to view them as merging into situated, historically and contextually specified complexes. Then, the assumed fixed boundary between “I” and “the world” looses meaning (Haila, 2000, p. 171).</blockquote><h3>Bibliography</h3><p>Haila, Y. (2000) ‘Beyond the Nature-Culture Dualism’, Biology & Philosophy, pp. 155–175. doi: 10.1023/a:1006625830102.<p>Monbiot, G. (2014) Feral: Rewilding the Land, the Sea, and Human Life. University of Chicago Press.</div></section><li data-question-id=117><p><a href=./bookcase/culturenature/landscapeandmemory.html>Landscape And Memory - Simon Schama (1996)</a></p> <section><div class=snippet>Landscape And Memory - Simon Schama (1996) <blockquote><p>Landscapes are culture before they are nature; constructs of the imagination projected onto wood and water and rock. So goes the argument of this book. But it should also be acknowledged that once a certain idea of landscape, a myth, a vision, establishes itself in an actual place, it has a peculiar way of muddling categories, of making metaphors more real than their referents; of becoming, in fact, part of the scenery.<p>page 61</blockquote></div></section><li data-question-id=118><p><a href=./bookcase/culturenature/losingeden.html>Losing Eden (2020)</a></p> <section><div class=snippet>Losing Eden (2020) <h2>Why Our Minds Need the Wild by Lucy Jones</h2><p>Contemporary literary work on the British landscape tends to be a focus on nature, wilderness, or wonder. This, however, focuses on the wellbeing and health benefits of nature. Backed by scientific research, it features a substantial scientific and academic bibliography in conjunction with accessible writing.<h2>Introduction chapter</h2><h3>Terms</h3><p>Psychoterratic - mental health in relation to the earth.<blockquote><p>Psychoterratic illnesses, for example, are earth-related mental health issues such as ecoanxiety and global dread.</blockquote><p>Solastalgia - <a href=https://www.bbc.com/future/article/20151030-have-you-ever-felt-solastalgia>is when your endemic sense of place is being violated</a>.<blockquote><p>‘Solastalgia’ – an admixture of solace, nostalgia and destruction – describes a feeling of nostalgia and powerlessness about a place that once brought solace which has been destroyed.</blockquote><p>Species loneliness:<blockquote><p>...to mean a collective sorrow and anxiety arising from our disconnection from other species.</blockquote><p>I enjoyed and agreed with this:<blockquote><p>...it would appear that industrialized society perceives nature to be little more than a nicety: a luxury, an extra, a garnish – ‘Green crap’, as the former prime minister David Cameron reportedly called environmental policies</blockquote><h3>Brief timeline of cultures relationship with nature</h3><p>Arcadia:<blockquote><p>Virgil’s account of Arcadia, from his Eclogues (also known as the Bucolics), was a landscape of comfort and healing – with its cool springs, zephyrs, laurels and tamarisks – for Gallus, who was dying of a broken heart.</blockquote><p>Industrialization:<blockquote><p>...as the West became industrialized and our contact and connection with the natural world around us dwindled. As people moved to cities, and away from the land, they had to actively seek out nature, as they became physically separated from it. In the pre-industrialized West, the wilderness was often seen as cruel, revolting and ugly</blockquote><p>Romanization of nature:<blockquote><p>from the eighteenth century onwards people began to see the natural landscape in a new way, and with the rise of the Romantic movement in art and poetry, and Transcendentalists such as Henry Thoreau and Ralph Waldo Emerson</blockquote><p>After a brief timeline, Jones discusses post-industrial attitudes to nature and mental health with Victorian/Edwardian asylums having gardens. Followed by contemporary nature therapy and the authors personal interest.<h2>Chapter 1</h2><h3>Mycobacterium vaccae:</h3><blockquote><p>hypothesize that an immune response to M. vaccae stimulates the brain to create more serotonin, the happy chemical that antidepressant pills are designed to boost.</blockquote><p>
+
+            </ul>
+          </div>
+        </div>
+      </main>
+      <script>
+        
+console.clear();
+
+        var trace = console.log.bind(console);
+        var listSelector = "#question-list-container li";
+
+        var idx = lunr(function () {
+          // define searchable fields
+          this.ref("id");
+          this.field("title");
+          this.field("body");
+
+          this.k1(1.3);
+          this.b(0);
+
+          // create list of all searchable entries by reading out the
+          // '#question-list-container' and saving it as a list of json objects
+          // in this case: {id: , title: , ref: }
+          var documents = htmlElementsToJSON(listSelector, function ($element) {
+            var ref = $element.attr("data-question-id"),
+              title = $element.find("p a").text(),
+              body = $element.find("section").text();
+
+            return { id: ref, title: title, body: body };
+          });
+
+          // adding all entires to lunr
+          documents.forEach(function (doc) {
+            this.add(doc);
+          }, this);
+        });
+
+        //
+        function htmlElementsToJSON(listSelector, unmarschallFunction) {
+          // add the list elements to lunr
+          var qs = $(listSelector);
+          var entries = [];
+          for (var i = 0; i < qs.length; i++) {
+            var $q = $(qs[i]);
+            entries.push(unmarschallFunction($q));
+          }
+          return entries;
+        }
+
+        function search(searchTerm) {
+          var results = idx.search(searchTerm);
+
+          // reset(hide) all entries
+          $(listSelector).removeClass("show");
+
+          for (var i = 0; i < results.length; i++) {
+            var result = results[i];
+            $(listSelector + "[data-question-id=" + result.ref + "]").addClass(
+              "show"
+            );
+          }
+        }
+
+        function showAll(searchTerm) {
+          $(listSelector).addClass("show");
+        }
+
+        $("#searchterm").on("search paste keyup", function (event) {
+          var st = $(this).val();
+
+          // make it async, otherwise the keyboard input is interrupted
+          if (st != "") {
+            setTimeout(function () {
+              search(st);
+            }, 100);
+          }
+        });
+
+        // and show all results when clicking this button
+        //$(".all").click(function () {
+        //  showAll();
+        //});
+
+        var queryString = window.location.search;
+        queryString = queryString
+          .replaceAll("?=", "")
+          .replaceAll("+", " ")
+          .replaceAll("_", " ")
+          .replaceAll("-", " ")
+          .replaceAll("%20", " ");
+        $("#searchterm").val(queryString);
+        console.log(queryString);
+        if (queryString != "") {
+          search(queryString);
+        }
+
+      </script>
+      <p>For nostaglia purposes: search function requires javascript.</p>
+    </body>
+  </html>
+
+
+  
